@@ -39,7 +39,7 @@
     <link href="http://protagonistss.github.io.com/2019/04/28/JMS/"/>
     <id>http://protagonistss.github.io.com/2019/04/28/JMS/</id>
     <published>2019-04-27T21:11:23.000Z</published>
-    <updated>2019-04-27T13:20:37.041Z</updated>
+    <updated>2019-04-27T15:07:20.936Z</updated>
     
     <content type="html"><![CDATA[<h5 id="JMS-消息服务介绍和使用场景"><a href="#JMS-消息服务介绍和使用场景" class="headerlink" title="JMS 消息服务介绍和使用场景"></a>JMS 消息服务介绍和使用场景</h5><h6 id="什么是JMS-消息队列的使用场景"><a href="#什么是JMS-消息队列的使用场景" class="headerlink" title="# 什么是JMS,消息队列的使用场景"></a># 什么是JMS,消息队列的使用场景</h6><ul><li>什么是JMS：java 消息服务(java message Service),java 平台中关于面向消息中间件的接口</li></ul>]]></content>
     
@@ -52,8 +52,10 @@
     
     </summary>
     
+      <category term="java" scheme="http://protagonistss.github.io.com/categories/java/"/>
     
-      <category term="java rocket" scheme="http://protagonistss.github.io.com/tags/java-rocket/"/>
+    
+      <category term="RocketMQ" scheme="http://protagonistss.github.io.com/tags/RocketMQ/"/>
     
   </entry>
   
