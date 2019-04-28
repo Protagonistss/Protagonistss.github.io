@@ -99,9 +99,19 @@
     <link href="http://protagonistss.github.io.com/2019/04/28/docker/"/>
     <id>http://protagonistss.github.io.com/2019/04/28/docker/</id>
     <published>2019-04-27T23:04:48.000Z</published>
-    <updated>2019-04-27T15:05:25.851Z</updated>
+    <updated>2019-04-28T14:52:54.106Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Docker-命令"><a href="#Docker-命令" class="headerlink" title="Docker 命令"></a>Docker 命令</h3><ul><li>获镜像<ul><li>docker pull 镜像名</li></ul></li><li>使用tag命令添加镜像标签<ul><li>docker tag ubuntu:latest myubuntu:latest</li><li>注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。</li></ul></li></ul>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Docker-命令&quot;&gt;&lt;a href=&quot;#Docker-命令&quot; class=&quot;headerlink&quot; title=&quot;Docker 命令&quot;&gt;&lt;/a&gt;Docker 命令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;获镜像&lt;ul&gt;
+&lt;li&gt;docker pull 镜像名&lt;/li&gt;
+&lt;/u
+      
     
     </summary>
     
