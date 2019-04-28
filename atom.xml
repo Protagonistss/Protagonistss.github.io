@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-04-27T15:05:25.851Z</updated>
+  <updated>2019-04-28T05:18:48.629Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue-get请求传输数组</title>
+    <link href="http://protagonistss.github.io.com/2019/04/28/Vue-get%E8%AF%B7%E6%B1%82%E4%BC%A0%E8%BE%93%E6%95%B0%E7%BB%84/"/>
+    <id>http://protagonistss.github.io.com/2019/04/28/Vue-get请求传输数组/</id>
+    <published>2019-04-28T13:14:22.000Z</published>
+    <updated>2019-04-28T05:18:48.629Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Vue-get请求中传输数组问题"><a href="#Vue-get请求中传输数组问题" class="headerlink" title="Vue-get请求中传输数组问题"></a>Vue-get请求中传输数组问题</h4><ul><li>发送get请求时,请求参数是数组，需要把数组JSON.stringify([1,2,3]),后台使用json.loads(‘’[1,2,3]’’)转成列表形式</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;Vue-get请求中传输数组问题&quot;&gt;&lt;a href=&quot;#Vue-get请求中传输数组问题&quot; class=&quot;headerlink&quot; title=&quot;Vue-get请求中传输数组问题&quot;&gt;&lt;/a&gt;Vue-get请求中传输数组问题&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;发送get请求时
+      
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://protagonistss.github.io.com/categories/Vue/"/>
+    
+    
+      <category term="Vue-get-array" scheme="http://protagonistss.github.io.com/tags/Vue-get-array/"/>
+    
+  </entry>
   
   <entry>
     <title>docker</title>
