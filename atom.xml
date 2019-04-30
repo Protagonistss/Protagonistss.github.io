@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-04-30T13:15:54.619Z</updated>
+  <updated>2019-04-30T13:44:40.854Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://protagonistss.github.io.com/2019/05/01/tomcat/"/>
     <id>http://protagonistss.github.io.com/2019/05/01/tomcat/</id>
     <published>2019-04-30T20:49:42.000Z</published>
-    <updated>2019-04-30T13:15:54.619Z</updated>
+    <updated>2019-04-30T13:44:40.854Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h4><ul><li>tomcat 下载<ul><li><a href="http://tomcat.apache.org/" target="_blank" rel="noopener">tomcat 下载地址</a></li></ul></li><li>mac 下载tar.gz格式<ul><li>解压 `tar -zxvf apache-tomcat-9.0.19.tar.gz </li><li>将解压后的文件夹重命名为Tomcat(之所以重名,知识习惯)放到/Library下</li><li>进入到Tomcat 文件夹下的bin目录</li><li>设置bin目录下的所有.sh文件的读写执行权限 <code>sudo chmod 755 *.sh</code></li><li>启动tomcat 服务<code>sudo sh startup.sh</code></li><li>关闭tomcat服务<code>sudo sh shutdown.sh</code></li></ul></li><li>注意:tomcat 的配置信息都在server.xml文件里配置，如果想自定义配置,可以去xml文件配置</li></ul>]]></content>
+    <content type="html"><![CDATA[<h4 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h4><ul><li>tomcat 下载<ul><li><a href="http://tomcat.apache.org/" target="_blank" rel="noopener">tomcat 下载地址</a></li></ul></li><li>mac 下载tar.gz格式<ul><li>解压 `tar -zxvf apache-tomcat-9.0.19.tar.gz </li><li>将解压后的文件夹重命名为Tomcat( 之所以重名,只是习惯性命名 )放到/Library下</li><li>进入到Tomcat 文件夹下的bin目录</li><li>设置bin目录下的所有.sh文件的读写执行权限 <code>sudo chmod 755 *.sh</code></li><li>启动tomcat 服务<code>sudo sh startup.sh</code></li><li>关闭tomcat服务<code>sudo sh shutdown.sh</code></li></ul></li><li>注意:tomcat 的配置信息都在server.xml文件里配置，如果想自定义配置,可以去xml文件配置</li></ul><h4 id="Eclipse-集成Tomcat"><a href="#Eclipse-集成Tomcat" class="headerlink" title="Eclipse 集成Tomcat"></a>Eclipse 集成Tomcat</h4><ul><li>Window-&gt;show view -&gt; server</li></ul>]]></content>
     
     <summary type="html">
     
