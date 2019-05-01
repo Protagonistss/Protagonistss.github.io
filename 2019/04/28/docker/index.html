@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Docker 命令 获镜像 docker pull 镜像名   使用tag命令添加镜像标签 docker tag ubuntu:latest myubuntu:latest 注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。">
+<meta name="description" content="Docker 命令 获镜像 docker pull 镜像名   使用tag命令添加镜像标签 docker tag ubuntu:latest myubuntu:latest 注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。   进入容器中 docker attach 使用该命令 进入容器时候,当多个窗">
 <meta name="keywords" content="docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker">
 <meta property="og:url" content="http://protagonistss.github.io.com/2019/04/28/docker/index.html">
 <meta property="og:site_name" content="protagonistss">
-<meta property="og:description" content="Docker 命令 获镜像 docker pull 镜像名   使用tag命令添加镜像标签 docker tag ubuntu:latest myubuntu:latest 注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。">
+<meta property="og:description" content="Docker 命令 获镜像 docker pull 镜像名   使用tag命令添加镜像标签 docker tag ubuntu:latest myubuntu:latest 注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。   进入容器中 docker attach 使用该命令 进入容器时候,当多个窗">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-28T14:52:54.106Z">
+<meta property="og:updated_time" content="2019-05-01T03:47:43.567Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker">
-<meta name="twitter:description" content="Docker 命令 获镜像 docker pull 镜像名   使用tag命令添加镜像标签 docker tag ubuntu:latest myubuntu:latest 注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。">
+<meta name="twitter:description" content="Docker 命令 获镜像 docker pull 镜像名   使用tag命令添加镜像标签 docker tag ubuntu:latest myubuntu:latest 注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。   进入容器中 docker attach 使用该命令 进入容器时候,当多个窗">
 
 
 
@@ -374,6 +374,12 @@
 <li>注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。</li>
 </ul>
 </li>
+<li>进入容器中<ul>
+<li>docker attach 使用该命令 进入容器时候,当多个窗口同时attach到同一个容器中的时候,所有的窗口都会同步显示,所以一个窗口进行阻塞操作的时候,另外的窗口中的容器也会阻塞,而且值得一提的是,当使用exit退出容器的时候,容器会关掉。前提是容器没有使用-d参数后台运行。</li>
+<li>docker exec -it 容器名 /bin/bash 这种方式与attach相反。</li>
+</ul>
+</li>
+<li>docker ps -qa 查看所有容器的ID</li>
 </ul>
 
       
