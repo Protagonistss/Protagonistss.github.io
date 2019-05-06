@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="protagonistss">
 <meta property="og:description" content="Docker 命令 获镜像 docker pull 镜像名   使用tag命令添加镜像标签 docker tag ubuntu:latest myubuntu:latest 注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。   进入容器中 docker attach 使用该命令 进入容器时候,当多个窗">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-01T03:47:43.567Z">
+<meta property="og:updated_time" content="2019-05-05T01:39:49.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker">
 <meta name="twitter:description" content="Docker 命令 获镜像 docker pull 镜像名   使用tag命令添加镜像标签 docker tag ubuntu:latest myubuntu:latest 注意,这里的myubuntu:latest 和ubuntu:latest 镜像的ID其实是完全一致的,它们实际上同一个镜像文件，知识别名不同而已。   进入容器中 docker attach 使用该命令 进入容器时候,当多个窗">
@@ -381,6 +381,23 @@
 </li>
 <li>docker ps -qa 查看所有容器的ID</li>
 </ul>
+<h5 id="导入和导出容器"><a href="#导入和导出容器" class="headerlink" title="导入和导出容器"></a>导入和导出容器</h5><h6 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h6><ul>
+<li>docker export -o 文件名 容器ID<ul>
+<li><code>docker export -o test.tar ceba23bdb8db</code></li>
+</ul>
+</li>
+<li>docker export 容器ID  &gt; 文件名<ul>
+<li><code>docker export ceba23bdb8db &gt; test.tar</code></li>
+</ul>
+</li>
+</ul>
+<h6 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h6><ul>
+<li><code>docker import test.tar  test/demo</code></li>
+</ul>
+<ul>
+<li>查看容器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker top 容器名 or ID</span><br><span class="line">docker container inpect 容器名 or ID</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -527,7 +544,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -549,7 +566,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -591,7 +608,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-命令"><span class="nav-number">1.</span> <span class="nav-text">Docker 命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-命令"><span class="nav-number">1.</span> <span class="nav-text">Docker 命令</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#导入和导出容器"><span class="nav-number">1.0.1.</span> <span class="nav-text">导入和导出容器</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#导出"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">导出</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#导入"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">导入</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
