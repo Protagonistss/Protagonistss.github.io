@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-05-06T14:12:17.776Z</updated>
+  <updated>2019-05-16T04:32:30.492Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>css-样式选中</title>
+    <link href="http://protagonistss.github.io.com/2019/05/16/css-%E6%A0%B7%E5%BC%8F%E9%80%89%E4%B8%AD/"/>
+    <id>http://protagonistss.github.io.com/2019/05/16/css-样式选中/</id>
+    <published>2019-05-16T11:01:33.000Z</published>
+    <updated>2019-05-16T04:32:30.492Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="CSS选中元素"><a href="#CSS选中元素" class="headerlink" title="CSS选中元素"></a>CSS选中元素</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>:</span><br><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">css</span>:</span><br><span class="line"><span class="selector-tag">style</span>&#123;</span><br><span class="line">  # 选中第一个p标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nt-child(1)</span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  # 选中除了第一个<span class="selector-tag">p</span>标签以外的标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:first-child)</span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;CSS选中元素&quot;&gt;&lt;a href=&quot;#CSS选中元素&quot; class=&quot;headerlink&quot; title=&quot;CSS选中元素&quot;&gt;&lt;/a&gt;CSS选中元素&lt;/h5&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;g
+      
+    
+    </summary>
+    
+      <category term="css" scheme="http://protagonistss.github.io.com/categories/css/"/>
+    
+    
+      <category term="css" scheme="http://protagonistss.github.io.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
     <title>git-merge</title>
     <link href="http://protagonistss.github.io.com/2019/05/07/git-merge/"/>
     <id>http://protagonistss.github.io.com/2019/05/07/git-merge/</id>
     <published>2019-05-06T22:08:09.000Z</published>
-    <updated>2019-05-06T14:12:17.776Z</updated>
+    <updated>2019-05-08T03:13:35.004Z</updated>
     
     <content type="html"><![CDATA[<h4 id="Git-Merge"><a href="#Git-Merge" class="headerlink" title="Git-Merge"></a>Git-Merge</h4><ul><li><p>如果你已经把解决冲突的方案搞砸了,想回到尝试解决冲突前的原始冲突状态,你可以使用 </p><p><code>git checkout -m</code></p></li></ul>]]></content>
     
