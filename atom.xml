@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-05-16T04:39:21.731Z</updated>
+  <updated>2019-05-18T16:14:35.230Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>website</title>
+    <link href="http://protagonistss.github.io.com/2019/05/19/website/"/>
+    <id>http://protagonistss.github.io.com/2019/05/19/website/</id>
+    <published>2019-05-19T00:13:11.000Z</published>
+    <updated>2019-05-18T16:14:35.230Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;Create-command&quot;&gt;&lt;a href=&quot;#Create-command&quot; class=&quot;headerlink&quot; title=&quot;Create command&quot;&gt;&lt;/a&gt;Create command&lt;/h5&gt;&lt;figure class=&quot;highlight 
+      
+    
+    </summary>
+    
+      <category term="website" scheme="http://protagonistss.github.io.com/categories/website/"/>
+    
+    
+      <category term="vps" scheme="http://protagonistss.github.io.com/tags/vps/"/>
+    
+  </entry>
   
   <entry>
     <title>css-样式选中</title>
