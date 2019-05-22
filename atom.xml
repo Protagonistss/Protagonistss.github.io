@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-05-22T06:42:08.617Z</updated>
+  <updated>2019-05-22T11:08:30.475Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql安装</title>
+    <link href="http://protagonistss.github.io.com/2019/05/23/mysql%E5%AE%89%E8%A3%85/"/>
+    <id>http://protagonistss.github.io.com/2019/05/23/mysql安装/</id>
+    <published>2019-05-22T19:07:10.000Z</published>
+    <updated>2019-05-22T11:08:30.475Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Install-Mysql"><a href="#Install-Mysql" class="headerlink" title="Install Mysql"></a>Install Mysql</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;Install-Mysql&quot;&gt;&lt;a href=&quot;#Install-Mysql&quot; class=&quot;headerlink&quot; title=&quot;Install Mysql&quot;&gt;&lt;/a&gt;Install Mysql&lt;/h4&gt;
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="http://protagonistss.github.io.com/categories/mysql/"/>
+    
+    
+      <category term="install mysql" scheme="http://protagonistss.github.io.com/tags/install-mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>node安装</title>
