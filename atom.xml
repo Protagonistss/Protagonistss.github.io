@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-05-18T16:14:35.230Z</updated>
+  <updated>2019-05-22T05:33:08.739Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Yarn的安装</title>
+    <link href="http://protagonistss.github.io.com/2019/05/22/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>http://protagonistss.github.io.com/2019/05/22/Yarn的安装/</id>
+    <published>2019-05-22T13:29:54.000Z</published>
+    <updated>2019-05-22T05:33:08.739Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="INSTALL-YARN"><a href="#INSTALL-YARN" class="headerlink" title="INSTALL YARN"></a>INSTALL YARN</h5><ul><li><p>添加yum源</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo</span><br></pre></td></tr></table></figure></li></ul><ul><li><p>安装</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install yarn -y</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;INSTALL-YARN&quot;&gt;&lt;a href=&quot;#INSTALL-YARN&quot; class=&quot;headerlink&quot; title=&quot;INSTALL YARN&quot;&gt;&lt;/a&gt;INSTALL YARN&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;添加yum源&lt;/p&gt;
+&lt;figure cl
+      
+    
+    </summary>
+    
+      <category term="Centos7" scheme="http://protagonistss.github.io.com/categories/Centos7/"/>
+    
+    
+      <category term="yarn" scheme="http://protagonistss.github.io.com/tags/yarn/"/>
+    
+  </entry>
   
   <entry>
     <title>website</title>
