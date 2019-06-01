@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-05-23T13:45:15.714Z</updated>
+  <updated>2019-06-01T12:18:43.807Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -17,13 +17,46 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>rewrite</title>
+    <link href="http://protagonistss.github.io.com/2019/06/02/rewrite/"/>
+    <id>http://protagonistss.github.io.com/2019/06/02/rewrite/</id>
+    <published>2019-06-01T20:06:54.000Z</published>
+    <updated>2019-06-01T12:18:43.807Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Rewrite"><a href="#Rewrite" class="headerlink" title="Rewrite"></a>Rewrite</h4><p>实现url重写以及重定向</p><h4 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h4><ul><li>url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等)</li><li>SEO优化</li><li>运维人员维护<ul><li>后台维护、流量转发</li></ul></li><li>安全-&gt;伪静态</li></ul><h4 id="配置语法"><a href="#配置语法" class="headerlink" title="配置语法"></a>配置语法</h4><p>Systanx: rewrite regx replacement[flag]</p><p>Default: –</p><p>Context:server,location,if</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;Rewrite&quot;&gt;&lt;a href=&quot;#Rewrite&quot; class=&quot;headerlink&quot; title=&quot;Rewrite&quot;&gt;&lt;/a&gt;Rewrite&lt;/h4&gt;&lt;p&gt;实现url重写以及重定向&lt;/p&gt;
+&lt;h4 id=&quot;场景&quot;&gt;&lt;a href=&quot;#场景&quot; class=&quot;
+      
+    
+    </summary>
+    
+      <category term="nginx" scheme="http://protagonistss.github.io.com/categories/nginx/"/>
+    
+    
+      <category term="rewrite" scheme="http://protagonistss.github.io.com/tags/rewrite/"/>
+    
+  </entry>
+  
+  <entry>
     <title>常见nginx中间件架构</title>
     <link href="http://protagonistss.github.io.com/2019/05/24/%E5%B8%B8%E8%A7%81nginx%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%9E%B6%E6%9E%84/"/>
     <id>http://protagonistss.github.io.com/2019/05/24/常见nginx中间件架构/</id>
     <published>2019-05-23T21:44:43.000Z</published>
-    <updated>2019-05-23T13:45:15.714Z</updated>
+    <updated>2019-05-23T13:50:31.667Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="一、静态资源"><a href="#一、静态资源" class="headerlink" title="一、静态资源"></a>一、静态资源</h4>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;一、静态资源&quot;&gt;&lt;a href=&quot;#一、静态资源&quot; class=&quot;headerlink&quot; title=&quot;一、静态资源&quot;&gt;&lt;/a&gt;一、静态资源&lt;/h4&gt;
+      
     
     </summary>
     
