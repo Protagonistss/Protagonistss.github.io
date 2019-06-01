@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Rewrite实现url重写以及重定向 场景 url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等) SEO优化 运维人员维护 后台维护、流量转发   安全-&amp;gt;伪静态  配置语法Systanx: rewrite regx replacement[flag] Default: – Context:server,location,if">
+<meta name="description" content="Rewrite实现url重写以及重定向 场景 url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等) SEO优化 运维人员维护 后台维护、流量转发   安全-&amp;gt;伪静态  配置语法Systanx: rewrite regx replacement[flag] Default: – Context:server,location,if 正则pcre 正则测试 flaglast : 停止">
 <meta name="keywords" content="rewrite">
 <meta property="og:type" content="article">
 <meta property="og:title" content="rewrite">
 <meta property="og:url" content="http://protagonistss.github.io.com/2019/06/02/rewrite/index.html">
 <meta property="og:site_name" content="protagonistss">
-<meta property="og:description" content="Rewrite实现url重写以及重定向 场景 url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等) SEO优化 运维人员维护 后台维护、流量转发   安全-&amp;gt;伪静态  配置语法Systanx: rewrite regx replacement[flag] Default: – Context:server,location,if">
+<meta property="og:description" content="Rewrite实现url重写以及重定向 场景 url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等) SEO优化 运维人员维护 后台维护、流量转发   安全-&amp;gt;伪静态  配置语法Systanx: rewrite regx replacement[flag] Default: – Context:server,location,if 正则pcre 正则测试 flaglast : 停止">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-01T12:18:43.807Z">
+<meta property="og:updated_time" content="2019-06-01T14:03:07.455Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="rewrite">
-<meta name="twitter:description" content="Rewrite实现url重写以及重定向 场景 url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等) SEO优化 运维人员维护 后台维护、流量转发   安全-&amp;gt;伪静态  配置语法Systanx: rewrite regx replacement[flag] Default: – Context:server,location,if">
+<meta name="twitter:description" content="Rewrite实现url重写以及重定向 场景 url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等) SEO优化 运维人员维护 后台维护、流量转发   安全-&amp;gt;伪静态  配置语法Systanx: rewrite regx replacement[flag] Default: – Context:server,location,if 正则pcre 正则测试 flaglast : 停止">
 
 
 
@@ -377,6 +377,17 @@
 <h4 id="配置语法"><a href="#配置语法" class="headerlink" title="配置语法"></a>配置语法</h4><p>Systanx: rewrite regx replacement[flag]</p>
 <p>Default: –</p>
 <p>Context:server,location,if</p>
+<h4 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h4><p>pcre 正则测试</p>
+<h4 id="flag"><a href="#flag" class="headerlink" title="flag"></a>flag</h4><p>last : 停止rewrite 检测</p>
+<p>Break: 停止rewrite 检测</p>
+<p>redirect : 返回302临时重定向,地址栏会显示跳转后的地址</p>
+<p>permanent : 返回301永久重定向，地址栏会显示跳转后的地址 (nginx 停掉也会重定向)</p>
+<h4 id="Rewrite-规则优先级"><a href="#Rewrite-规则优先级" class="headerlink" title="Rewrite 规则优先级"></a>Rewrite 规则优先级</h4><ol>
+<li>执行server块的rewrite指令</li>
+<li>执行location匹配</li>
+<li>执行选定的location中的rewrite</li>
+</ol>
+<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    listen  6060;</span><br><span class="line">    server_name  localhost;</span><br><span class="line">    access_log  /var/log/nginx/host.access.log  main;</span><br><span class="line">    root /opt/app/code;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        rewrite ^/course-(\d+)-(\d+)-(\d+)\.html$ /course/$1/$2/course_$3.html break;</span><br><span class="line"></span><br><span class="line">        if ($http_user_agent ~* Chrome) &#123;</span><br><span class="line">            rewrite ^/nginx http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        if (!-f $request_filename) &#123;</span><br><span class="line">            rewrite ^/(.*)$ http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        index  index.html  index.htm;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/break &#123;</span><br><span class="line">        rewrite ^/break /test/ break;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/last &#123;</span><br><span class="line">        #rewrite ^/last /test/ last;</span><br><span class="line">        rewrite ^/last /test/ redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/protagonist &#123;</span><br><span class="line">    	#rewrite ^/protagonist  http://39.97.187.133:80 permanent;</span><br><span class="line">			rewrite ^/protagonist  http://39.97.187.133:80 redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location /test/ &#123;</span><br><span class="line">			default_type  application/json;</span><br><span class="line">			return 200 '&#123;"status":"success"&#125;';</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -587,7 +598,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Rewrite"><span class="nav-number">1.</span> <span class="nav-text">Rewrite</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#场景"><span class="nav-number">2.</span> <span class="nav-text">场景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置语法"><span class="nav-number">3.</span> <span class="nav-text">配置语法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Rewrite"><span class="nav-number">1.</span> <span class="nav-text">Rewrite</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#场景"><span class="nav-number">2.</span> <span class="nav-text">场景</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置语法"><span class="nav-number">3.</span> <span class="nav-text">配置语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正则"><span class="nav-number">4.</span> <span class="nav-text">正则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flag"><span class="nav-number">5.</span> <span class="nav-text">flag</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Rewrite-规则优先级"><span class="nav-number">6.</span> <span class="nav-text">Rewrite 规则优先级</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#示例"><span class="nav-number">7.</span> <span class="nav-text">示例</span></a></li></ol></div>
             
 
           </div>
