@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-06-01T12:23:43.470Z</updated>
+  <updated>2019-06-21T07:42:51.957Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>scp</title>
+    <link href="http://protagonistss.github.io.com/2019/06/21/scp/"/>
+    <id>http://protagonistss.github.io.com/2019/06/21/scp/</id>
+    <published>2019-06-21T15:40:07.000Z</published>
+    <updated>2019-06-21T07:42:51.957Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="SCP-复制远程服务器上的目录"><a href="#SCP-复制远程服务器上的目录" class="headerlink" title="SCP 复制远程服务器上的目录"></a>SCP 复制远程服务器上的目录</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -p 22 -r root@ip:/home/example/ /temp/</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;SCP-复制远程服务器上的目录&quot;&gt;&lt;a href=&quot;#SCP-复制远程服务器上的目录&quot; class=&quot;headerlink&quot; title=&quot;SCP 复制远程服务器上的目录&quot;&gt;&lt;/a&gt;SCP 复制远程服务器上的目录&lt;/h4&gt;&lt;figure class=&quot;highli
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="http://protagonistss.github.io.com/categories/linux/"/>
+    
+    
+      <category term="scp" scheme="http://protagonistss.github.io.com/tags/scp/"/>
+    
+  </entry>
   
   <entry>
     <title>查看使用的端口</title>
