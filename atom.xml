@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-06-21T08:53:23.188Z</updated>
+  <updated>2019-10-11T03:12:35.894Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx依赖</title>
+    <link href="http://protagonistss.github.io.com/2019/10/11/nginx%E4%BE%9D%E8%B5%96/"/>
+    <id>http://protagonistss.github.io.com/2019/10/11/nginx依赖/</id>
+    <published>2019-10-11T11:11:04.000Z</published>
+    <updated>2019-10-11T03:12:35.894Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="编译安装nginx需要安装依赖"><a href="#编译安装nginx需要安装依赖" class="headerlink" title="编译安装nginx需要安装依赖"></a>编译安装nginx需要安装依赖</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc gcc-c++</span><br><span class="line">yum -y install zlib zlib-devel openssl openssl-devel pcre-devel</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;编译安装nginx需要安装依赖&quot;&gt;&lt;a href=&quot;#编译安装nginx需要安装依赖&quot; class=&quot;headerlink&quot; title=&quot;编译安装nginx需要安装依赖&quot;&gt;&lt;/a&gt;编译安装nginx需要安装依赖&lt;/h3&gt;&lt;figure class=&quot;highli
+      
+    
+    </summary>
+    
+      <category term="nginx" scheme="http://protagonistss.github.io.com/categories/nginx/"/>
+    
+    
+      <category term="nginx dependency" scheme="http://protagonistss.github.io.com/tags/nginx-dependency/"/>
+    
+  </entry>
   
   <entry>
     <title>mongo</title>
