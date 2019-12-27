@@ -730,7 +730,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/05/07/git-merge/" itemprop="url">git-merge</a></h1>
+                <a class="post-title-link" href="/2019/05/07/git-merge/" itemprop="url">Git Command</a></h1>
         
 
         <div class="post-meta">
@@ -765,8 +765,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
                   </a>
                 </span>
 
@@ -803,14 +803,21 @@
 
       
         
-          
-            <h4 id="Git-Merge"><a href="#Git-Merge" class="headerlink" title="Git-Merge"></a>Git-Merge</h4><ul>
-<li><p>如果你已经把解决冲突的方案搞砸了,想回到尝试解决冲突前的原始冲突状态,你可以使用 </p>
-<p><code>git checkout -m</code></p>
+          <h3 id="一、合并"><a href="#一、合并" class="headerlink" title="一、合并"></a>一、合并</h3><ul>
+<li><p>合并分支</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge &lt;branch&gt; --no -ff -m<span class="string">"xxxxxx"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果你已经把解决冲突的方案搞砸了,想回到尝试解决冲突前的原始冲突状态,你可以使用 如下命令,该命令会丢弃本次合并，回到上次commit的HEAD上</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;commit id&gt; --hard</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/07/git-merge/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1836,7 +1843,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
