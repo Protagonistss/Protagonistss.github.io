@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-12-27T09:25:57.834Z</updated>
+  <updated>2019-12-27T09:29:35.942Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://protagonistss.github.io.com/2019/12/28/cal-exp/"/>
     <id>http://protagonistss.github.io.com/2019/12/28/cal-exp/</id>
     <published>2019-12-27T17:24:00.000Z</published>
-    <updated>2019-12-27T09:25:57.834Z</updated>
+    <updated>2019-12-27T09:29:35.942Z</updated>
     
     <content type="html"><![CDATA[<h3 id="计算表达式拆解"><a href="#计算表达式拆解" class="headerlink" title="计算表达式拆解"></a>计算表达式拆解</h3>]]></content>
     
@@ -34,10 +34,10 @@
     
     </summary>
     
-      <category term="alg-js" scheme="http://protagonistss.github.io.com/categories/alg-js/"/>
+      <category term="arigthmetic javascript" scheme="http://protagonistss.github.io.com/categories/arigthmetic-javascript/"/>
     
     
-      <category term="alg" scheme="http://protagonistss.github.io.com/tags/alg/"/>
+      <category term="arithmetic" scheme="http://protagonistss.github.io.com/tags/arithmetic/"/>
     
   </entry>
   
