@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2019-12-27T09:55:31.766Z</updated>
+  <updated>2019-12-27T10:06:35.846Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>队列</title>
+    <link href="http://protagonistss.github.io.com/2019/12/28/triangle/"/>
+    <id>http://protagonistss.github.io.com/2019/12/28/triangle/</id>
+    <published>2019-12-27T18:03:19.000Z</published>
+    <updated>2019-12-27T10:06:35.846Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h3><blockquote><p>利用数组定义队列,在队列的基础上实现一些功能</p></blockquote><h4 id="一、定义队列"><a href="#一、定义队列" class="headerlink" title="一、定义队列"></a>一、定义队列</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;队列&quot;&gt;&lt;a href=&quot;#队列&quot; class=&quot;headerlink&quot; title=&quot;队列&quot;&gt;&lt;/a&gt;队列&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;利用数组定义队列,在队列的基础上实现一些功能&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;一、定义队列&quot;&gt;
+      
+    
+    </summary>
+    
+      <category term="arithmetic javascript" scheme="http://protagonistss.github.io.com/categories/arithmetic-javascript/"/>
+    
+    
+      <category term="Queue" scheme="http://protagonistss.github.io.com/tags/Queue/"/>
+    
+  </entry>
   
   <entry>
     <title>计算表达式</title>
@@ -513,31 +541,6 @@
     
     
       <category term="docker" scheme="http://protagonistss.github.io.com/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JMS</title>
-    <link href="http://protagonistss.github.io.com/2019/04/28/JMS/"/>
-    <id>http://protagonistss.github.io.com/2019/04/28/JMS/</id>
-    <published>2019-04-27T21:11:23.000Z</published>
-    <updated>2019-04-27T15:07:20.936Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="JMS-消息服务介绍和使用场景"><a href="#JMS-消息服务介绍和使用场景" class="headerlink" title="JMS 消息服务介绍和使用场景"></a>JMS 消息服务介绍和使用场景</h5><h6 id="什么是JMS-消息队列的使用场景"><a href="#什么是JMS-消息队列的使用场景" class="headerlink" title="# 什么是JMS,消息队列的使用场景"></a># 什么是JMS,消息队列的使用场景</h6><ul><li>什么是JMS：java 消息服务(java message Service),java 平台中关于面向消息中间件的接口</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;JMS-消息服务介绍和使用场景&quot;&gt;&lt;a href=&quot;#JMS-消息服务介绍和使用场景&quot; class=&quot;headerlink&quot; title=&quot;JMS 消息服务介绍和使用场景&quot;&gt;&lt;/a&gt;JMS 消息服务介绍和使用场景&lt;/h5&gt;&lt;h6 id=&quot;什么是JMS-消息队列的使
-      
-    
-    </summary>
-    
-      <category term="java" scheme="http://protagonistss.github.io.com/categories/java/"/>
-    
-    
-      <category term="RocketMQ" scheme="http://protagonistss.github.io.com/tags/RocketMQ/"/>
     
   </entry>
   
