@@ -359,21 +359,18 @@
   
   <entry>
     <title>Git Command</title>
-    <link href="http://protagonistss.github.io.com/2019/05/07/git-merge/"/>
-    <id>http://protagonistss.github.io.com/2019/05/07/git-merge/</id>
+    <link href="http://protagonistss.github.io.com/2019/05/07/git-command/"/>
+    <id>http://protagonistss.github.io.com/2019/05/07/git-command/</id>
     <published>2019-05-06T22:08:09.000Z</published>
-    <updated>2019-12-27T10:21:00.826Z</updated>
+    <updated>2019-12-27T10:26:57.569Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="一、合并"><a href="#一、合并" class="headerlink" title="一、合并"></a>一、合并</h3><ul><li><p>合并分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge &lt;branch&gt; --no -ff -m<span class="string">"xxxxxx"</span></span><br></pre></td></tr></table></figure></li><li><p>如果你已经把解决冲突的方案搞砸了,想回到尝试解决冲突前的原始冲突状态,你可以使用 如下命令,该命令会丢弃本次合并，回到上次commit的HEAD上</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;commit id&gt; --hard</span><br></pre></td></tr></table></figure></li></ul><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<h3 id="一、分支"><a href="#一、分支" class="headerlink" title="一、分支"></a>一、分支</h3><ul><li><p>查看分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch <span class="comment"># 查看本地当前所有分支</span></span><br><span class="line">git branch -r <span class="comment"># 查看远程服务器上的所有分支</span></span><br></pre></td></tr></table></figure></li></ul><a id="more"></a><h3 id="二、合并"><a href="#二、合并" class="headerlink" title="二、合并"></a>二、合并</h3><ul><li><p>合并分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge &lt;branch&gt; --no -ff -m<span class="string">"xxxxxx"</span></span><br></pre></td></tr></table></figure></li><li><p>如果你已经把解决冲突的方案搞砸了,想回到尝试解决冲突前的原始冲突状态,你可以使用 如下命令,该命令会丢弃本次合并，回到上次commit的HEAD上</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;commit id&gt; --hard</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;一、合并&quot;&gt;&lt;a href=&quot;#一、合并&quot; class=&quot;headerlink&quot; title=&quot;一、合并&quot;&gt;&lt;/a&gt;一、合并&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;合并分支&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git merge &amp;lt;branch&amp;gt; --no -ff -m&lt;span class=&quot;string&quot;&gt;&quot;xxxxxx&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果你已经把解决冲突的方案搞砸了,想回到尝试解决冲突前的原始冲突状态,你可以使用 如下命令,该命令会丢弃本次合并，回到上次commit的HEAD上&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git reset &amp;lt;commit id&amp;gt; --hard&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h3 id=&quot;一、分支&quot;&gt;&lt;a href=&quot;#一、分支&quot; class=&quot;headerlink&quot; title=&quot;一、分支&quot;&gt;&lt;/a&gt;一、分支&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;查看分支&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git branch &lt;span class=&quot;comment&quot;&gt;# 查看本地当前所有分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git branch -r &lt;span class=&quot;comment&quot;&gt;# 查看远程服务器上的所有分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
     
