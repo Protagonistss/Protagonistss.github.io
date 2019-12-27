@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="队列 利用数组定义队列,在队列的基础上实现一些功能  一、定义队列">
+<meta name="description" content="队列 利用数组定义队列,在队列的基础上实现一些功能  一、定义队列12345678910111213141516171819202122232425262728293031function Queue()&amp;#123;  var items = []    this.enqueue = function(item)&amp;#123;    items.push(item)  &amp;#125;    this.">
 <meta name="keywords" content="Queue">
 <meta property="og:type" content="article">
 <meta property="og:title" content="队列">
 <meta property="og:url" content="http://protagonistss.github.io.com/2019/12/28/triangle/index.html">
 <meta property="og:site_name" content="protagonistss">
-<meta property="og:description" content="队列 利用数组定义队列,在队列的基础上实现一些功能  一、定义队列">
+<meta property="og:description" content="队列 利用数组定义队列,在队列的基础上实现一些功能  一、定义队列12345678910111213141516171819202122232425262728293031function Queue()&amp;#123;  var items = []    this.enqueue = function(item)&amp;#123;    items.push(item)  &amp;#125;    this.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-27T10:06:35.846Z">
+<meta property="og:updated_time" content="2019-12-27T10:11:12.202Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="队列">
-<meta name="twitter:description" content="队列 利用数组定义队列,在队列的基础上实现一些功能  一、定义队列">
+<meta name="twitter:description" content="队列 利用数组定义队列,在队列的基础上实现一些功能  一、定义队列12345678910111213141516171819202122232425262728293031function Queue()&amp;#123;  var items = []    this.enqueue = function(item)&amp;#123;    items.push(item)  &amp;#125;    this.">
 
 
 
@@ -367,7 +367,8 @@
         <h3 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h3><blockquote>
 <p>利用数组定义队列,在队列的基础上实现一些功能</p>
 </blockquote>
-<h4 id="一、定义队列"><a href="#一、定义队列" class="headerlink" title="一、定义队列"></a>一、定义队列</h4>
+<h4 id="一、定义队列"><a href="#一、定义队列" class="headerlink" title="一、定义队列"></a>一、定义队列</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Queue</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> items = []</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.enqueue = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    items.push(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.dequeue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.shift()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.head = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[<span class="number">0</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.tail = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[items.length - <span class="number">1</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.clear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    items = []</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.Empty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length === <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
       
     </div>
     
