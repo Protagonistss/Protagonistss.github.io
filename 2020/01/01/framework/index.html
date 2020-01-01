@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Vue组件化插槽插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。 匿名插槽1234567// child&amp;lt;div&amp;gt;  &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;&amp;lt;/div&amp;gt;// parent&amp;lt;child&amp;gt;Hello World&amp;lt;/child&amp;gt;">
+<meta name="description" content="Vue组件化插槽插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。 匿名插槽1234567// child&amp;lt;div&amp;gt;  &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;&amp;lt;/div&amp;gt;// parent&amp;lt;child&amp;gt;Hello World&amp;lt;/child&amp;gt; 具名插槽将内容过分发到子组件指定位置 123456789">
 <meta name="keywords" content="framework">
 <meta property="og:type" content="article">
 <meta property="og:title" content="架构">
 <meta property="og:url" content="http://protagonistss.github.io.com/2020/01/01/framework/index.html">
 <meta property="og:site_name" content="protagonistss">
-<meta property="og:description" content="Vue组件化插槽插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。 匿名插槽1234567// child&amp;lt;div&amp;gt;  &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;&amp;lt;/div&amp;gt;// parent&amp;lt;child&amp;gt;Hello World&amp;lt;/child&amp;gt;">
+<meta property="og:description" content="Vue组件化插槽插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。 匿名插槽1234567// child&amp;lt;div&amp;gt;  &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;&amp;lt;/div&amp;gt;// parent&amp;lt;child&amp;gt;Hello World&amp;lt;/child&amp;gt; 具名插槽将内容过分发到子组件指定位置 123456789">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-31T18:14:53.879Z">
+<meta property="og:updated_time" content="2020-01-01T03:52:41.339Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="架构">
-<meta name="twitter:description" content="Vue组件化插槽插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。 匿名插槽1234567// child&amp;lt;div&amp;gt;  &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;&amp;lt;/div&amp;gt;// parent&amp;lt;child&amp;gt;Hello World&amp;lt;/child&amp;gt;">
+<meta name="twitter:description" content="Vue组件化插槽插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。 匿名插槽1234567// child&amp;lt;div&amp;gt;  &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt;&amp;lt;/div&amp;gt;// parent&amp;lt;child&amp;gt;Hello World&amp;lt;/child&amp;gt; 具名插槽将内容过分发到子组件指定位置 123456789">
 
 
 
@@ -391,6 +391,11 @@
       
         <h4 id="Vue组件化"><a href="#Vue组件化" class="headerlink" title="Vue组件化"></a>Vue组件化</h4><h5 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h5><p>插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。</p>
 <h6 id="匿名插槽"><a href="#匿名插槽" class="headerlink" title="匿名插槽"></a>匿名插槽</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;slot&gt;&lt;/slot&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;child&gt;Hello World&lt;/child&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h6><p>将内容过分发到子组件指定位置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;solt&gt;&lt;/solt&gt;</span><br><span class="line">  &lt;solt name=&quot;content&quot;&gt;&lt;/solt&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;Child&gt;</span><br><span class="line">	&lt;template v-solt:default&gt;具名插槽&lt;/template&gt;</span><br><span class="line">  &lt;template v-solt:content&gt;hello world&lt;/template&gt;</span><br><span class="line">&lt;/Child&gt;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h6 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h6><p>分发内容要用到子组件中的数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -610,7 +615,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Vue组件化"><span class="nav-number">1.</span> <span class="nav-text">Vue组件化</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#插槽"><span class="nav-number">1.1.</span> <span class="nav-text">插槽</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#匿名插槽"><span class="nav-number">1.1.1.</span> <span class="nav-text">匿名插槽</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Vue组件化"><span class="nav-number">1.</span> <span class="nav-text">Vue组件化</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#插槽"><span class="nav-number">1.1.</span> <span class="nav-text">插槽</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#匿名插槽"><span class="nav-number">1.1.1.</span> <span class="nav-text">匿名插槽</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#具名插槽"><span class="nav-number">1.1.2.</span> <span class="nav-text">具名插槽</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#作用域插槽"><span class="nav-number">1.1.3.</span> <span class="nav-text">作用域插槽</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -633,7 +638,7 @@
         <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
