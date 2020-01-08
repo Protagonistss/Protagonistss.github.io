@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2020-01-02T03:33:05.931Z</updated>
+  <updated>2020-01-08T07:02:46.691Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bind、call、apply</title>
+    <link href="http://protagonistss.github.io.com/2020/01/08/bind/"/>
+    <id>http://protagonistss.github.io.com/2020/01/08/bind/</id>
+    <published>2020-01-08T14:52:54.000Z</published>
+    <updated>2020-01-08T07:02:46.691Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Bind、Apply、Call的区别"><a href="#Bind、Apply、Call的区别" class="headerlink" title="Bind、Apply、Call的区别"></a>Bind、Apply、Call的区别</h3><p>相同点就是这三个方法都可以改变函数的this指向,不同点是call,apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数,apply 接受的参数形式是数组。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Bind、Apply、Call的区别&quot;&gt;&lt;a href=&quot;#Bind、Apply、Call的区别&quot; class=&quot;headerlink&quot; title=&quot;Bind、Apply、Call的区别&quot;&gt;&lt;/a&gt;Bind、Apply、Call的区别&lt;/h3&gt;&lt;p&gt;相同点就是这
+      
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://protagonistss.github.io.com/categories/javascript/"/>
+    
+    
+      <category term="bind call apply" scheme="http://protagonistss.github.io.com/tags/bind-call-apply/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue-extend概念以及相关用法</title>
@@ -500,32 +525,6 @@
     
     
       <category term="div-css-inline" scheme="http://protagonistss.github.io.com/tags/div-css-inline/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git-branch</title>
-    <link href="http://protagonistss.github.io.com/2019/04/29/git-branch/"/>
-    <id>http://protagonistss.github.io.com/2019/04/29/git-branch/</id>
-    <published>2019-04-28T22:26:24.000Z</published>
-    <updated>2019-04-28T14:29:51.151Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="Git-branch"><a href="#Git-branch" class="headerlink" title="Git-branch"></a>Git-branch</h4><ul><li>git branch branch [starting-commit]</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git branch dev new-create d25bdb13539c9d584a434cc47da864fe49afd826</span><br><span class="line"></span><br><span class="line">dev:是当前所在的分之</span><br><span class="line">new-create:是要创建的新分支</span><br><span class="line">d25bdb13539c9d584a434cc47da864fe49afd826: 指定从当前分之的该次提交启动一个新分支。</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;Git-branch&quot;&gt;&lt;a href=&quot;#Git-branch&quot; class=&quot;headerlink&quot; title=&quot;Git-branch&quot;&gt;&lt;/a&gt;Git-branch&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;git branch branch [starting-comm
-      
-    
-    </summary>
-    
-      <category term="git" scheme="http://protagonistss.github.io.com/categories/git/"/>
-    
-    
-      <category term="git-branch" scheme="http://protagonistss.github.io.com/tags/git-branch/"/>
     
   </entry>
   
