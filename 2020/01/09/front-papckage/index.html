@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="前端项目打包工具 Rollup  Webpack   一、Rollup归纳环境安装12345# 全局安装npm i rollup -g# 运行rollup,不传参数默认打印出 rollup --help rollup -h 一样的效果rollup">
+<meta name="description" content="前端项目打包工具 Rollup  Webpack   一、Rollup归纳一、环境安装12345# 全局安装npm i rollup -g# 运行rollup,不传参数默认打印出 rollup --help rollup -h 一样的效果rollup 二、简单示例1、第一种方式通过command123456# first recommendrollup main.js -o dist.js -f">
 <meta name="keywords" content="package">
 <meta property="og:type" content="article">
 <meta property="og:title" content="front-papckage">
 <meta property="og:url" content="http://protagonistss.github.io.com/2020/01/09/front-papckage/index.html">
 <meta property="og:site_name" content="protagonistss">
-<meta property="og:description" content="前端项目打包工具 Rollup  Webpack   一、Rollup归纳环境安装12345# 全局安装npm i rollup -g# 运行rollup,不传参数默认打印出 rollup --help rollup -h 一样的效果rollup">
+<meta property="og:description" content="前端项目打包工具 Rollup  Webpack   一、Rollup归纳一、环境安装12345# 全局安装npm i rollup -g# 运行rollup,不传参数默认打印出 rollup --help rollup -h 一样的效果rollup 二、简单示例1、第一种方式通过command123456# first recommendrollup main.js -o dist.js -f">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-01-09T04:46:28.525Z">
+<meta property="og:updated_time" content="2020-01-09T10:19:14.070Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="front-papckage">
-<meta name="twitter:description" content="前端项目打包工具 Rollup  Webpack   一、Rollup归纳环境安装12345# 全局安装npm i rollup -g# 运行rollup,不传参数默认打印出 rollup --help rollup -h 一样的效果rollup">
+<meta name="twitter:description" content="前端项目打包工具 Rollup  Webpack   一、Rollup归纳一、环境安装12345# 全局安装npm i rollup -g# 运行rollup,不传参数默认打印出 rollup --help rollup -h 一样的效果rollup 二、简单示例1、第一种方式通过command123456# first recommendrollup main.js -o dist.js -f">
 
 
 
@@ -402,8 +402,10 @@
 <li><p>Webpack</p>
 </li>
 </ul>
-<h4 id="一、Rollup归纳"><a href="#一、Rollup归纳" class="headerlink" title="一、Rollup归纳"></a>一、Rollup归纳</h4><h5 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 全局安装</span></span><br><span class="line">npm i rollup -g</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 运行rollup,不传参数默认打印出 rollup --<span class="built_in">help</span> rollup -h 一样的效果</span></span><br><span class="line">rollup</span><br></pre></td></tr></table></figure>
-
+<h4 id="一、Rollup归纳"><a href="#一、Rollup归纳" class="headerlink" title="一、Rollup归纳"></a>一、Rollup归纳</h4><h5 id="一、环境安装"><a href="#一、环境安装" class="headerlink" title="一、环境安装"></a>一、环境安装</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 全局安装</span></span><br><span class="line">npm i rollup -g</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 运行rollup,不传参数默认打印出 rollup --<span class="built_in">help</span> rollup -h 一样的效果</span></span><br><span class="line">rollup</span><br></pre></td></tr></table></figure>
+<h5 id="二、简单示例"><a href="#二、简单示例" class="headerlink" title="二、简单示例"></a>二、简单示例</h5><h6 id="1、第一种方式通过command"><a href="#1、第一种方式通过command" class="headerlink" title="1、第一种方式通过command"></a>1、第一种方式通过command</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> first recommend</span></span><br><span class="line">rollup main.js -o dist.js -f cjs</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> second not recommend </span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 这种方式在生成sourcemap的时候灵活性不够</span></span><br><span class="line">rollup main.js -f cjs &gt; dist.js</span><br></pre></td></tr></table></figure>
+<h6 id="2、第二种方式通过config文件"><a href="#2、第二种方式通过config文件" class="headerlink" title="2、第二种方式通过config文件"></a>2、第二种方式通过config文件</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建rollup.config.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> = &#123;</span><br><span class="line">  <span class="comment">// entry file</span></span><br><span class="line">  input:<span class="string">'xxx/main.js'</span>,</span><br><span class="line">  output:&#123;</span><br><span class="line">    file: <span class="string">'dist.js'</span>,</span><br><span class="line">    format: <span class="string">'cjs</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<!--mroe-->
       
     </div>
     
@@ -633,7 +635,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端项目打包工具"><span class="nav-number">1.</span> <span class="nav-text">前端项目打包工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、Rollup归纳"><span class="nav-number">1.1.</span> <span class="nav-text">一、Rollup归纳</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#环境安装"><span class="nav-number">1.1.1.</span> <span class="nav-text">环境安装</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前端项目打包工具"><span class="nav-number">1.</span> <span class="nav-text">前端项目打包工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、Rollup归纳"><span class="nav-number">1.1.</span> <span class="nav-text">一、Rollup归纳</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#一、环境安装"><span class="nav-number">1.1.1.</span> <span class="nav-text">一、环境安装</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#二、简单示例"><span class="nav-number">1.1.2.</span> <span class="nav-text">二、简单示例</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1、第一种方式通过command"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">1、第一种方式通过command</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2、第二种方式通过config文件"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">2、第二种方式通过config文件</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
