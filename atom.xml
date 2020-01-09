@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2020-01-08T07:23:41.546Z</updated>
+  <updated>2020-01-09T04:46:28.525Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>front-papckage</title>
+    <link href="http://protagonistss.github.io.com/2020/01/09/front-papckage/"/>
+    <id>http://protagonistss.github.io.com/2020/01/09/front-papckage/</id>
+    <published>2020-01-09T12:39:08.000Z</published>
+    <updated>2020-01-09T04:46:28.525Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前端项目打包工具"><a href="#前端项目打包工具" class="headerlink" title="前端项目打包工具"></a>前端项目打包工具</h3><ul><li><p>Rollup</p></li><li><p>Webpack</p></li></ul><h4 id="一、Rollup归纳"><a href="#一、Rollup归纳" class="headerlink" title="一、Rollup归纳"></a>一、Rollup归纳</h4><h5 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 全局安装</span></span><br><span class="line">npm i rollup -g</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 运行rollup,不传参数默认打印出 rollup --<span class="built_in">help</span> rollup -h 一样的效果</span></span><br><span class="line">rollup</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;前端项目打包工具&quot;&gt;&lt;a href=&quot;#前端项目打包工具&quot; class=&quot;headerlink&quot; title=&quot;前端项目打包工具&quot;&gt;&lt;/a&gt;前端项目打包工具&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Rollup&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Webpack&lt;/p&gt;
+&lt;
+      
+    
+    </summary>
+    
+      <category term="Framework" scheme="http://protagonistss.github.io.com/categories/Framework/"/>
+    
+    
+      <category term="package" scheme="http://protagonistss.github.io.com/tags/package/"/>
+    
+  </entry>
   
   <entry>
     <title>bind、call、apply</title>
@@ -500,31 +529,6 @@
     
     
       <category term="tomcat" scheme="http://protagonistss.github.io.com/tags/tomcat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>div-横向排列和出现横向滚动条</title>
-    <link href="http://protagonistss.github.io.com/2019/04/30/div-%E6%A8%AA%E5%90%91%E6%8E%92%E5%88%97%E5%92%8C%E5%87%BA%E7%8E%B0%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/"/>
-    <id>http://protagonistss.github.io.com/2019/04/30/div-横向排列和出现横向滚动条/</id>
-    <published>2019-04-30T13:26:42.000Z</published>
-    <updated>2019-04-30T05:32:57.541Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="出现横向滚动条"><a href="#出现横向滚动条" class="headerlink" title="出现横向滚动条"></a>出现横向滚动条</h5><p>核心思路是使用<code>white-space</code> 这个属性防止父容器内容换行，例子如下:</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// html</span><br><span class="line">&lt;<span class="selector-tag">ul</span>&gt;</span><br><span class="line">&lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">// css</span><br><span class="line"><span class="selector-tag">ul</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">overflow-x</span>: scroll;</span><br><span class="line">  <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">  <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:inline-block;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;出现横向滚动条&quot;&gt;&lt;a href=&quot;#出现横向滚动条&quot; class=&quot;headerlink&quot; title=&quot;出现横向滚动条&quot;&gt;&lt;/a&gt;出现横向滚动条&lt;/h5&gt;&lt;p&gt;核心思路是使用&lt;code&gt;white-space&lt;/code&gt; 这个属性防止父容器内容换行，例子如下
-      
-    
-    </summary>
-    
-      <category term="css" scheme="http://protagonistss.github.io.com/categories/css/"/>
-    
-    
-      <category term="div-css-inline" scheme="http://protagonistss.github.io.com/tags/div-css-inline/"/>
     
   </entry>
   
