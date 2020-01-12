@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>vscode</title>
+    <url>/2020/01/12/vscode/</url>
+    <content><![CDATA[<h3 id="VSCODE开发工具配置"><a href="#VSCODE开发工具配置" class="headerlink" title="VSCODE开发工具配置"></a>VSCODE开发工具配置</h3><h4 id="一、Python开发工具配置"><a href="#一、Python开发工具配置" class="headerlink" title="一、Python开发工具配置"></a>一、Python开发工具配置</h4><h4 id="二、Java开发工具配置"><a href="#二、Java开发工具配置" class="headerlink" title="二、Java开发工具配置"></a>二、Java开发工具配置</h4><h4 id="三、Go开发工具配置"><a href="#三、Go开发工具配置" class="headerlink" title="三、Go开发工具配置"></a>三、Go开发工具配置</h4><h4 id="Lua开发工具配置"><a href="#Lua开发工具配置" class="headerlink" title="Lua开发工具配置"></a>Lua开发工具配置</h4>]]></content>
+      <categories>
+        <category>vscode</category>
+      </categories>
+      <tags>
+        <tag>development</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>front-papckage</title>
     <url>/2020/01/09/front-papckage/</url>
     <content><![CDATA[<h3 id="前端项目打包工具"><a href="#前端项目打包工具" class="headerlink" title="前端项目打包工具"></a>前端项目打包工具</h3><ul>
