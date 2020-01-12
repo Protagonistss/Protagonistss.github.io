@@ -3,7 +3,8 @@
   <entry>
     <title>vscode</title>
     <url>/2020/01/12/vscode/</url>
-    <content><![CDATA[<h3 id="VSCODE开发工具配置"><a href="#VSCODE开发工具配置" class="headerlink" title="VSCODE开发工具配置"></a>VSCODE开发工具配置</h3><h4 id="一、Python开发工具配置"><a href="#一、Python开发工具配置" class="headerlink" title="一、Python开发工具配置"></a>一、Python开发工具配置</h4><h4 id="二、Java开发工具配置"><a href="#二、Java开发工具配置" class="headerlink" title="二、Java开发工具配置"></a>二、Java开发工具配置</h4><h4 id="三、Go开发工具配置"><a href="#三、Go开发工具配置" class="headerlink" title="三、Go开发工具配置"></a>三、Go开发工具配置</h4><h4 id="四、Lua开发工具配置"><a href="#四、Lua开发工具配置" class="headerlink" title="四、Lua开发工具配置"></a>四、Lua开发工具配置</h4>]]></content>
+    <content><![CDATA[<h3 id="VSCODE开发工具配置"><a href="#VSCODE开发工具配置" class="headerlink" title="VSCODE开发工具配置"></a>VSCODE开发工具配置</h3><h4 id="一、Python开发工具配置"><a href="#一、Python开发工具配置" class="headerlink" title="一、Python开发工具配置"></a>一、Python开发工具配置</h4><h5 id="1、Extensions"><a href="#1、Extensions" class="headerlink" title="1、Extensions"></a>1、Extensions</h5><p>在Vscode中market中搜索 Python，改扩展为了代码静态编译检查，Debugging …</p>
+<h4 id="二、Java开发工具配置"><a href="#二、Java开发工具配置" class="headerlink" title="二、Java开发工具配置"></a>二、Java开发工具配置</h4><h4 id="三、Go开发工具配置"><a href="#三、Go开发工具配置" class="headerlink" title="三、Go开发工具配置"></a>三、Go开发工具配置</h4><h4 id="四、Lua开发工具配置"><a href="#四、Lua开发工具配置" class="headerlink" title="四、Lua开发工具配置"></a>四、Lua开发工具配置</h4>]]></content>
       <categories>
         <category>vscode</category>
       </categories>
