@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2020-01-12T03:16:53.497Z</updated>
+  <updated>2020-01-17T03:38:51.504Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>platform-install</title>
+    <link href="http://protagonistss.github.io.com/2020/01/17/platform-install/"/>
+    <id>http://protagonistss.github.io.com/2020/01/17/platform-install/</id>
+    <published>2020-01-17T10:38:05.000Z</published>
+    <updated>2020-01-17T03:38:51.504Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一、UBUNTU18-04-安装"><a href="#一、UBUNTU18-04-安装" class="headerlink" title="一、UBUNTU18.04 安装"></a>一、UBUNTU18.04 安装</h3><h4 id="1、服务器创建用户"><a href="#1、服务器创建用户" class="headerlink" title="1、服务器创建用户"></a>1、服务器创建用户</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 在 /home 目录下创建 username </span><br><span class="line">sudo useradd -m -s /bin/bash username</span><br><span class="line">// 设置密码</span><br><span class="line">sudo passwd username</span><br><span class="line">// 给username 赋予管理员权限</span><br><span class="line">sudo vim /etc/sudoers</span><br><span class="line">root ALL=(ALL:ALL)ALL</span><br><span class="line">protagonisths ALL=(ALL:ALL)ALL</span><br></pre></td></tr></table></figure><h4 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</span><br><span class="line">sudo apt-get install -y nodejs</span><br></pre></td></tr></table></figure><blockquote><p><a href="https://github.com/nodesource/distributions#debinstall" target="_blank" rel="noopener">https://github.com/nodesource/distributions#debinstall</a></p></blockquote><h4 id="安装yarn"><a href="#安装yarn" class="headerlink" title="安装yarn"></a>安装yarn</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -</span><br><span class="line">sudo apt-get update &amp;&amp; sudo apt-get install yarn</span><br></pre></td></tr></table></figure><h4 id="安装Pm2"><a href="#安装Pm2" class="headerlink" title="安装Pm2"></a>安装Pm2</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 4.2.1</span></span><br><span class="line">npm i -g pm2</span><br></pre></td></tr></table></figure><a id="more"></a><h4 id="安装mongo"><a href="#安装mongo" class="headerlink" title="安装mongo"></a>安装mongo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># install</span></span><br><span class="line">sudo apt-get install -y mongodb</span><br><span class="line"><span class="comment"># stop</span></span><br><span class="line">sudo service mongodb stop</span><br><span class="line"><span class="comment"># setup</span></span><br><span class="line">sudo service mongodb start</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、UBUNTU18-04-安装&quot;&gt;&lt;a href=&quot;#一、UBUNTU18-04-安装&quot; class=&quot;headerlink&quot; title=&quot;一、UBUNTU18.04 安装&quot;&gt;&lt;/a&gt;一、UBUNTU18.04 安装&lt;/h3&gt;&lt;h4 id=&quot;1、服务器创建用户&quot;&gt;&lt;a href=&quot;#1、服务器创建用户&quot; class=&quot;headerlink&quot; title=&quot;1、服务器创建用户&quot;&gt;&lt;/a&gt;1、服务器创建用户&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;// 在 /home 目录下创建 username &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo useradd -m -s /bin/bash username&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// 设置密码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo passwd username&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// 给username 赋予管理员权限&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo vim /etc/sudoers&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;root ALL=(ALL:ALL)ALL&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;protagonisths ALL=(ALL:ALL)ALL&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;安装nodejs&quot;&gt;&lt;a href=&quot;#安装nodejs&quot; class=&quot;headerlink&quot; title=&quot;安装nodejs&quot;&gt;&lt;/a&gt;安装nodejs&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install -y nodejs&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/nodesource/distributions#debinstall&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/nodesource/distributions#debinstall&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;安装yarn&quot;&gt;&lt;a href=&quot;#安装yarn&quot; class=&quot;headerlink&quot; title=&quot;安装yarn&quot;&gt;&lt;/a&gt;安装yarn&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install yarn&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;安装Pm2&quot;&gt;&lt;a href=&quot;#安装Pm2&quot; class=&quot;headerlink&quot; title=&quot;安装Pm2&quot;&gt;&lt;/a&gt;安装Pm2&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 4.2.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm i -g pm2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="OPS" scheme="http://protagonistss.github.io.com/categories/OPS/"/>
+    
+    
+      <category term="OPS" scheme="http://protagonistss.github.io.com/tags/OPS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>vscode</title>
     <link href="http://protagonistss.github.io.com/2020/01/12/vscode/"/>
     <id>http://protagonistss.github.io.com/2020/01/12/vscode/</id>
     <published>2020-01-12T10:54:14.000Z</published>
-    <updated>2020-01-12T03:16:53.497Z</updated>
+    <updated>2020-01-12T03:22:19.525Z</updated>
     
     <content type="html"><![CDATA[<h3 id="VSCODE开发工具配置"><a href="#VSCODE开发工具配置" class="headerlink" title="VSCODE开发工具配置"></a>VSCODE开发工具配置</h3><h4 id="一、Python开发工具配置"><a href="#一、Python开发工具配置" class="headerlink" title="一、Python开发工具配置"></a>一、Python开发工具配置</h4><h5 id="1、Extensions"><a href="#1、Extensions" class="headerlink" title="1、Extensions"></a>1、Extensions</h5><p>在Vscode中market中搜索 Python，改扩展为了代码静态编译检查，Debugging …</p><h4 id="二、Java开发工具配置"><a href="#二、Java开发工具配置" class="headerlink" title="二、Java开发工具配置"></a>二、Java开发工具配置</h4><h4 id="三、Go开发工具配置"><a href="#三、Go开发工具配置" class="headerlink" title="三、Go开发工具配置"></a>三、Go开发工具配置</h4><h4 id="四、Lua开发工具配置"><a href="#四、Lua开发工具配置" class="headerlink" title="四、Lua开发工具配置"></a>四、Lua开发工具配置</h4>]]></content>
     
@@ -503,31 +531,6 @@
     
     
       <category term="vps" scheme="http://protagonistss.github.io.com/tags/vps/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>css-样式选中</title>
-    <link href="http://protagonistss.github.io.com/2019/05/16/css-%E6%A0%B7%E5%BC%8F%E9%80%89%E4%B8%AD/"/>
-    <id>http://protagonistss.github.io.com/2019/05/16/css-样式选中/</id>
-    <published>2019-05-16T11:01:33.000Z</published>
-    <updated>2019-12-30T07:57:45.620Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="CSS选中元素"><a href="#CSS选中元素" class="headerlink" title="CSS选中元素"></a>CSS选中元素</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"><span class="selector-tag">style</span>&#123;</span><br><span class="line">  // 选中第一个p标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(1)</span>&#123;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  // 选中除了第一个p标签以外的标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:first-child)</span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;CSS选中元素&quot;&gt;&lt;a href=&quot;#CSS选中元素&quot; class=&quot;headerlink&quot; title=&quot;CSS选中元素&quot;&gt;&lt;/a&gt;CSS选中元素&lt;/h4&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;g
-      
-    
-    </summary>
-    
-      <category term="css" scheme="http://protagonistss.github.io.com/categories/css/"/>
-    
-    
-      <category term="css" scheme="http://protagonistss.github.io.com/tags/css/"/>
     
   </entry>
   
