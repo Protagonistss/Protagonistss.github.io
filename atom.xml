@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2020-02-13T14:40:48.778Z</updated>
+  <updated>2020-02-13T14:42:40.247Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://protagonistss.github.io.com/2020/02/14/nvm/"/>
     <id>http://protagonistss.github.io.com/2020/02/14/nvm/</id>
     <published>2020-02-13T22:35:24.000Z</published>
-    <updated>2020-02-13T14:40:48.778Z</updated>
+    <updated>2020-02-13T14:42:40.247Z</updated>
     
     <content type="html"><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm user 8.12.0</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -34,10 +34,10 @@
     
     </summary>
     
-      <category term="nvm install" scheme="http://protagonistss.github.io.com/categories/nvm-install/"/>
+      <category term="node" scheme="http://protagonistss.github.io.com/categories/node/"/>
     
     
-      <category term="node" scheme="http://protagonistss.github.io.com/tags/node/"/>
+      <category term="nvm install" scheme="http://protagonistss.github.io.com/tags/nvm-install/"/>
     
   </entry>
   
