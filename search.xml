@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>platform-install</title>
+    <title>nvm</title>
+    <url>/2020/02/14/nvm/</url>
+    <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm user 8.12.0</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>nvm install</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
     <url>/2020/01/17/platform-install/</url>
     <content><![CDATA[<h3 id="一、UBUNTU18-04-安装"><a href="#一、UBUNTU18-04-安装" class="headerlink" title="一、UBUNTU18.04 安装"></a>一、UBUNTU18.04 安装</h3><h4 id="1、服务器创建用户"><a href="#1、服务器创建用户" class="headerlink" title="1、服务器创建用户"></a>1、服务器创建用户</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">// 在 /home 目录下创建 username </span><br><span class="line">sudo useradd -m -s /bin/bash username</span><br><span class="line">// 设置密码</span><br><span class="line">sudo passwd username</span><br><span class="line">// 给username 赋予管理员权限</span><br><span class="line">sudo vim /etc/sudoers</span><br><span class="line">root ALL=(ALL:ALL)ALL</span><br><span class="line">protagonisths ALL=(ALL:ALL)ALL</span><br></pre></td></tr></table></figure>
 <h4 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</span><br><span class="line">sudo apt-get install -y nodejs</span><br></pre></td></tr></table></figure>

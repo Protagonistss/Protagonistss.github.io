@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2020-01-17T03:38:51.504Z</updated>
+  <updated>2020-02-13T14:40:48.778Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>platform-install</title>
+    <title>nvm</title>
+    <link href="http://protagonistss.github.io.com/2020/02/14/nvm/"/>
+    <id>http://protagonistss.github.io.com/2020/02/14/nvm/</id>
+    <published>2020-02-13T22:35:24.000Z</published>
+    <updated>2020-02-13T14:40:48.778Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm user 8.12.0</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;NVM-安装&quot;&gt;&lt;a href=&quot;#NVM-安装&quot; class=&quot;headerlink&quot; title=&quot;NVM 安装&quot;&gt;&lt;/a&gt;NVM 安装&lt;/h3&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gut
+      
+    
+    </summary>
+    
+      <category term="nvm install" scheme="http://protagonistss.github.io.com/categories/nvm-install/"/>
+    
+    
+      <category term="node" scheme="http://protagonistss.github.io.com/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="http://protagonistss.github.io.com/2020/01/17/platform-install/"/>
     <id>http://protagonistss.github.io.com/2020/01/17/platform-install/</id>
     <published>2020-01-17T10:38:05.000Z</published>
-    <updated>2020-01-17T03:38:51.504Z</updated>
+    <updated>2020-01-17T03:41:00.517Z</updated>
     
     <content type="html"><![CDATA[<h3 id="一、UBUNTU18-04-安装"><a href="#一、UBUNTU18-04-安装" class="headerlink" title="一、UBUNTU18.04 安装"></a>一、UBUNTU18.04 安装</h3><h4 id="1、服务器创建用户"><a href="#1、服务器创建用户" class="headerlink" title="1、服务器创建用户"></a>1、服务器创建用户</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 在 /home 目录下创建 username </span><br><span class="line">sudo useradd -m -s /bin/bash username</span><br><span class="line">// 设置密码</span><br><span class="line">sudo passwd username</span><br><span class="line">// 给username 赋予管理员权限</span><br><span class="line">sudo vim /etc/sudoers</span><br><span class="line">root ALL=(ALL:ALL)ALL</span><br><span class="line">protagonisths ALL=(ALL:ALL)ALL</span><br></pre></td></tr></table></figure><h4 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</span><br><span class="line">sudo apt-get install -y nodejs</span><br></pre></td></tr></table></figure><blockquote><p><a href="https://github.com/nodesource/distributions#debinstall" target="_blank" rel="noopener">https://github.com/nodesource/distributions#debinstall</a></p></blockquote><h4 id="安装yarn"><a href="#安装yarn" class="headerlink" title="安装yarn"></a>安装yarn</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -</span><br><span class="line">sudo apt-get update &amp;&amp; sudo apt-get install yarn</span><br></pre></td></tr></table></figure><h4 id="安装Pm2"><a href="#安装Pm2" class="headerlink" title="安装Pm2"></a>安装Pm2</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 4.2.1</span></span><br><span class="line">npm i -g pm2</span><br></pre></td></tr></table></figure><a id="more"></a><h4 id="安装mongo"><a href="#安装mongo" class="headerlink" title="安装mongo"></a>安装mongo</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># install</span></span><br><span class="line">sudo apt-get install -y mongodb</span><br><span class="line"><span class="comment"># stop</span></span><br><span class="line">sudo service mongodb stop</span><br><span class="line"><span class="comment"># setup</span></span><br><span class="line">sudo service mongodb start</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -506,31 +531,6 @@
     
     
       <category term="yarn" scheme="http://protagonistss.github.io.com/tags/yarn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>website</title>
-    <link href="http://protagonistss.github.io.com/2019/05/19/website/"/>
-    <id>http://protagonistss.github.io.com/2019/05/19/website/</id>
-    <published>2019-05-19T00:13:11.000Z</published>
-    <updated>2019-05-18T16:14:35.230Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;Create-command&quot;&gt;&lt;a href=&quot;#Create-command&quot; class=&quot;headerlink&quot; title=&quot;Create command&quot;&gt;&lt;/a&gt;Create command&lt;/h5&gt;&lt;figure class=&quot;highlight 
-      
-    
-    </summary>
-    
-      <category term="website" scheme="http://protagonistss.github.io.com/categories/website/"/>
-    
-    
-      <category term="vps" scheme="http://protagonistss.github.io.com/tags/vps/"/>
     
   </entry>
   
