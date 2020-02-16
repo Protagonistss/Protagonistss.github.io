@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>vue-knowledge-point</title>
+    <url>/2020/02/17/vue-knowledge-point/</url>
+    <content><![CDATA[<h3 id="Vue知识点"><a href="#Vue知识点" class="headerlink" title="Vue知识点"></a>Vue知识点</h3><h4 id="一、v-if和v-for"><a href="#一、v-if和v-for" class="headerlink" title="一、v-if和v-for"></a>一、v-if和v-for</h4><p>源码层面 compiler/codegen/index.js</p>
+<p>v-for的优先级高于v-if 可以通过代码编译生成的匿名函数看出来</p>
+<p>如果同时出现,每次渲染都会先循环再去判断条件，性能浪费</p>
+<p>在外层可以嵌套已成template做v-if判断</p>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>vue knowledge point</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>nvm</title>
     <url>/2020/02/14/nvm/</url>
     <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm use 8.12.0</span><br></pre></td></tr></table></figure>
