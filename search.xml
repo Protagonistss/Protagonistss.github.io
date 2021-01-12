@@ -297,17 +297,6 @@
       </tags>
   </entry>
   <entry>
-    <title>常见nginx中间件架构</title>
-    <url>/2019/05/24/%E5%B8%B8%E8%A7%81nginx%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%9E%B6%E6%9E%84/</url>
-    <content><![CDATA[<h4 id="一、静态资源"><a href="#一、静态资源" class="headerlink" title="一、静态资源"></a>一、静态资源</h4>]]></content>
-      <categories>
-        <category>nginx</category>
-      </categories>
-      <tags>
-        <tag>nginx常见中间件架构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mysql安装</title>
     <url>/2019/05/23/mysql%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h4 id="Install-Mysql"><a href="#Install-Mysql" class="headerlink" title="Install Mysql"></a>Install Mysql</h4>]]></content>
