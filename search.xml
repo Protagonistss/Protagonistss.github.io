@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>webpack-build-vue</title>
+    <url>/2021/01/15/webpack-build-vue/</url>
+    <content><![CDATA[<h2 id="Webpack构建vue项目"><a href="#Webpack构建vue项目" class="headerlink" title="Webpack构建vue项目"></a>Webpack构建vue项目</h2>]]></content>
+      <categories>
+        <category>webpack</category>
+      </categories>
+      <tags>
+        <tag>webpack &amp;&amp; vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vue-knowledge-point</title>
     <url>/2020/02/17/vue-knowledge-point/</url>
     <content><![CDATA[<h3 id="Vue知识点"><a href="#Vue知识点" class="headerlink" title="Vue知识点"></a>Vue知识点</h3><h4 id="一、v-if和v-for"><a href="#一、v-if和v-for" class="headerlink" title="一、v-if和v-for"></a>一、v-if和v-for</h4><p>源码层面 compiler/codegen/index.js</p>
