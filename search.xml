@@ -12,24 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>vue-knowledge-point</title>
-    <url>/2020/02/17/vue-knowledge-point/</url>
-    <content><![CDATA[<h3 id="Vue知识点"><a href="#Vue知识点" class="headerlink" title="Vue知识点"></a>Vue知识点</h3><h4 id="一、v-if和v-for"><a href="#一、v-if和v-for" class="headerlink" title="一、v-if和v-for"></a>一、v-if和v-for</h4><p>源码层面 compiler/codegen/index.js</p>
-<p>v-for的优先级高于v-if 可以通过代码编译生成的匿名函数看出来</p>
-<p>如果同时出现,每次渲染都会先循环再去判断条件，性能浪费</p>
-<p>在外层可以嵌套已成template做v-if判断</p>
-<h4 id="二、Vue组件中data必须是函数形式，而Vue的根实例则没有此限制"><a href="#二、Vue组件中data必须是函数形式，而Vue的根实例则没有此限制" class="headerlink" title="二、Vue组件中data必须是函数形式，而Vue的根实例则没有此限制"></a>二、Vue组件中data必须是函数形式，而Vue的根实例则没有此限制</h4><h4 id="三、Key的作用和工作原理"><a href="#三、Key的作用和工作原理" class="headerlink" title="三、Key的作用和工作原理"></a>三、Key的作用和工作原理</h4><p>源码 vdom/patch.js -updateChildren()</p>
-<p>key的作用是为了更加高效的更新虚拟dom，在pathc的过程中可以精准的判断两个节点是否是同一个，从而避免频繁的更新不同元素，使整个patch过程更加高效，减少dom的操作量，提高性能。</p>
-<p>vue在使用相同标签名元素的过渡切换时，也会用到key属性，其目的是为了让vue可以区分它们，否则vue只会替换其内部属性而不会触发过渡效果。</p>
-]]></content>
-      <categories>
-        <category>Vue</category>
-      </categories>
-      <tags>
-        <tag>vue knowledge point</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nvm</title>
     <url>/2020/02/14/nvm/</url>
     <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm use 8.12.0</span><br></pre></td></tr></table></figure>
@@ -71,28 +53,6 @@
       </categories>
       <tags>
         <tag>development</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>front-papckage</title>
-    <url>/2020/01/09/front-papckage/</url>
-    <content><![CDATA[<h3 id="前端项目打包工具"><a href="#前端项目打包工具" class="headerlink" title="前端项目打包工具"></a>前端项目打包工具</h3><ul>
-<li><p>Rollup</p>
-</li>
-<li><p>Webpack</p>
-</li>
-</ul>
-<h4 id="一、Rollup归纳"><a href="#一、Rollup归纳" class="headerlink" title="一、Rollup归纳"></a>一、Rollup归纳</h4><h5 id="1、环境安装"><a href="#1、环境安装" class="headerlink" title="1、环境安装"></a>1、环境安装</h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 全局安装</span></span><br><span class="line">npm i rollup -g</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 运行rollup,不传参数默认打印出 rollup --<span class="built_in">help</span> rollup -h 一样的效果</span></span><br><span class="line">rollup</span><br></pre></td></tr></table></figure>
-<h5 id="2、简单示例"><a href="#2、简单示例" class="headerlink" title="2、简单示例"></a>2、简单示例</h5><h6 id="1-gt-、第一种方式通过command"><a href="#1-gt-、第一种方式通过command" class="headerlink" title="1&gt;、第一种方式通过command"></a>1&gt;、第一种方式通过command</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> first recommend</span></span><br><span class="line">rollup main.js -o dist.js -f cjs</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> second not recommend </span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 这种方式在生成sourcemap的时候灵活性不够</span></span><br><span class="line">rollup main.js -f cjs &gt; dist.js</span><br></pre></td></tr></table></figure>
-<h6 id="2-gt-、第二种方式通过config文件"><a href="#2-gt-、第二种方式通过config文件" class="headerlink" title="2&gt;、第二种方式通过config文件"></a>2&gt;、第二种方式通过config文件</h6><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 创建rollup.config.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> = &#123;</span><br><span class="line">  <span class="comment">// entry file</span></span><br><span class="line">  input:<span class="string">'xxx/main.js'</span>,</span><br><span class="line">  output:&#123;</span><br><span class="line">    file: <span class="string">'dist.js'</span>,</span><br><span class="line">    format: <span class="string">'cjs</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">// rollup -c rollup.config.js</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h5 id="二、Rollup-对比-Webpack"><a href="#二、Rollup-对比-Webpack" class="headerlink" title="二、Rollup 对比 Webpack"></a>二、Rollup 对比 Webpack</h5><p>Rollup不支持一些特定的高级功能，比如说在构建一些应用程序的时候，需要代码拆分和运行时态的动态导入，那还是考虑Webpack吧。</p>
-]]></content>
-      <categories>
-        <category>Framework</category>
-      </categories>
-      <tags>
-        <tag>package</tag>
       </tags>
   </entry>
   <entry>
@@ -155,31 +115,6 @@
       </categories>
       <tags>
         <tag>arithmetic</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Commands</title>
-    <url>/2019/12/28/git-command/</url>
-    <content><![CDATA[<h3 id="一、分支"><a href="#一、分支" class="headerlink" title="一、分支"></a>一、分支</h3><ul>
-<li><p>查看分支</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch <span class="comment"># 查看本地当前所有分支</span></span><br><span class="line">git branch -r <span class="comment"># 查看远程服务器上的所有分支</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<a id="more"></a>
-<h3 id="二、合并"><a href="#二、合并" class="headerlink" title="二、合并"></a>二、合并</h3><ul>
-<li><p>合并分支</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git merge &lt;branch&gt; --no -ff -m<span class="string">"xxxxxx"</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>如果你已经把解决冲突的方案搞砸了,想回到尝试解决冲突前的原始冲突状态,你可以使用 如下命令,该命令会丢弃本次合并，回到上次commit的HEAD上</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git reset &lt;commit id&gt; --hard</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>git-command</tag>
       </tags>
   </entry>
   <entry>
@@ -305,17 +240,6 @@
       </categories>
       <tags>
         <tag>rewrite</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>mysql安装</title>
-    <url>/2019/05/23/mysql%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h4 id="Install-Mysql"><a href="#Install-Mysql" class="headerlink" title="Install Mysql"></a>Install Mysql</h4>]]></content>
-      <categories>
-        <category>mysql</category>
-      </categories>
-      <tags>
-        <tag>install mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -501,20 +425,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Vue-get请求传输数组</title>
-    <url>/2019/04/28/Vue-get%E8%AF%B7%E6%B1%82%E4%BC%A0%E8%BE%93%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<h4 id="Vue-get请求中传输数组问题"><a href="#Vue-get请求中传输数组问题" class="headerlink" title="Vue-get请求中传输数组问题"></a>Vue-get请求中传输数组问题</h4><ul>
-<li>发送get请求时,请求参数是数组，需要把数组JSON.stringify([1,2,3]),后台使用json.loads(‘’[1,2,3]’’)转成列表形式</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Vue</category>
-      </categories>
-      <tags>
-        <tag>Vue-get-array</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>docker</title>
     <url>/2019/04/28/docker/</url>
     <content><![CDATA[<h3 id="Docker-命令"><a href="#Docker-命令" class="headerlink" title="Docker 命令"></a>Docker 命令</h3><ul>
@@ -557,31 +467,6 @@
       </categories>
       <tags>
         <tag>docker</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JMS</title>
-    <url>/2019/04/28/JMS/</url>
-    <content><![CDATA[<h5 id="JMS-消息服务介绍和使用场景"><a href="#JMS-消息服务介绍和使用场景" class="headerlink" title="JMS 消息服务介绍和使用场景"></a>JMS 消息服务介绍和使用场景</h5><h6 id="什么是JMS-消息队列的使用场景"><a href="#什么是JMS-消息队列的使用场景" class="headerlink" title="# 什么是JMS,消息队列的使用场景"></a># 什么是JMS,消息队列的使用场景</h6><ul>
-<li>什么是JMS：java 消息服务(java message Service),java 平台中关于面向消息中间件的接口</li>
-</ul>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>RocketMQ</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>https</title>
-    <url>/2019/04/27/https/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>http协议</category>
-      </categories>
-      <tags>
-        <tag>https</tag>
       </tags>
   </entry>
 </search>

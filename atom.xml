@@ -42,31 +42,6 @@
   </entry>
   
   <entry>
-    <title>vue-knowledge-point</title>
-    <link href="http://protagonistss.github.io.com/2020/02/17/vue-knowledge-point/"/>
-    <id>http://protagonistss.github.io.com/2020/02/17/vue-knowledge-point/</id>
-    <published>2020-02-16T19:02:05.000Z</published>
-    <updated>2020-02-17T13:44:31.585Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Vue知识点"><a href="#Vue知识点" class="headerlink" title="Vue知识点"></a>Vue知识点</h3><h4 id="一、v-if和v-for"><a href="#一、v-if和v-for" class="headerlink" title="一、v-if和v-for"></a>一、v-if和v-for</h4><p>源码层面 compiler/codegen/index.js</p><p>v-for的优先级高于v-if 可以通过代码编译生成的匿名函数看出来</p><p>如果同时出现,每次渲染都会先循环再去判断条件，性能浪费</p><p>在外层可以嵌套已成template做v-if判断</p><h4 id="二、Vue组件中data必须是函数形式，而Vue的根实例则没有此限制"><a href="#二、Vue组件中data必须是函数形式，而Vue的根实例则没有此限制" class="headerlink" title="二、Vue组件中data必须是函数形式，而Vue的根实例则没有此限制"></a>二、Vue组件中data必须是函数形式，而Vue的根实例则没有此限制</h4><h4 id="三、Key的作用和工作原理"><a href="#三、Key的作用和工作原理" class="headerlink" title="三、Key的作用和工作原理"></a>三、Key的作用和工作原理</h4><p>源码 vdom/patch.js -updateChildren()</p><p>key的作用是为了更加高效的更新虚拟dom，在pathc的过程中可以精准的判断两个节点是否是同一个，从而避免频繁的更新不同元素，使整个patch过程更加高效，减少dom的操作量，提高性能。</p><p>vue在使用相同标签名元素的过渡切换时，也会用到key属性，其目的是为了让vue可以区分它们，否则vue只会替换其内部属性而不会触发过渡效果。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;Vue知识点&quot;&gt;&lt;a href=&quot;#Vue知识点&quot; class=&quot;headerlink&quot; title=&quot;Vue知识点&quot;&gt;&lt;/a&gt;Vue知识点&lt;/h3&gt;&lt;h4 id=&quot;一、v-if和v-for&quot;&gt;&lt;a href=&quot;#一、v-if和v-for&quot; class=&quot;head
-      
-    
-    </summary>
-    
-      <category term="Vue" scheme="http://protagonistss.github.io.com/categories/Vue/"/>
-    
-    
-      <category term="vue knowledge point" scheme="http://protagonistss.github.io.com/tags/vue-knowledge-point/"/>
-    
-  </entry>
-  
-  <entry>
     <title>nvm</title>
     <link href="http://protagonistss.github.io.com/2020/02/14/nvm/"/>
     <id>http://protagonistss.github.io.com/2020/02/14/nvm/</id>
@@ -145,41 +120,11 @@
   </entry>
   
   <entry>
-    <title>front-papckage</title>
-    <link href="http://protagonistss.github.io.com/2020/01/09/front-papckage/"/>
-    <id>http://protagonistss.github.io.com/2020/01/09/front-papckage/</id>
-    <published>2020-01-09T12:39:08.000Z</published>
-    <updated>2020-01-12T02:53:06.700Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="前端项目打包工具"><a href="#前端项目打包工具" class="headerlink" title="前端项目打包工具"></a>前端项目打包工具</h3><ul><li><p>Rollup</p></li><li><p>Webpack</p></li></ul><h4 id="一、Rollup归纳"><a href="#一、Rollup归纳" class="headerlink" title="一、Rollup归纳"></a>一、Rollup归纳</h4><h5 id="1、环境安装"><a href="#1、环境安装" class="headerlink" title="1、环境安装"></a>1、环境安装</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 全局安装</span></span><br><span class="line">npm i rollup -g</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 运行rollup,不传参数默认打印出 rollup --<span class="built_in">help</span> rollup -h 一样的效果</span></span><br><span class="line">rollup</span><br></pre></td></tr></table></figure><h5 id="2、简单示例"><a href="#2、简单示例" class="headerlink" title="2、简单示例"></a>2、简单示例</h5><h6 id="1-gt-、第一种方式通过command"><a href="#1-gt-、第一种方式通过command" class="headerlink" title="1&gt;、第一种方式通过command"></a>1&gt;、第一种方式通过command</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> first recommend</span></span><br><span class="line">rollup main.js -o dist.js -f cjs</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> second not recommend </span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 这种方式在生成sourcemap的时候灵活性不够</span></span><br><span class="line">rollup main.js -f cjs &gt; dist.js</span><br></pre></td></tr></table></figure><h6 id="2-gt-、第二种方式通过config文件"><a href="#2-gt-、第二种方式通过config文件" class="headerlink" title="2&gt;、第二种方式通过config文件"></a>2&gt;、第二种方式通过config文件</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建rollup.config.js</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> = &#123;</span><br><span class="line">  <span class="comment">// entry file</span></span><br><span class="line">  input:<span class="string">'xxx/main.js'</span>,</span><br><span class="line">  output:&#123;</span><br><span class="line">    file: <span class="string">'dist.js'</span>,</span><br><span class="line">    format: <span class="string">'cjs</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">// rollup -c rollup.config.js</span></span><br></pre></td></tr></table></figure><a id="more"></a><h5 id="二、Rollup-对比-Webpack"><a href="#二、Rollup-对比-Webpack" class="headerlink" title="二、Rollup 对比 Webpack"></a>二、Rollup 对比 Webpack</h5><p>Rollup不支持一些特定的高级功能，比如说在构建一些应用程序的时候，需要代码拆分和运行时态的动态导入，那还是考虑Webpack吧。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;前端项目打包工具&quot;&gt;&lt;a href=&quot;#前端项目打包工具&quot; class=&quot;headerlink&quot; title=&quot;前端项目打包工具&quot;&gt;&lt;/a&gt;前端项目打包工具&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Rollup&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Webpack&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;一、Rollup归纳&quot;&gt;&lt;a href=&quot;#一、Rollup归纳&quot; class=&quot;headerlink&quot; title=&quot;一、Rollup归纳&quot;&gt;&lt;/a&gt;一、Rollup归纳&lt;/h4&gt;&lt;h5 id=&quot;1、环境安装&quot;&gt;&lt;a href=&quot;#1、环境安装&quot; class=&quot;headerlink&quot; title=&quot;1、环境安装&quot;&gt;&lt;/a&gt;1、环境安装&lt;/h5&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 全局安装&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm i rollup -g&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 运行rollup,不传参数默认打印出 rollup --&lt;span class=&quot;built_in&quot;&gt;help&lt;/span&gt; rollup -h 一样的效果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rollup&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h5 id=&quot;2、简单示例&quot;&gt;&lt;a href=&quot;#2、简单示例&quot; class=&quot;headerlink&quot; title=&quot;2、简单示例&quot;&gt;&lt;/a&gt;2、简单示例&lt;/h5&gt;&lt;h6 id=&quot;1-gt-、第一种方式通过command&quot;&gt;&lt;a href=&quot;#1-gt-、第一种方式通过command&quot; class=&quot;headerlink&quot; title=&quot;1&amp;gt;、第一种方式通过command&quot;&gt;&lt;/a&gt;1&amp;gt;、第一种方式通过command&lt;/h6&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; first recommend&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rollup main.js -o dist.js -f cjs&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; second not recommend &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 这种方式在生成sourcemap的时候灵活性不够&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rollup main.js -f cjs &amp;gt; dist.js&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h6 id=&quot;2-gt-、第二种方式通过config文件&quot;&gt;&lt;a href=&quot;#2-gt-、第二种方式通过config文件&quot; class=&quot;headerlink&quot; title=&quot;2&amp;gt;、第二种方式通过config文件&quot;&gt;&lt;/a&gt;2&amp;gt;、第二种方式通过config文件&lt;/h6&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 创建rollup.config.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt; = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;// entry file&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  input:&lt;span class=&quot;string&quot;&gt;&#39;xxx/main.js&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  output:&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    file: &lt;span class=&quot;string&quot;&gt;&#39;dist.js&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    format: &lt;span class=&quot;string&quot;&gt;&#39;cjs&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;// rollup -c rollup.config.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Framework" scheme="http://protagonistss.github.io.com/categories/Framework/"/>
-    
-    
-      <category term="package" scheme="http://protagonistss.github.io.com/tags/package/"/>
-    
-  </entry>
-  
-  <entry>
     <title>bind、call、apply</title>
     <link href="http://protagonistss.github.io.com/2020/01/08/bind/"/>
     <id>http://protagonistss.github.io.com/2020/01/08/bind/</id>
     <published>2020-01-08T14:52:54.000Z</published>
-    <updated>2020-01-08T07:23:41.546Z</updated>
+    <updated>2021-01-14T09:26:43.104Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Bind、Apply、Call的区别"><a href="#Bind、Apply、Call的区别" class="headerlink" title="Bind、Apply、Call的区别"></a>Bind、Apply、Call的区别</h3><p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>]]></content>
     
@@ -269,32 +214,6 @@
     
     
       <category term="arithmetic" scheme="http://protagonistss.github.io.com/tags/arithmetic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git Commands</title>
-    <link href="http://protagonistss.github.io.com/2019/12/28/git-command/"/>
-    <id>http://protagonistss.github.io.com/2019/12/28/git-command/</id>
-    <published>2019-12-27T18:29:48.000Z</published>
-    <updated>2019-12-27T10:35:08.174Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="一、分支"><a href="#一、分支" class="headerlink" title="一、分支"></a>一、分支</h3><ul><li><p>查看分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch <span class="comment"># 查看本地当前所有分支</span></span><br><span class="line">git branch -r <span class="comment"># 查看远程服务器上的所有分支</span></span><br></pre></td></tr></table></figure></li></ul><a id="more"></a><h3 id="二、合并"><a href="#二、合并" class="headerlink" title="二、合并"></a>二、合并</h3><ul><li><p>合并分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge &lt;branch&gt; --no -ff -m<span class="string">"xxxxxx"</span></span><br></pre></td></tr></table></figure></li><li><p>如果你已经把解决冲突的方案搞砸了,想回到尝试解决冲突前的原始冲突状态,你可以使用 如下命令,该命令会丢弃本次合并，回到上次commit的HEAD上</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;commit id&gt; --hard</span><br></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;一、分支&quot;&gt;&lt;a href=&quot;#一、分支&quot; class=&quot;headerlink&quot; title=&quot;一、分支&quot;&gt;&lt;/a&gt;一、分支&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;查看分支&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git branch &lt;span class=&quot;comment&quot;&gt;# 查看本地当前所有分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git branch -r &lt;span class=&quot;comment&quot;&gt;# 查看远程服务器上的所有分支&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Git" scheme="http://protagonistss.github.io.com/categories/Git/"/>
-    
-    
-      <category term="git-command" scheme="http://protagonistss.github.io.com/tags/git-command/"/>
     
   </entry>
   
@@ -480,31 +399,6 @@
   </entry>
   
   <entry>
-    <title>mysql安装</title>
-    <link href="http://protagonistss.github.io.com/2019/05/23/mysql%E5%AE%89%E8%A3%85/"/>
-    <id>http://protagonistss.github.io.com/2019/05/23/mysql安装/</id>
-    <published>2019-05-22T19:07:10.000Z</published>
-    <updated>2019-05-22T11:08:30.475Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="Install-Mysql"><a href="#Install-Mysql" class="headerlink" title="Install Mysql"></a>Install Mysql</h4>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;Install-Mysql&quot;&gt;&lt;a href=&quot;#Install-Mysql&quot; class=&quot;headerlink&quot; title=&quot;Install Mysql&quot;&gt;&lt;/a&gt;Install Mysql&lt;/h4&gt;
-      
-    
-    </summary>
-    
-      <category term="mysql" scheme="http://protagonistss.github.io.com/categories/mysql/"/>
-    
-    
-      <category term="install mysql" scheme="http://protagonistss.github.io.com/tags/install-mysql/"/>
-    
-  </entry>
-  
-  <entry>
     <title>node安装</title>
     <link href="http://protagonistss.github.io.com/2019/05/22/node%E5%AE%89%E8%A3%85/"/>
     <id>http://protagonistss.github.io.com/2019/05/22/node安装/</id>
@@ -529,6 +423,110 @@
     
     
       <category term="node install" scheme="http://protagonistss.github.io.com/tags/node-install/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Yarn的安装</title>
+    <link href="http://protagonistss.github.io.com/2019/05/22/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>http://protagonistss.github.io.com/2019/05/22/Yarn的安装/</id>
+    <published>2019-05-22T13:29:54.000Z</published>
+    <updated>2019-05-22T05:33:08.739Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="INSTALL-YARN"><a href="#INSTALL-YARN" class="headerlink" title="INSTALL YARN"></a>INSTALL YARN</h5><ul><li><p>添加yum源</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo</span><br></pre></td></tr></table></figure></li></ul><ul><li><p>安装</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install yarn -y</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;INSTALL-YARN&quot;&gt;&lt;a href=&quot;#INSTALL-YARN&quot; class=&quot;headerlink&quot; title=&quot;INSTALL YARN&quot;&gt;&lt;/a&gt;INSTALL YARN&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;添加yum源&lt;/p&gt;
+&lt;figure cl
+      
+    
+    </summary>
+    
+      <category term="Centos7" scheme="http://protagonistss.github.io.com/categories/Centos7/"/>
+    
+    
+      <category term="yarn" scheme="http://protagonistss.github.io.com/tags/yarn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>website</title>
+    <link href="http://protagonistss.github.io.com/2019/05/19/website/"/>
+    <id>http://protagonistss.github.io.com/2019/05/19/website/</id>
+    <published>2019-05-19T00:13:11.000Z</published>
+    <updated>2019-05-18T16:14:35.230Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;Create-command&quot;&gt;&lt;a href=&quot;#Create-command&quot; class=&quot;headerlink&quot; title=&quot;Create command&quot;&gt;&lt;/a&gt;Create command&lt;/h5&gt;&lt;figure class=&quot;highlight 
+      
+    
+    </summary>
+    
+      <category term="website" scheme="http://protagonistss.github.io.com/categories/website/"/>
+    
+    
+      <category term="vps" scheme="http://protagonistss.github.io.com/tags/vps/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css-样式选中</title>
+    <link href="http://protagonistss.github.io.com/2019/05/16/css-%E6%A0%B7%E5%BC%8F%E9%80%89%E4%B8%AD/"/>
+    <id>http://protagonistss.github.io.com/2019/05/16/css-样式选中/</id>
+    <published>2019-05-16T11:01:33.000Z</published>
+    <updated>2019-12-30T07:57:45.620Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="CSS选中元素"><a href="#CSS选中元素" class="headerlink" title="CSS选中元素"></a>CSS选中元素</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"><span class="selector-tag">style</span>&#123;</span><br><span class="line">  // 选中第一个p标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(1)</span>&#123;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  // 选中除了第一个p标签以外的标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:first-child)</span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;CSS选中元素&quot;&gt;&lt;a href=&quot;#CSS选中元素&quot; class=&quot;headerlink&quot; title=&quot;CSS选中元素&quot;&gt;&lt;/a&gt;CSS选中元素&lt;/h4&gt;&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;g
+      
+    
+    </summary>
+    
+      <category term="css" scheme="http://protagonistss.github.io.com/categories/css/"/>
+    
+    
+      <category term="css" scheme="http://protagonistss.github.io.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>tomcat</title>
+    <link href="http://protagonistss.github.io.com/2019/05/01/tomcat/"/>
+    <id>http://protagonistss.github.io.com/2019/05/01/tomcat/</id>
+    <published>2019-04-30T20:49:42.000Z</published>
+    <updated>2019-04-30T13:44:40.854Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h4><ul><li>tomcat 下载<ul><li><a href="http://tomcat.apache.org/" target="_blank" rel="noopener">tomcat 下载地址</a></li></ul></li><li>mac 下载tar.gz格式<ul><li>解压 `tar -zxvf apache-tomcat-9.0.19.tar.gz </li><li>将解压后的文件夹重命名为Tomcat( 之所以重名,只是习惯性命名 )放到/Library下</li><li>进入到Tomcat 文件夹下的bin目录</li><li>设置bin目录下的所有.sh文件的读写执行权限 <code>sudo chmod 755 *.sh</code></li><li>启动tomcat 服务<code>sudo sh startup.sh</code></li><li>关闭tomcat服务<code>sudo sh shutdown.sh</code></li></ul></li><li>注意:tomcat 的配置信息都在server.xml文件里配置，如果想自定义配置,可以去xml文件配置</li></ul><h4 id="Eclipse-集成Tomcat"><a href="#Eclipse-集成Tomcat" class="headerlink" title="Eclipse 集成Tomcat"></a>Eclipse 集成Tomcat</h4><ul><li>Window-&gt;show view -&gt; server</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;Tomcat&quot;&gt;&lt;a href=&quot;#Tomcat&quot; class=&quot;headerlink&quot; title=&quot;Tomcat&quot;&gt;&lt;/a&gt;Tomcat&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;tomcat 下载&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://tomcat.apache.
+      
+    
+    </summary>
+    
+      <category term="java" scheme="http://protagonistss.github.io.com/categories/java/"/>
+    
+    
+      <category term="tomcat" scheme="http://protagonistss.github.io.com/tags/tomcat/"/>
     
   </entry>
   
