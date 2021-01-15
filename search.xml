@@ -34,7 +34,7 @@
         <category>node</category>
       </categories>
       <tags>
-        <tag>nvm install</tag>
+        <tag>install</tag>
       </tags>
   </entry>
   <entry>
@@ -54,11 +54,11 @@
         <category>OPS</category>
       </categories>
       <tags>
-        <tag>OPS</tag>
+        <tag>install</tag>
       </tags>
   </entry>
   <entry>
-    <title>bind、call、apply</title>
+    <title>Bind、Call、Apply</title>
     <url>/2020/01/08/frontend/javascript/bind/</url>
     <content><![CDATA[<h3 id="Bind、Apply、Call的区别"><a href="#Bind、Apply、Call的区别" class="headerlink" title="Bind、Apply、Call的区别"></a>Bind、Apply、Call的区别</h3><p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>
 ]]></content>
@@ -66,11 +66,11 @@
         <category>javascript</category>
       </categories>
       <tags>
-        <tag>bind call apply</tag>
+        <tag>bind&amp;&amp;call&amp;&amp;apply</tag>
       </tags>
   </entry>
   <entry>
-    <title>Vue-extend概念以及相关用法</title>
+    <title>Vue-Extend总结</title>
     <url>/2020/01/02/vue/vue-extend/</url>
     <content><![CDATA[<h4 id="一、Vue-extend"><a href="#一、Vue-extend" class="headerlink" title="一、Vue-extend"></a>一、Vue-extend</h4><p>Vue.extend(options)在官法文章中的归类是全局API，是使用基础Vue构造器，创造一个子类，动态地创建实例。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Init = Vue.extend(&#123;</span><br><span class="line">	template: <span class="string">'&lt;div&gt;Hello World&lt;/div&gt;'</span>,</span><br><span class="line">	data()&#123;</span><br><span class="line">		<span class="keyword">return</span> &#123;</span><br><span class="line">			msg:<span class="string">'Hello'</span></span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// render: h =&gt; h(Component)</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">new</span> Init().$mount(<span class="string">'app'</span>)</span><br></pre></td></tr></table></figure>
@@ -82,7 +82,7 @@
         <category>Vue</category>
       </categories>
       <tags>
-        <tag>vue-extend</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -113,7 +113,7 @@
 <h5 id="2、链表的方法"><a href="#2、链表的方法" class="headerlink" title="2、链表的方法"></a>2、链表的方法</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">LinkList</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> Node = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.data = data</span><br><span class="line">    <span class="keyword">this</span>.next = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">var</span> length = <span class="number">0</span></span><br><span class="line">  <span class="keyword">var</span> head = <span class="literal">null</span></span><br><span class="line">  <span class="keyword">var</span> tail = <span class="literal">null</span></span><br><span class="line">  <span class="comment">// append 方法</span></span><br><span class="line">  <span class="keyword">this</span>.append = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">    <span class="keyword">if</span>(head === <span class="literal">null</span>)&#123;</span><br><span class="line">      head = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      tail.next = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;</span><br><span class="line">    length += <span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// insert 方法</span></span><br><span class="line">  <span class="keyword">this</span>.insert = functoin(index, data)&#123;</span><br><span class="line">    <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt; length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(index === length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.append(index, data)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">      <span class="keyword">if</span>(index === <span class="number">0</span>)&#123;</span><br><span class="line">        new_node.next = head</span><br><span class="line">        head = new_node</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> insert_index = <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> curr_node = head</span><br><span class="line">        <span class="keyword">while</span>(insert_index &lt; index)&#123;</span><br><span class="line">          insert_index += <span class="number">1</span></span><br><span class="line">          curr_node = curr_node.next</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> next_node = curr_node.next</span><br><span class="line">        curr_node.next = new_node</span><br><span class="line">        new_node.next = next_node</span><br><span class="line">      &#125;</span><br><span class="line">      length += <span class="number">1</span></span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.print = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> current_node = head</span><br><span class="line">    <span class="keyword">while</span>(head === <span class="literal">true</span>)&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(current_node.data)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>arithmetic javascript</category>
+        <category>javascript</category>
       </categories>
       <tags>
         <tag>arithmetic</tag>
@@ -142,7 +142,7 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>arithmetic javascript</category>
+        <category>javascript</category>
       </categories>
       <tags>
         <tag>Queue</tag>
@@ -160,7 +160,7 @@
 <h4 id="三、实现一个计算后缀表达式"><a href="#三、实现一个计算后缀表达式" class="headerlink" title="三、实现一个计算后缀表达式"></a>三、实现一个计算后缀表达式</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calculate</span>(<span class="params">expressionList</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> data_stack = <span class="keyword">new</span> Stack()</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; expressionList.length; i++)&#123;</span><br><span class="line">  	<span class="keyword">var</span> item = expressionList[i]</span><br><span class="line">    <span class="keyword">if</span>([<span class="string">'+'</span>, <span class="string">'-'</span>, <span class="string">'*'</span>, <span class="string">'/'</span>].indexOf(item) &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">      <span class="keyword">var</span> pre = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> next = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> result = next + item + pre</span><br><span class="line">      result = <span class="built_in">parseInt</span>(<span class="built_in">eval</span>(result))</span><br><span class="line">      stack.push(result)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.pop()</span><br><span class="line">&#125;</span><br><span class="line">calculate([<span class="string">'4'</span>,<span class="string">'13'</span>, <span class="string">'5'</span>, <span class="string">'/'</span>, <span class="string">'+'</span>])</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>arithmetic javascript</category>
+        <category>javascript</category>
       </categories>
       <tags>
         <tag>arithmetic</tag>
@@ -175,7 +175,7 @@
         <category>nginx</category>
       </categories>
       <tags>
-        <tag>nginx dependency</tag>
+        <tag>nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -217,7 +217,7 @@
       </tags>
   </entry>
   <entry>
-    <title>rewrite</title>
+    <title>Rewrite总结</title>
     <url>/2019/06/02/nginx/rewrite/</url>
     <content><![CDATA[<h4 id="一、Rewrite"><a href="#一、Rewrite" class="headerlink" title="一、Rewrite"></a>一、Rewrite</h4><p>​    实现url<span style="color:red">重写</span>以及<span style="color:red">重定向</span></p>
 <h4 id="二、场景"><a href="#二、场景" class="headerlink" title="二、场景"></a>二、场景</h4><p>​    url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等)</p>
@@ -284,7 +284,7 @@
         <category>node</category>
       </categories>
       <tags>
-        <tag>node install</tag>
+        <tag>install</tag>
       </tags>
   </entry>
   <entry>
@@ -305,7 +305,7 @@
         <category>Centos7</category>
       </categories>
       <tags>
-        <tag>yarn</tag>
+        <tag>install</tag>
       </tags>
   </entry>
   <entry>
@@ -321,7 +321,7 @@
       </tags>
   </entry>
   <entry>
-    <title>css-样式选中</title>
+    <title>Css样式选中</title>
     <url>/2019/05/16/frontend/css/css-%E6%A0%B7%E5%BC%8F%E9%80%89%E4%B8%AD/</url>
     <content><![CDATA[<h4 id="CSS选中元素"><a href="#CSS选中元素" class="headerlink" title="CSS选中元素"></a>CSS选中元素</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"><span class="selector-tag">style</span>&#123;</span><br><span class="line">  // 选中第一个p标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(1)</span>&#123;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  // 选中除了第一个p标签以外的标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:first-child)</span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -363,7 +363,7 @@
       </tags>
   </entry>
   <entry>
-    <title>div-横向排列和出现横向滚动条</title>
+    <title>Div横向排列和出现横向滚动条</title>
     <url>/2019/04/30/frontend/css/div-%E6%A8%AA%E5%90%91%E6%8E%92%E5%88%97%E5%92%8C%E5%87%BA%E7%8E%B0%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/</url>
     <content><![CDATA[<h5 id="出现横向滚动条"><a href="#出现横向滚动条" class="headerlink" title="出现横向滚动条"></a>出现横向滚动条</h5><p>核心思路是使用<code>white-space</code> 这个属性防止父容器内容换行，例子如下:</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// html</span><br><span class="line">&lt;<span class="selector-tag">ul</span>&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">// css</span><br><span class="line"><span class="selector-tag">ul</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">overflow-x</span>: scroll;</span><br><span class="line">  <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">  <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:inline-block;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -372,11 +372,11 @@
         <category>css</category>
       </categories>
       <tags>
-        <tag>div-css-inline</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
-    <title>git-branch</title>
+    <title>Git-Branch</title>
     <url>/2019/04/29/git/git-branch/</url>
     <content><![CDATA[<h4 id="Git-branch"><a href="#Git-branch" class="headerlink" title="Git-branch"></a>Git-branch</h4><ul>
 <li>git branch branch [starting-commit]</li>
@@ -387,11 +387,11 @@
         <category>git</category>
       </categories>
       <tags>
-        <tag>git-branch</tag>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
-    <title>git-commit</title>
+    <title>Git-Commit</title>
     <url>/2019/04/29/git/git-commit/</url>
     <content><![CDATA[<h4 id="Git-commit"><a href="#Git-commit" class="headerlink" title="Git-commit"></a>Git-commit</h4><ul>
 <li>在Git中，提交(commit)是用来记录版本库的变更。</li>
@@ -423,7 +423,7 @@
         <category>git</category>
       </categories>
       <tags>
-        <tag>git-commit</tag>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
