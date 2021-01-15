@@ -58,18 +58,6 @@
       </tags>
   </entry>
   <entry>
-    <title>vscode</title>
-    <url>/2020/01/12/vscode/</url>
-    <content><![CDATA[<h3 id="VSCODE开发工具配置"><a href="#VSCODE开发工具配置" class="headerlink" title="VSCODE开发工具配置"></a>VSCODE开发工具配置</h3><h4 id="一、Python开发工具配置"><a href="#一、Python开发工具配置" class="headerlink" title="一、Python开发工具配置"></a>一、Python开发工具配置</h4><h5 id="1、Extensions"><a href="#1、Extensions" class="headerlink" title="1、Extensions"></a>1、Extensions</h5><p>在Vscode中market中搜索 Python，改扩展为了代码静态编译检查，Debugging …</p>
-<h4 id="二、Java开发工具配置"><a href="#二、Java开发工具配置" class="headerlink" title="二、Java开发工具配置"></a>二、Java开发工具配置</h4><h4 id="三、Go开发工具配置"><a href="#三、Go开发工具配置" class="headerlink" title="三、Go开发工具配置"></a>三、Go开发工具配置</h4><h4 id="四、Lua开发工具配置"><a href="#四、Lua开发工具配置" class="headerlink" title="四、Lua开发工具配置"></a>四、Lua开发工具配置</h4>]]></content>
-      <categories>
-        <category>vscode</category>
-      </categories>
-      <tags>
-        <tag>development</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>bind、call、apply</title>
     <url>/2020/01/08/bind/</url>
     <content><![CDATA[<h3 id="Bind、Apply、Call的区别"><a href="#Bind、Apply、Call的区别" class="headerlink" title="Bind、Apply、Call的区别"></a>Bind、Apply、Call的区别</h3><p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>
@@ -439,7 +427,7 @@
       </tags>
   </entry>
   <entry>
-    <title>docker</title>
+    <title>Docker总结</title>
     <url>/2019/04/28/docker/</url>
     <content><![CDATA[<h3 id="Docker-命令"><a href="#Docker-命令" class="headerlink" title="Docker 命令"></a>Docker 命令</h3><ul>
 <li>获镜像<ul>
