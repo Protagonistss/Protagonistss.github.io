@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2021-01-15T03:29:53.571Z</updated>
+  <updated>2021-01-15T03:21:29.338Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -17,32 +17,9 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://protagonistss.github.io.com/2021/01/15/python/test/"/>
-    <id>http://protagonistss.github.io.com/2021/01/15/python/test/</id>
-    <published>2021-01-15T11:29:15.000Z</published>
-    <updated>2021-01-15T03:29:53.571Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">test ----</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span cla
-      
-    
-    </summary>
-    
-    
-      <category term="test" scheme="http://protagonistss.github.io.com/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
     <title>webpack构建vue项目</title>
-    <link href="http://protagonistss.github.io.com/2021/01/15/webpack%E6%9E%84%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/"/>
-    <id>http://protagonistss.github.io.com/2021/01/15/webpack构建vue项目/</id>
+    <link href="http://protagonistss.github.io.com/2021/01/15/webpack/webpack%E6%9E%84%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://protagonistss.github.io.com/2021/01/15/webpack/webpack构建vue项目/</id>
     <published>2021-01-14T17:28:31.000Z</published>
     <updated>2021-01-15T03:21:29.338Z</updated>
     
@@ -64,8 +41,8 @@
   
   <entry>
     <title>nvm</title>
-    <link href="http://protagonistss.github.io.com/2020/02/14/nvm/"/>
-    <id>http://protagonistss.github.io.com/2020/02/14/nvm/</id>
+    <link href="http://protagonistss.github.io.com/2020/02/14/node/nvm/"/>
+    <id>http://protagonistss.github.io.com/2020/02/14/node/nvm/</id>
     <published>2020-02-13T22:35:24.000Z</published>
     <updated>2020-02-13T14:43:24.691Z</updated>
     
@@ -89,8 +66,8 @@
   
   <entry>
     <title>环境搭建</title>
-    <link href="http://protagonistss.github.io.com/2020/01/17/platform-install/"/>
-    <id>http://protagonistss.github.io.com/2020/01/17/platform-install/</id>
+    <link href="http://protagonistss.github.io.com/2020/01/17/linux/platform-install/"/>
+    <id>http://protagonistss.github.io.com/2020/01/17/linux/platform-install/</id>
     <published>2020-01-17T10:38:05.000Z</published>
     <updated>2021-01-14T09:31:09.643Z</updated>
     
@@ -117,8 +94,8 @@
   
   <entry>
     <title>bind、call、apply</title>
-    <link href="http://protagonistss.github.io.com/2020/01/08/bind/"/>
-    <id>http://protagonistss.github.io.com/2020/01/08/bind/</id>
+    <link href="http://protagonistss.github.io.com/2020/01/08/frontend/javascript/bind/"/>
+    <id>http://protagonistss.github.io.com/2020/01/08/frontend/javascript/bind/</id>
     <published>2020-01-08T14:52:54.000Z</published>
     <updated>2021-01-14T09:26:43.104Z</updated>
     
@@ -142,8 +119,8 @@
   
   <entry>
     <title>Vue-extend概念以及相关用法</title>
-    <link href="http://protagonistss.github.io.com/2020/01/02/vue-extend/"/>
-    <id>http://protagonistss.github.io.com/2020/01/02/vue-extend/</id>
+    <link href="http://protagonistss.github.io.com/2020/01/02/vue/vue-extend/"/>
+    <id>http://protagonistss.github.io.com/2020/01/02/vue/vue-extend/</id>
     <published>2020-01-02T10:50:39.000Z</published>
     <updated>2020-01-02T03:33:05.931Z</updated>
     
@@ -166,8 +143,8 @@
   
   <entry>
     <title>架构</title>
-    <link href="http://protagonistss.github.io.com/2020/01/01/framework/"/>
-    <id>http://protagonistss.github.io.com/2020/01/01/framework/</id>
+    <link href="http://protagonistss.github.io.com/2020/01/01/vue/framework/"/>
+    <id>http://protagonistss.github.io.com/2020/01/01/vue/framework/</id>
     <published>2020-01-01T01:06:05.000Z</published>
     <updated>2020-01-01T09:34:20.481Z</updated>
     
@@ -191,8 +168,8 @@
   
   <entry>
     <title>链表</title>
-    <link href="http://protagonistss.github.io.com/2019/12/31/link-list/"/>
-    <id>http://protagonistss.github.io.com/2019/12/31/link-list/</id>
+    <link href="http://protagonistss.github.io.com/2019/12/31/frontend/javascript/link-list/"/>
+    <id>http://protagonistss.github.io.com/2019/12/31/frontend/javascript/link-list/</id>
     <published>2019-12-30T18:24:17.000Z</published>
     <updated>2019-12-31T17:05:07.713Z</updated>
     
@@ -215,8 +192,8 @@
   
   <entry>
     <title>队列</title>
-    <link href="http://protagonistss.github.io.com/2019/12/28/triangle/"/>
-    <id>http://protagonistss.github.io.com/2019/12/28/triangle/</id>
+    <link href="http://protagonistss.github.io.com/2019/12/28/frontend/javascript/triangle/"/>
+    <id>http://protagonistss.github.io.com/2019/12/28/frontend/javascript/triangle/</id>
     <published>2019-12-27T18:03:19.000Z</published>
     <updated>2019-12-30T08:23:11.215Z</updated>
     
@@ -240,8 +217,8 @@
   
   <entry>
     <title>计算表达式</title>
-    <link href="http://protagonistss.github.io.com/2019/12/28/cal-exp/"/>
-    <id>http://protagonistss.github.io.com/2019/12/28/cal-exp/</id>
+    <link href="http://protagonistss.github.io.com/2019/12/28/frontend/javascript/cal-exp/"/>
+    <id>http://protagonistss.github.io.com/2019/12/28/frontend/javascript/cal-exp/</id>
     <published>2019-12-27T17:24:00.000Z</published>
     <updated>2019-12-30T09:24:03.432Z</updated>
     
@@ -265,8 +242,8 @@
   
   <entry>
     <title>nginx依赖</title>
-    <link href="http://protagonistss.github.io.com/2019/10/11/nginx%E4%BE%9D%E8%B5%96/"/>
-    <id>http://protagonistss.github.io.com/2019/10/11/nginx依赖/</id>
+    <link href="http://protagonistss.github.io.com/2019/10/11/nginx/nginx%E4%BE%9D%E8%B5%96/"/>
+    <id>http://protagonistss.github.io.com/2019/10/11/nginx/nginx依赖/</id>
     <published>2019-10-11T11:11:04.000Z</published>
     <updated>2019-10-11T03:12:35.894Z</updated>
     
@@ -290,8 +267,8 @@
   
   <entry>
     <title>mongo</title>
-    <link href="http://protagonistss.github.io.com/2019/06/22/mongo/"/>
-    <id>http://protagonistss.github.io.com/2019/06/22/mongo/</id>
+    <link href="http://protagonistss.github.io.com/2019/06/22/db/mongo/"/>
+    <id>http://protagonistss.github.io.com/2019/06/22/db/mongo/</id>
     <published>2019-06-21T16:48:46.000Z</published>
     <updated>2019-06-21T08:53:23.188Z</updated>
     
@@ -315,8 +292,8 @@
   
   <entry>
     <title>scp</title>
-    <link href="http://protagonistss.github.io.com/2019/06/21/scp/"/>
-    <id>http://protagonistss.github.io.com/2019/06/21/scp/</id>
+    <link href="http://protagonistss.github.io.com/2019/06/21/linux/scp/"/>
+    <id>http://protagonistss.github.io.com/2019/06/21/linux/scp/</id>
     <published>2019-06-21T15:40:07.000Z</published>
     <updated>2019-06-21T07:42:51.957Z</updated>
     
@@ -340,8 +317,8 @@
   
   <entry>
     <title>查看使用的端口</title>
-    <link href="http://protagonistss.github.io.com/2019/06/02/%E6%9F%A5%E7%9C%8B%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AB%AF%E5%8F%A3/"/>
-    <id>http://protagonistss.github.io.com/2019/06/02/查看使用的端口/</id>
+    <link href="http://protagonistss.github.io.com/2019/06/02/linux/%E6%9F%A5%E7%9C%8B%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AB%AF%E5%8F%A3/"/>
+    <id>http://protagonistss.github.io.com/2019/06/02/linux/查看使用的端口/</id>
     <published>2019-06-01T20:21:06.000Z</published>
     <updated>2019-06-01T12:23:43.470Z</updated>
     
@@ -367,8 +344,8 @@
   
   <entry>
     <title>rewrite</title>
-    <link href="http://protagonistss.github.io.com/2019/06/02/rewrite/"/>
-    <id>http://protagonistss.github.io.com/2019/06/02/rewrite/</id>
+    <link href="http://protagonistss.github.io.com/2019/06/02/nginx/rewrite/"/>
+    <id>http://protagonistss.github.io.com/2019/06/02/nginx/rewrite/</id>
     <published>2019-06-01T20:06:54.000Z</published>
     <updated>2019-12-27T10:42:44.114Z</updated>
     
@@ -396,8 +373,8 @@
   
   <entry>
     <title>node安装</title>
-    <link href="http://protagonistss.github.io.com/2019/05/22/node%E5%AE%89%E8%A3%85/"/>
-    <id>http://protagonistss.github.io.com/2019/05/22/node安装/</id>
+    <link href="http://protagonistss.github.io.com/2019/05/22/node/node%E5%AE%89%E8%A3%85/"/>
+    <id>http://protagonistss.github.io.com/2019/05/22/node/node安装/</id>
     <published>2019-05-22T14:19:10.000Z</published>
     <updated>2019-05-22T06:42:08.617Z</updated>
     
@@ -424,8 +401,8 @@
   
   <entry>
     <title>Yarn的安装</title>
-    <link href="http://protagonistss.github.io.com/2019/05/22/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/"/>
-    <id>http://protagonistss.github.io.com/2019/05/22/Yarn的安装/</id>
+    <link href="http://protagonistss.github.io.com/2019/05/22/node/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/"/>
+    <id>http://protagonistss.github.io.com/2019/05/22/node/Yarn的安装/</id>
     <published>2019-05-22T13:29:54.000Z</published>
     <updated>2019-05-22T05:33:08.739Z</updated>
     
@@ -451,8 +428,8 @@
   
   <entry>
     <title>website</title>
-    <link href="http://protagonistss.github.io.com/2019/05/19/website/"/>
-    <id>http://protagonistss.github.io.com/2019/05/19/website/</id>
+    <link href="http://protagonistss.github.io.com/2019/05/19/linux/website/"/>
+    <id>http://protagonistss.github.io.com/2019/05/19/linux/website/</id>
     <published>2019-05-19T00:13:11.000Z</published>
     <updated>2019-05-18T16:14:35.230Z</updated>
     
@@ -476,8 +453,8 @@
   
   <entry>
     <title>css-样式选中</title>
-    <link href="http://protagonistss.github.io.com/2019/05/16/css-%E6%A0%B7%E5%BC%8F%E9%80%89%E4%B8%AD/"/>
-    <id>http://protagonistss.github.io.com/2019/05/16/css-样式选中/</id>
+    <link href="http://protagonistss.github.io.com/2019/05/16/frontend/css/css-%E6%A0%B7%E5%BC%8F%E9%80%89%E4%B8%AD/"/>
+    <id>http://protagonistss.github.io.com/2019/05/16/frontend/css/css-样式选中/</id>
     <published>2019-05-16T11:01:33.000Z</published>
     <updated>2019-12-30T07:57:45.620Z</updated>
     
@@ -501,10 +478,10 @@
   
   <entry>
     <title>tomcat</title>
-    <link href="http://protagonistss.github.io.com/2019/05/01/tomcat/"/>
-    <id>http://protagonistss.github.io.com/2019/05/01/tomcat/</id>
+    <link href="http://protagonistss.github.io.com/2019/05/01/java/tomcat/"/>
+    <id>http://protagonistss.github.io.com/2019/05/01/java/tomcat/</id>
     <published>2019-04-30T20:49:42.000Z</published>
-    <updated>2019-04-30T13:44:40.854Z</updated>
+    <updated>2021-01-15T06:14:23.981Z</updated>
     
     <content type="html"><![CDATA[<h4 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h4><ul><li>tomcat 下载<ul><li><a href="http://tomcat.apache.org/" target="_blank" rel="noopener">tomcat 下载地址</a></li></ul></li><li>mac 下载tar.gz格式<ul><li>解压 `tar -zxvf apache-tomcat-9.0.19.tar.gz </li><li>将解压后的文件夹重命名为Tomcat( 之所以重名,只是习惯性命名 )放到/Library下</li><li>进入到Tomcat 文件夹下的bin目录</li><li>设置bin目录下的所有.sh文件的读写执行权限 <code>sudo chmod 755 *.sh</code></li><li>启动tomcat 服务<code>sudo sh startup.sh</code></li><li>关闭tomcat服务<code>sudo sh shutdown.sh</code></li></ul></li><li>注意:tomcat 的配置信息都在server.xml文件里配置，如果想自定义配置,可以去xml文件配置</li></ul><h4 id="Eclipse-集成Tomcat"><a href="#Eclipse-集成Tomcat" class="headerlink" title="Eclipse 集成Tomcat"></a>Eclipse 集成Tomcat</h4><ul><li>Window-&gt;show view -&gt; server</li></ul>]]></content>
     
@@ -523,6 +500,31 @@
     
     
       <category term="tomcat" scheme="http://protagonistss.github.io.com/tags/tomcat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>div-横向排列和出现横向滚动条</title>
+    <link href="http://protagonistss.github.io.com/2019/04/30/frontend/css/div-%E6%A8%AA%E5%90%91%E6%8E%92%E5%88%97%E5%92%8C%E5%87%BA%E7%8E%B0%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/"/>
+    <id>http://protagonistss.github.io.com/2019/04/30/frontend/css/div-横向排列和出现横向滚动条/</id>
+    <published>2019-04-30T13:26:42.000Z</published>
+    <updated>2019-04-30T05:32:57.541Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="出现横向滚动条"><a href="#出现横向滚动条" class="headerlink" title="出现横向滚动条"></a>出现横向滚动条</h5><p>核心思路是使用<code>white-space</code> 这个属性防止父容器内容换行，例子如下:</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// html</span><br><span class="line">&lt;<span class="selector-tag">ul</span>&gt;</span><br><span class="line">&lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">// css</span><br><span class="line"><span class="selector-tag">ul</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">overflow-x</span>: scroll;</span><br><span class="line">  <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">  <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:inline-block;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;出现横向滚动条&quot;&gt;&lt;a href=&quot;#出现横向滚动条&quot; class=&quot;headerlink&quot; title=&quot;出现横向滚动条&quot;&gt;&lt;/a&gt;出现横向滚动条&lt;/h5&gt;&lt;p&gt;核心思路是使用&lt;code&gt;white-space&lt;/code&gt; 这个属性防止父容器内容换行，例子如下
+      
+    
+    </summary>
+    
+      <category term="css" scheme="http://protagonistss.github.io.com/categories/css/"/>
+    
+    
+      <category term="div-css-inline" scheme="http://protagonistss.github.io.com/tags/div-css-inline/"/>
     
   </entry>
   
