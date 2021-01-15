@@ -19,7 +19,7 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">rules:[</span><br><span class="line">  &#123;</span><br><span class="line">    test: <span class="regexp">/\.vue$/</span>,</span><br><span class="line">    use: [<span class="string">"vue-loader"</span>],</span><br><span class="line">  &#125;,</span><br><span class="line">],</span><br><span class="line">resolve:&#123;</span><br><span class="line">  alias: &#123;</span><br><span class="line">    vue$: <span class="string">"vue/dist/vue.runtime.esm.js"</span>,</span><br><span class="line">    <span class="string">"@"</span>: resolve(<span class="string">"../src"</span>),</span><br><span class="line">    <span class="string">"@examples"</span>: resolve(<span class="string">"../examples"</span>),</span><br><span class="line">  &#125;,</span><br><span class="line"> 	extensions: [<span class="string">".js"</span>, <span class="string">".vue"</span>],</span><br><span class="line">&#125;,</span><br><span class="line">plugins:[</span><br><span class="line">  <span class="keyword">new</span> vueLoaderPlugin()</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>web pack</category>
+        <category>webpack</category>
       </categories>
       <tags>
         <tag>webpack &amp;&amp; vue</tag>
