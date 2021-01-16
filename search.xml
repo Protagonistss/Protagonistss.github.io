@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Rabbitmq安装和使用</title>
+    <url>/2021/01/16/python/setup/</url>
+    <content><![CDATA[<h4 id="docker方式"><a href="#docker方式" class="headerlink" title="docker方式"></a>docker方式</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 拉取镜像</span></span><br><span class="line">docker pull rabbitmq</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>python&amp;&amp;rabbit</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>webpack构建vue项目</title>
     <url>/2021/01/15/webpack/webpack%E6%9E%84%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/</url>
     <content><![CDATA[<h3 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h3><h4 id="1、安装webpack依赖"><a href="#1、安装webpack依赖" class="headerlink" title="1、安装webpack依赖"></a>1、安装webpack依赖</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add webpack webpack-cli -D</span><br><span class="line">yarn add webpack-dev-server -D</span><br><span class="line">yarn add html-webpack-plugin -D</span><br></pre></td></tr></table></figure>
