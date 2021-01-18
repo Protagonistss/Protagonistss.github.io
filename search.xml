@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>vim</title>
+    <url>/2021/01/19/vim/</url>
+    <content><![CDATA[<p>在命令模式下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">e 跳到单词的末尾</span><br><span class="line">w 跳到单词的首位</span><br><span class="line">r + [想要替换成的字符]  比如hello 光标在h上，ra 就是把h替换成了a，也就是allo</span><br><span class="line">gg 跳到第一行首位</span><br><span class="line">G 跳到最后一行</span><br><span class="line">o 在光标的下面新开一行</span><br><span class="line">O 在光标的上面新开一行</span><br><span class="line">. 执行上次的操作</span><br></pre></td></tr></table></figure>
+<p>搜索</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在normal模式下</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">hello world</span><br><span class="line">hello</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">输入 /hello 按下回车 按 n 去到下一个hello的位置</span><br></pre></td></tr></table></figure>
+<p>替换</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在normal模式下</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">hello world</span><br><span class="line">hello</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">光标所在行替换</span><br><span class="line">  替换单个</span><br><span class="line">  键入 </span><br><span class="line">  :s/hello/hi</span><br><span class="line">  替换全部</span><br><span class="line">  键入 </span><br><span class="line">  :s/hello/hi/g</span><br><span class="line">全文替换</span><br><span class="line">键入</span><br><span class="line">:%s/o/i/g</span><br></pre></td></tr></table></figure>
+<p>复制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">复制当前行 yy</span><br></pre></td></tr></table></figure>
+<p>粘贴</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p</span><br></pre></td></tr></table></figure>
+<p>删除</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">删除当前行 dd</span><br><span class="line">删除光标选中字符 x</span><br><span class="line">2dd 删除从光标（包括光标所在行）往下2行</span><br></pre></td></tr></table></figure>
+<p>撤销</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">u</span><br></pre></td></tr></table></figure>
+<p>反撤销</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ctrl r</span><br></pre></td></tr></table></figure>
+<p>生成多个</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在normal模式下按下100，进入输入模式 输入hello 然后esc</span><br></pre></td></tr></table></figure>
+<p>visual</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">v 选中</span><br><span class="line">v0 选中到行首</span><br><span class="line">ctrl + v 进入 到block 然后ctrl + d 选中到最后一行 然后想要对选中的行做操作 按下 I，输入 # 进行注释，然后再按下esc</span><br></pre></td></tr></table></figure>
+<p>help</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">help 0</span><br><span class="line">help test.txt</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>vim</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vue单元测试</title>
     <url>/2021/01/16/vue/vue-unit-test/</url>
     <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1、安装依赖模块</p>
@@ -56,6 +89,7 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">module</span>:&#123;</span><br><span class="line">  rules:[</span><br><span class="line">    &#123;</span><br><span class="line">      test: <span class="regexp">/\.scss$/</span>,</span><br><span class="line">      use: [</span><br><span class="line">        miniCssExtractPlugin.loader,</span><br><span class="line">        <span class="string">"css-loader"</span>,</span><br><span class="line">        <span class="string">"sass-loader"</span>,</span><br><span class="line">      ],</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br><span class="line">plugins:[</span><br><span class="line">  <span class="keyword">new</span> MiniCssExtractPlugin(&#123;</span><br><span class="line">    filename: <span class="string">"css/[name].[hash:8].css"</span>,</span><br><span class="line">    chunkFilename: <span class="string">"css/[id].css"</span>,</span><br><span class="line">  &#125;)</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 <h4 id="8、识别vue文件"><a href="#8、识别vue文件" class="headerlink" title="8、识别vue文件"></a>8、识别vue文件</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add vue-loader vue-template-compiler vue-style-loader -D</span><br><span class="line">yarn add vue -S</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">rules:[</span><br><span class="line">  &#123;</span><br><span class="line">    test: <span class="regexp">/\.vue$/</span>,</span><br><span class="line">    use: [<span class="string">"vue-loader"</span>],</span><br><span class="line">  &#125;,</span><br><span class="line">],</span><br><span class="line">resolve:&#123;</span><br><span class="line">  alias: &#123;</span><br><span class="line">    vue$: <span class="string">"vue/dist/vue.runtime.esm.js"</span>,</span><br><span class="line">    <span class="string">"@"</span>: resolve(<span class="string">"../src"</span>),</span><br><span class="line">    <span class="string">"@examples"</span>: resolve(<span class="string">"../examples"</span>),</span><br><span class="line">  &#125;,</span><br><span class="line"> 	extensions: [<span class="string">".js"</span>, <span class="string">".vue"</span>],</span><br><span class="line">&#125;,</span><br><span class="line">plugins:[</span><br><span class="line">  <span class="keyword">new</span> vueLoaderPlugin()</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h3 id="配置eslint"><a href="#配置eslint" class="headerlink" title="配置eslint"></a>配置eslint</h3><p>eslant-loader 可以每次保存的时候校验代码</p>
 ]]></content>
       <categories>
         <category>webpack</category>
