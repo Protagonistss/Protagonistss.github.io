@@ -34,16 +34,11 @@
       </tags>
   </entry>
   <entry>
-    <title>mongo</title>
-    <url>/2019/06/22/db/mongo/</url>
-    <content><![CDATA[<h4 id="Mongo的mongodump、mongorestore"><a href="#Mongo的mongodump、mongorestore" class="headerlink" title="Mongo的mongodump、mongorestore"></a>Mongo的mongodump、mongorestore</h4><h6 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongodump -d individtax -o /users/</span><br></pre></td></tr></table></figure>
-<h6 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongorestore -d individtax --dir /users/individtax/</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>mongo</category>
-      </categories>
+    <title>travis-ci</title>
+    <url>/2022/03/04/deploy/travis-ci/</url>
+    <content><![CDATA[<h1 id="Travis"><a href="#Travis" class="headerlink" title="Travis"></a>Travis</h1>]]></content>
       <tags>
-        <tag>mongo</tag>
+        <tag>deploy</tag>
       </tags>
   </entry>
   <entry>
@@ -89,6 +84,19 @@
       </categories>
       <tags>
         <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mongo</title>
+    <url>/2019/06/22/db/mongo/</url>
+    <content><![CDATA[<h4 id="Mongo的mongodump、mongorestore"><a href="#Mongo的mongodump、mongorestore" class="headerlink" title="Mongo的mongodump、mongorestore"></a>Mongo的mongodump、mongorestore</h4><h6 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongodump -d individtax -o /users/</span><br></pre></td></tr></table></figure>
+<h6 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongorestore -d individtax --dir /users/individtax/</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>mongo</category>
+      </categories>
+      <tags>
+        <tag>mongo</tag>
       </tags>
   </entry>
   <entry>
@@ -193,6 +201,30 @@
       </tags>
   </entry>
   <entry>
+    <title>scp</title>
+    <url>/2019/06/21/linux/scp/</url>
+    <content><![CDATA[<h4 id="SCP-复制远程服务器上的目录"><a href="#SCP-复制远程服务器上的目录" class="headerlink" title="SCP 复制远程服务器上的目录"></a>SCP 复制远程服务器上的目录</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scp -p 22 -r root@ip:/home/example/ /temp/</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>scp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>website</title>
+    <url>/2019/05/19/linux/website/</url>
+    <content><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>website</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>查看使用的端口</title>
     <url>/2019/06/02/linux/%E6%9F%A5%E7%9C%8B%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AB%AF%E5%8F%A3/</url>
     <content><![CDATA[<h5 id="Centos7"><a href="#Centos7" class="headerlink" title="Centos7"></a>Centos7</h5><p>查看服务器端口号目前的使用情况</p>
@@ -203,6 +235,61 @@
       </categories>
       <tags>
         <tag>luntp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nginx依赖</title>
+    <url>/2019/10/11/nginx/nginx%E4%BE%9D%E8%B5%96/</url>
+    <content><![CDATA[<h3 id="编译安装nginx需要安装依赖"><a href="#编译安装nginx需要安装依赖" class="headerlink" title="编译安装nginx需要安装依赖"></a>编译安装nginx需要安装依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install gcc gcc-c++</span><br><span class="line">yum -y install zlib zlib-devel openssl openssl-devel pcre-devel</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>nginx</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node安装</title>
+    <url>/2019/05/22/node/node%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h5 id="Node-Install"><a href="#Node-Install" class="headerlink" title="Node Install"></a>Node Install</h5><ul>
+<li><p>Centos</p>
+<ul>
+<li><p>cd /usr/local</p>
+</li>
+<li><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://github-production-release-asset-2e65be.s3.amazonaws.com/49970642/4ea79e00-6a70-11e9-8a21-46a123284fc5?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190522%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190522T052650Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=a92bd6d054a303</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>此时下载的是二进制的包,不是采用源码安装,所以解压后没有configure文件</p>
+</li>
+<li><p>解压下载后的压缩包</p>
+</li>
+<li><p><code>tar -xvf node-v10.15.3-linux-x64</code></p>
+</li>
+<li><p>配置环境变量</p>
+<ul>
+<li>编辑.bash_profile<ul>
+<li><code>export PATH=$PATH:/usr/local/node-v10.15.3-linux-x64/bin</code></li>
+<li><code>source .bash_profile</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>配置软连接</p>
+<ul>
+<li><code>ln -s /usr/local/node-v10.15.3-linux-x64/bin/node /usr/local/bin</code></li>
+<li><code>ln -s /usr/local/node-v10.15.3-linux-x64/bin/npm /usr/local/bin</code></li>
+<li><code>ln -s /usr/local/node-v10.15.3-linux-x64/bin/npx /usr/local/bin</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>install</tag>
       </tags>
   </entry>
   <entry>
@@ -234,27 +321,31 @@
       </tags>
   </entry>
   <entry>
-    <title>website</title>
-    <url>/2019/05/19/linux/website/</url>
-    <content><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>
+    <title>nvm</title>
+    <url>/2020/02/14/node/nvm/</url>
+    <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm use 8.12.0</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>website</category>
+        <category>node</category>
       </categories>
       <tags>
-        <tag>vps</tag>
+        <tag>install</tag>
       </tags>
   </entry>
   <entry>
-    <title>scp</title>
-    <url>/2019/06/21/linux/scp/</url>
-    <content><![CDATA[<h4 id="SCP-复制远程服务器上的目录"><a href="#SCP-复制远程服务器上的目录" class="headerlink" title="SCP 复制远程服务器上的目录"></a>SCP 复制远程服务器上的目录</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scp -p 22 -r root@ip:/home/example/ /temp/</span><br></pre></td></tr></table></figure>
+    <title>Vue-Extend总结</title>
+    <url>/2020/01/02/vue/vue-extend/</url>
+    <content><![CDATA[<h4 id="一、Vue-extend"><a href="#一、Vue-extend" class="headerlink" title="一、Vue-extend"></a>一、Vue-extend</h4><p>Vue.extend(options)在官法文章中的归类是全局API，是使用基础Vue构造器，创造一个子类，动态地创建实例。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Init = Vue.extend(&#123;</span><br><span class="line">	template: <span class="string">'&lt;div&gt;Hello World&lt;/div&gt;'</span>,</span><br><span class="line">	data()&#123;</span><br><span class="line">		<span class="keyword">return</span> &#123;</span><br><span class="line">			msg:<span class="string">'Hello'</span></span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// render: h =&gt; h(Component)</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">new</span> Init().$mount(<span class="string">'app'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="二、Vue-component"><a href="#二、Vue-component" class="headerlink" title="二、Vue.component()"></a>二、Vue.component()</h4><p>注册或者获取全局组件，注册还会自动使用给定的id设置组件的名称</p>
+<a id="more"></a>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 注册组件时，传入一个构造器</span></span><br><span class="line">Vue.component(<span class="string">'hs-form'</span>,Vue.extend(...))</span><br><span class="line"></span><br><span class="line"><span class="comment">// 注册组件时，传入一个选项对象</span></span><br><span class="line">Vue.component(<span class="string">'hs-form'</span>,&#123;</span><br><span class="line">	data()&#123;</span><br><span class="line">		<span class="keyword">return</span>&#123;</span><br><span class="line">			name: <span class="string">'Hello'</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取注册的组件（始终返回构造器）</span></span><br><span class="line"><span class="keyword">var</span> hsFormConstructor = Vue.component(<span class="string">'hs-form'</span>)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>linux</category>
+        <category>Vue</category>
       </categories>
       <tags>
-        <tag>scp</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -273,30 +364,6 @@
 ]]></content>
       <categories>
         <category>Centos7</category>
-      </categories>
-      <tags>
-        <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>nginx依赖</title>
-    <url>/2019/10/11/nginx/nginx%E4%BE%9D%E8%B5%96/</url>
-    <content><![CDATA[<h3 id="编译安装nginx需要安装依赖"><a href="#编译安装nginx需要安装依赖" class="headerlink" title="编译安装nginx需要安装依赖"></a>编译安装nginx需要安装依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install gcc gcc-c++</span><br><span class="line">yum -y install zlib zlib-devel openssl openssl-devel pcre-devel</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>nginx</category>
-      </categories>
-      <tags>
-        <tag>nginx</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>nvm</title>
-    <url>/2020/02/14/node/nvm/</url>
-    <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm use 8.12.0</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>node</category>
       </categories>
       <tags>
         <tag>install</tag>
@@ -349,76 +416,6 @@
       </tags>
   </entry>
   <entry>
-    <title>vue单元测试</title>
-    <url>/2021/01/16/vue/vue-unit-test/</url>
-    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1、安装依赖模块</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add @vue/<span class="built_in">test</span>-utils vue-jest -D</span><br></pre></td></tr></table></figure>
-<p>2、创建jest配置文件</p>
-]]></content>
-      <tags>
-        <tag>单元测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue-Extend总结</title>
-    <url>/2020/01/02/vue/vue-extend/</url>
-    <content><![CDATA[<h4 id="一、Vue-extend"><a href="#一、Vue-extend" class="headerlink" title="一、Vue-extend"></a>一、Vue-extend</h4><p>Vue.extend(options)在官法文章中的归类是全局API，是使用基础Vue构造器，创造一个子类，动态地创建实例。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Init = Vue.extend(&#123;</span><br><span class="line">	template: <span class="string">'&lt;div&gt;Hello World&lt;/div&gt;'</span>,</span><br><span class="line">	data()&#123;</span><br><span class="line">		<span class="keyword">return</span> &#123;</span><br><span class="line">			msg:<span class="string">'Hello'</span></span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// render: h =&gt; h(Component)</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">new</span> Init().$mount(<span class="string">'app'</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="二、Vue-component"><a href="#二、Vue-component" class="headerlink" title="二、Vue.component()"></a>二、Vue.component()</h4><p>注册或者获取全局组件，注册还会自动使用给定的id设置组件的名称</p>
-<a id="more"></a>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 注册组件时，传入一个构造器</span></span><br><span class="line">Vue.component(<span class="string">'hs-form'</span>,Vue.extend(...))</span><br><span class="line"></span><br><span class="line"><span class="comment">// 注册组件时，传入一个选项对象</span></span><br><span class="line">Vue.component(<span class="string">'hs-form'</span>,&#123;</span><br><span class="line">	data()&#123;</span><br><span class="line">		<span class="keyword">return</span>&#123;</span><br><span class="line">			name: <span class="string">'Hello'</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取注册的组件（始终返回构造器）</span></span><br><span class="line"><span class="keyword">var</span> hsFormConstructor = Vue.component(<span class="string">'hs-form'</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Vue</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>node安装</title>
-    <url>/2019/05/22/node/node%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h5 id="Node-Install"><a href="#Node-Install" class="headerlink" title="Node Install"></a>Node Install</h5><ul>
-<li><p>Centos</p>
-<ul>
-<li><p>cd /usr/local</p>
-</li>
-<li><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget https://github-production-release-asset-2e65be.s3.amazonaws.com/49970642/4ea79e00-6a70-11e9-8a21-46a123284fc5?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190522%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190522T052650Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=a92bd6d054a303</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>此时下载的是二进制的包,不是采用源码安装,所以解压后没有configure文件</p>
-</li>
-<li><p>解压下载后的压缩包</p>
-</li>
-<li><p><code>tar -xvf node-v10.15.3-linux-x64</code></p>
-</li>
-<li><p>配置环境变量</p>
-<ul>
-<li>编辑.bash_profile<ul>
-<li><code>export PATH=$PATH:/usr/local/node-v10.15.3-linux-x64/bin</code></li>
-<li><code>source .bash_profile</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>配置软连接</p>
-<ul>
-<li><code>ln -s /usr/local/node-v10.15.3-linux-x64/bin/node /usr/local/bin</code></li>
-<li><code>ln -s /usr/local/node-v10.15.3-linux-x64/bin/npm /usr/local/bin</code></li>
-<li><code>ln -s /usr/local/node-v10.15.3-linux-x64/bin/npx /usr/local/bin</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>node</category>
-      </categories>
-      <tags>
-        <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>webpack构建vue项目</title>
     <url>/2021/01/15/webpack/webpack%E6%9E%84%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/</url>
     <content><![CDATA[<h3 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h3><h4 id="1、安装webpack依赖"><a href="#1、安装webpack依赖" class="headerlink" title="1、安装webpack依赖"></a>1、安装webpack依赖</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add webpack webpack-cli -D</span><br><span class="line">yarn add webpack-dev-server -D</span><br><span class="line">yarn add html-webpack-plugin -D</span><br></pre></td></tr></table></figure>
@@ -445,6 +442,17 @@
       </tags>
   </entry>
   <entry>
+    <title>vue单元测试</title>
+    <url>/2021/01/16/vue/vue-unit-test/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1、安装依赖模块</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add @vue/<span class="built_in">test</span>-utils vue-jest -D</span><br></pre></td></tr></table></figure>
+<p>2、创建jest配置文件</p>
+]]></content>
+      <tags>
+        <tag>单元测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Css样式选中</title>
     <url>/2019/05/16/frontend/css/css-%E6%A0%B7%E5%BC%8F%E9%80%89%E4%B8%AD/</url>
     <content><![CDATA[<h4 id="CSS选中元素"><a href="#CSS选中元素" class="headerlink" title="CSS选中元素"></a>CSS选中元素</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"><span class="selector-tag">style</span>&#123;</span><br><span class="line">  // 选中第一个p标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(1)</span>&#123;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  // 选中除了第一个p标签以外的标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:first-child)</span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -454,6 +462,31 @@
       </categories>
       <tags>
         <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Div横向排列和出现横向滚动条</title>
+    <url>/2019/04/30/frontend/css/div-%E6%A8%AA%E5%90%91%E6%8E%92%E5%88%97%E5%92%8C%E5%87%BA%E7%8E%B0%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/</url>
+    <content><![CDATA[<h5 id="出现横向滚动条"><a href="#出现横向滚动条" class="headerlink" title="出现横向滚动条"></a>出现横向滚动条</h5><p>核心思路是使用<code>white-space</code> 这个属性防止父容器内容换行，例子如下:</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// html</span><br><span class="line">&lt;<span class="selector-tag">ul</span>&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">// css</span><br><span class="line"><span class="selector-tag">ul</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">overflow-x</span>: scroll;</span><br><span class="line">  <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">  <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:inline-block;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Bind、Call、Apply</title>
+    <url>/2020/01/08/frontend/javascript/bind/</url>
+    <content><![CDATA[<h3 id="Bind、Apply、Call的区别"><a href="#Bind、Apply、Call的区别" class="headerlink" title="Bind、Apply、Call的区别"></a>Bind、Apply、Call的区别</h3><p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>
+]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>bind&amp;&amp;call&amp;&amp;apply</tag>
       </tags>
   </entry>
   <entry>
@@ -472,31 +505,6 @@
       </categories>
       <tags>
         <tag>arithmetic</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Bind、Call、Apply</title>
-    <url>/2020/01/08/frontend/javascript/bind/</url>
-    <content><![CDATA[<h3 id="Bind、Apply、Call的区别"><a href="#Bind、Apply、Call的区别" class="headerlink" title="Bind、Apply、Call的区别"></a>Bind、Apply、Call的区别</h3><p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>
-]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>bind&amp;&amp;call&amp;&amp;apply</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Div横向排列和出现横向滚动条</title>
-    <url>/2019/04/30/frontend/css/div-%E6%A8%AA%E5%90%91%E6%8E%92%E5%88%97%E5%92%8C%E5%87%BA%E7%8E%B0%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/</url>
-    <content><![CDATA[<h5 id="出现横向滚动条"><a href="#出现横向滚动条" class="headerlink" title="出现横向滚动条"></a>出现横向滚动条</h5><p>核心思路是使用<code>white-space</code> 这个属性防止父容器内容换行，例子如下:</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">// html</span><br><span class="line">&lt;<span class="selector-tag">ul</span>&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">// css</span><br><span class="line"><span class="selector-tag">ul</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">overflow-x</span>: scroll;</span><br><span class="line">  <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">  <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:inline-block;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>css</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
       </tags>
   </entry>
   <entry>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2021-01-18T16:31:41.731Z</updated>
+  <updated>2022-03-03T08:51:18.017Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>travis-ci</title>
+    <link href="http://protagonistss.github.io.com/2022/03/04/deploy/travis-ci/"/>
+    <id>http://protagonistss.github.io.com/2022/03/04/deploy/travis-ci/</id>
+    <published>2022-03-03T16:49:55.000Z</published>
+    <updated>2022-03-03T08:51:18.017Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Travis"><a href="#Travis" class="headerlink" title="Travis"></a>Travis</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Travis&quot;&gt;&lt;a href=&quot;#Travis&quot; class=&quot;headerlink&quot; title=&quot;Travis&quot;&gt;&lt;/a&gt;Travis&lt;/h1&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="deploy" scheme="http://protagonistss.github.io.com/tags/deploy/"/>
+    
+  </entry>
   
   <entry>
     <title>vim</title>
@@ -506,31 +529,6 @@
     
     
       <category term="install" scheme="http://protagonistss.github.io.com/tags/install/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>website</title>
-    <link href="http://protagonistss.github.io.com/2019/05/19/linux/website/"/>
-    <id>http://protagonistss.github.io.com/2019/05/19/linux/website/</id>
-    <published>2019-05-19T00:13:11.000Z</published>
-    <updated>2019-05-18T16:14:35.230Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;Create-command&quot;&gt;&lt;a href=&quot;#Create-command&quot; class=&quot;headerlink&quot; title=&quot;Create command&quot;&gt;&lt;/a&gt;Create command&lt;/h5&gt;&lt;figure class=&quot;highlight 
-      
-    
-    </summary>
-    
-      <category term="website" scheme="http://protagonistss.github.io.com/categories/website/"/>
-    
-    
-      <category term="vps" scheme="http://protagonistss.github.io.com/tags/vps/"/>
     
   </entry>
   
