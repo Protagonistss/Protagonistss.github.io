@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2022-03-09T02:06:24.305Z</updated>
+  <updated>2022-03-09T03:55:09.466Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Rust安装</title>
+    <link href="http://protagonistss.github.io.com/2022/03/09/rust/rust-start/"/>
+    <id>http://protagonistss.github.io.com/2022/03/09/rust/rust-start/</id>
+    <published>2022-03-09T11:52:14.000Z</published>
+    <updated>2022-03-09T03:55:09.466Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="Linux、Macos"><a href="#Linux、Macos" class="headerlink" title="Linux、Macos"></a>Linux、Macos</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --proto <span class="string">'=https'</span> --tlsv1.2 https://sh.rustup.rs -sSf | sh</span><br></pre></td></tr></table></figure><h1 id="二、查看版本"><a href="#二、查看版本" class="headerlink" title="二、查看版本"></a>二、查看版本</h1><p><code>rustc -v</code></p><p><code>cargo -v</code></p><h1 id="三、卸载"><a href="#三、卸载" class="headerlink" title="三、卸载"></a>三、卸载</h1><p><code>rustup self uninstall</code></p><h1 id="四、vscode插件"><a href="#四、vscode插件" class="headerlink" title="四、vscode插件"></a>四、vscode插件</h1><ul><li>Better TOML</li><li>Error Lens 展示错误信息</li><li>CodeLLDB, Debugger</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一、安装&quot;&gt;&lt;a href=&quot;#一、安装&quot; class=&quot;headerlink&quot; title=&quot;一、安装&quot;&gt;&lt;/a&gt;一、安装&lt;/h1&gt;&lt;h2 id=&quot;Linux、Macos&quot;&gt;&lt;a href=&quot;#Linux、Macos&quot; class=&quot;headerlink&quot; ti
+      
+    
+    </summary>
+    
+      <category term="rust" scheme="http://protagonistss.github.io.com/categories/rust/"/>
+    
+    
+      <category term="env" scheme="http://protagonistss.github.io.com/tags/env/"/>
+    
+  </entry>
   
   <entry>
     <title>PyMysql使用</title>
@@ -496,34 +521,6 @@
     
     
       <category term="rewrite" scheme="http://protagonistss.github.io.com/tags/rewrite/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>node安装</title>
-    <link href="http://protagonistss.github.io.com/2019/05/22/node/node%E5%AE%89%E8%A3%85/"/>
-    <id>http://protagonistss.github.io.com/2019/05/22/node/node安装/</id>
-    <published>2019-05-22T14:19:10.000Z</published>
-    <updated>2021-01-15T11:29:41.527Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="Node-Install"><a href="#Node-Install" class="headerlink" title="Node Install"></a>Node Install</h5><ul><li><p>Centos</p><ul><li><p>cd /usr/local</p></li><li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github-production-release-asset-2e65be.s3.amazonaws.com/49970642/4ea79e00-6a70-11e9-8a21-46a123284fc5?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20190522%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190522T052650Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=a92bd6d054a303</span><br></pre></td></tr></table></figure></li><li><p>此时下载的是二进制的包,不是采用源码安装,所以解压后没有configure文件</p></li><li><p>解压下载后的压缩包</p></li><li><p><code>tar -xvf node-v10.15.3-linux-x64</code></p></li><li><p>配置环境变量</p><ul><li>编辑.bash_profile<ul><li><code>export PATH=$PATH:/usr/local/node-v10.15.3-linux-x64/bin</code></li><li><code>source .bash_profile</code></li></ul></li></ul></li><li><p>配置软连接</p><ul><li><code>ln -s /usr/local/node-v10.15.3-linux-x64/bin/node /usr/local/bin</code></li><li><code>ln -s /usr/local/node-v10.15.3-linux-x64/bin/npm /usr/local/bin</code></li><li><code>ln -s /usr/local/node-v10.15.3-linux-x64/bin/npx /usr/local/bin</code></li></ul></li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;Node-Install&quot;&gt;&lt;a href=&quot;#Node-Install&quot; class=&quot;headerlink&quot; title=&quot;Node Install&quot;&gt;&lt;/a&gt;Node Install&lt;/h5&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Centos&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;
-      
-    
-    </summary>
-    
-      <category term="node" scheme="http://protagonistss.github.io.com/categories/node/"/>
-    
-    
-      <category term="install" scheme="http://protagonistss.github.io.com/tags/install/"/>
     
   </entry>
   
