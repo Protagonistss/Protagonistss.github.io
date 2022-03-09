@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>mongo</title>
-    <url>/2019/06/22/db/mongo/</url>
-    <content><![CDATA[<h4 id="Mongo的mongodump、mongorestore"><a href="#Mongo的mongodump、mongorestore" class="headerlink" title="Mongo的mongodump、mongorestore"></a>Mongo的mongodump、mongorestore</h4><h6 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongodump -d individtax -o /users/</span><br></pre></td></tr></table></figure>
-<h6 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongorestore -d individtax --dir /users/individtax/</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>mongo</category>
-      </categories>
-      <tags>
-        <tag>mongo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>travis-ci</title>
     <url>/2022/03/04/deploy/travis-ci/</url>
     <content><![CDATA[<h1 id="Travis"><a href="#Travis" class="headerlink" title="Travis"></a>Travis</h1>]]></content>
@@ -70,6 +57,19 @@
       </tags>
   </entry>
   <entry>
+    <title>mongo</title>
+    <url>/2019/06/22/db/mongo/</url>
+    <content><![CDATA[<h4 id="Mongo的mongodump、mongorestore"><a href="#Mongo的mongodump、mongorestore" class="headerlink" title="Mongo的mongodump、mongorestore"></a>Mongo的mongodump、mongorestore</h4><h6 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongodump -d individtax -o /users/</span><br></pre></td></tr></table></figure>
+<h6 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongorestore -d individtax --dir /users/individtax/</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>mongo</category>
+      </categories>
+      <tags>
+        <tag>mongo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git-Branch</title>
     <url>/2019/04/29/git/git-branch/</url>
     <content><![CDATA[<h4 id="Git-branch"><a href="#Git-branch" class="headerlink" title="Git-branch"></a>Git-branch</h4><ul>
@@ -82,6 +82,18 @@
       </categories>
       <tags>
         <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>website</title>
+    <url>/2019/05/19/linux/website/</url>
+    <content><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>website</category>
+      </categories>
+      <tags>
+        <tag>vps</tag>
       </tags>
   </entry>
   <entry>
@@ -151,6 +163,18 @@
       </tags>
   </entry>
   <entry>
+    <title>scp</title>
+    <url>/2019/06/21/linux/scp/</url>
+    <content><![CDATA[<h4 id="SCP-复制远程服务器上的目录"><a href="#SCP-复制远程服务器上的目录" class="headerlink" title="SCP 复制远程服务器上的目录"></a>SCP 复制远程服务器上的目录</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scp -p 22 -r root@ip:/home/example/ /temp/</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>scp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>环境搭建</title>
     <url>/2020/01/17/linux/platform-install/</url>
     <content><![CDATA[<h3 id="一、UBUNTU18-04-安装"><a href="#一、UBUNTU18-04-安装" class="headerlink" title="一、UBUNTU18.04 安装"></a>一、UBUNTU18.04 安装</h3><h4 id="1、服务器创建用户"><a href="#1、服务器创建用户" class="headerlink" title="1、服务器创建用户"></a>1、服务器创建用户</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">// 在 /home 目录下创建 username </span><br><span class="line">sudo useradd -m -s /bin/bash username</span><br><span class="line">// 设置密码</span><br><span class="line">sudo passwd username</span><br><span class="line">// 给username 赋予管理员权限</span><br><span class="line">sudo vim /etc/sudoers</span><br><span class="line">root ALL=(ALL:ALL)ALL</span><br><span class="line">protagonisths ALL=(ALL:ALL)ALL</span><br></pre></td></tr></table></figure>
@@ -171,27 +195,43 @@
       </tags>
   </entry>
   <entry>
-    <title>scp</title>
-    <url>/2019/06/21/linux/scp/</url>
-    <content><![CDATA[<h4 id="SCP-复制远程服务器上的目录"><a href="#SCP-复制远程服务器上的目录" class="headerlink" title="SCP 复制远程服务器上的目录"></a>SCP 复制远程服务器上的目录</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scp -p 22 -r root@ip:/home/example/ /temp/</span><br></pre></td></tr></table></figure>
+    <title>nginx依赖</title>
+    <url>/2019/10/11/nginx/nginx%E4%BE%9D%E8%B5%96/</url>
+    <content><![CDATA[<h3 id="编译安装nginx需要安装依赖"><a href="#编译安装nginx需要安装依赖" class="headerlink" title="编译安装nginx需要安装依赖"></a>编译安装nginx需要安装依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install gcc gcc-c++</span><br><span class="line">yum -y install zlib zlib-devel openssl openssl-devel pcre-devel</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>linux</category>
+        <category>nginx</category>
       </categories>
       <tags>
-        <tag>scp</tag>
+        <tag>nginx</tag>
       </tags>
   </entry>
   <entry>
-    <title>website</title>
-    <url>/2019/05/19/linux/website/</url>
-    <content><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>
+    <title>Rewrite总结</title>
+    <url>/2019/06/02/nginx/rewrite/</url>
+    <content><![CDATA[<h4 id="一、Rewrite"><a href="#一、Rewrite" class="headerlink" title="一、Rewrite"></a>一、Rewrite</h4><p>​    实现url<span style="color:red">重写</span>以及<span style="color:red">重定向</span></p>
+<h4 id="二、场景"><a href="#二、场景" class="headerlink" title="二、场景"></a>二、场景</h4><p>​    url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等)</p>
+<p>​    SEO优化</p>
+<p>​    运维人员维护</p>
+<p>​    后台维护、流量转发</p>
+<p>​    安全-&gt;伪静态</p>
+<h4 id="三、配置语法"><a href="#三、配置语法" class="headerlink" title="三、配置语法"></a>三、配置语法</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Systanx: rewrite regx replacement[flag]</span><br><span class="line">​	Default: --</span><br><span class="line">​	Context:server,location,<span class="keyword">if</span></span><br></pre></td></tr></table></figure>
+<p>​    <a id="more"></a></p>
+<h4 id="四、正则"><a href="#四、正则" class="headerlink" title="四、正则"></a>四、正则</h4><p>​    pcre 正则测试</p>
+<h4 id="五、Flag"><a href="#五、Flag" class="headerlink" title="五、Flag"></a>五、Flag</h4><p>​    last : 停止rewrite 检测</p>
+<p>​    Break: 停止rewrite 检测</p>
+<p>​    redirect : 返回302临时重定向,地址栏会显示跳转后的地址</p>
+<p>​    permanent : 返回301永久重定向，地址栏会显示跳转后的地址 (nginx 停掉也会重定向)</p>
+<h4 id="六、Rewrite-规则优先级"><a href="#六、Rewrite-规则优先级" class="headerlink" title="六、Rewrite 规则优先级"></a>六、Rewrite 规则优先级</h4><p>​    执行server块的rewrite指令</p>
+<p>​    执行location匹配</p>
+<p>​    执行选定的location中的rewrite</p>
+<h4 id="七、示例"><a href="#七、示例" class="headerlink" title="七、示例"></a>七、示例</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    listen  6060;</span><br><span class="line">    server_name  localhost;</span><br><span class="line">    access_log  /var/<span class="built_in">log</span>/nginx/host.access.log  main;</span><br><span class="line">    root /opt/app/code;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        rewrite ^/course-(\d+)-(\d+)-(\d+)\.html$ /course/<span class="variable">$1</span>/<span class="variable">$2</span>/course_<span class="variable">$3</span>.html <span class="built_in">break</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$http_user_agent</span> ~* Chrome) &#123;</span><br><span class="line">            rewrite ^/nginx http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!-f <span class="variable">$request_filename</span>) &#123;</span><br><span class="line">            rewrite ^/(.*)$ http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        index  index.html  index.htm;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/<span class="built_in">break</span> &#123;</span><br><span class="line">        rewrite ^/<span class="built_in">break</span> /<span class="built_in">test</span>/ <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/last &#123;</span><br><span class="line">        <span class="comment">#rewrite ^/last /test/ last;</span></span><br><span class="line">        rewrite ^/last /<span class="built_in">test</span>/ redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/protagonist &#123;</span><br><span class="line">    	<span class="comment">#rewrite ^/protagonist  http://39.97.187.133:80 permanent;</span></span><br><span class="line">			rewrite ^/protagonist  http://39.97.187.133:80 redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location /<span class="built_in">test</span>/ &#123;</span><br><span class="line">			default_type  application/json;</span><br><span class="line">			<span class="built_in">return</span> 200 <span class="string">'&#123;"status":"success"&#125;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>website</category>
+        <category>nginx</category>
       </categories>
       <tags>
-        <tag>vps</tag>
+        <tag>rewrite</tag>
       </tags>
   </entry>
   <entry>
@@ -208,15 +248,118 @@
       </tags>
   </entry>
   <entry>
-    <title>nginx依赖</title>
-    <url>/2019/10/11/nginx/nginx%E4%BE%9D%E8%B5%96/</url>
-    <content><![CDATA[<h3 id="编译安装nginx需要安装依赖"><a href="#编译安装nginx需要安装依赖" class="headerlink" title="编译安装nginx需要安装依赖"></a>编译安装nginx需要安装依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install gcc gcc-c++</span><br><span class="line">yum -y install zlib zlib-devel openssl openssl-devel pcre-devel</span><br></pre></td></tr></table></figure>
+    <title>PyMysql使用</title>
+    <url>/2022/03/09/python/pymysql/</url>
+    <content><![CDATA[<h1 id="一、使用pymysql"><a href="#一、使用pymysql" class="headerlink" title="一、使用pymysql"></a>一、使用pymysql</h1><h2 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h2><p><code>pip install pymysql</code></p>
+<h2 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a>2、使用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Single</span>:</span></span><br><span class="line">	_instance = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> cls._instance:</span><br><span class="line">            cls._instance = object.__new__(cls)</span><br><span class="line">        <span class="keyword">return</span> cls._instance</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GetMysqlIns</span><span class="params">(Single)</span>:</span></span><br><span class="line">    db = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.db = pymysql.connect(host=<span class="string">'xxx'</span>, user=<span class="string">'xxx'</span>,</span><br><span class="line">                                  passwd=<span class="string">'xxx'</span>, db=<span class="string">'xxx'</span>)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">		db_ins = GetMysqlIns()</span><br><span class="line">		cursor = db_ins.db.cursor()</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h1 id="二、新增"><a href="#二、新增" class="headerlink" title="二、新增"></a>二、新增</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">create_data = [(<span class="string">'xxx'</span>, <span class="number">18</span>)]</span><br><span class="line">create_sql = <span class="string">"insert into table (name, age) values (%s, %s)"</span></span><br><span class="line">cursor.executemany(create_sql, create_data)</span><br></pre></td></tr></table></figure>
+<h1 id="三、删除"><a href="#三、删除" class="headerlink" title="三、删除"></a>三、删除</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">delete_sql = <span class="string">"delete from table where name='&#123;&#125;'"</span></span><br><span class="line">delete_data = [(<span class="string">'name'</span>)]</span><br><span class="line">cursor.executemany(delete_sql, delete_data)</span><br></pre></td></tr></table></figure>
+<h1 id="四、修改"><a href="#四、修改" class="headerlink" title="四、修改"></a>四、修改</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">update_sql = <span class="string">"update table set name=(%s) where age='18' and gender='male'"</span></span><br><span class="line">update_data = [(<span class="string">'xxx'</span>)]</span><br><span class="line">cursor.executemany(update_sql, update_data)</span><br></pre></td></tr></table></figure>
+<h1 id="五、查询"><a href="#五、查询" class="headerlink" title="五、查询"></a>五、查询</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">query_sql = <span class="string">"select * from table where name='name'"</span></span><br><span class="line">cursor.execute(query_sql)</span><br></pre></td></tr></table></figure>
+<h1 id="六、操作失败回滚"><a href="#六、操作失败回滚" class="headerlink" title="六、操作失败回滚"></a>六、操作失败回滚</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">		print(<span class="string">"操作db"</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">		db_ins.db.rollback()</span><br></pre></td></tr></table></figure>
+<h1 id="七、关闭链接"><a href="#七、关闭链接" class="headerlink" title="七、关闭链接"></a>七、关闭链接</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cursor.close()</span><br><span class="line">db_ins.db.close()</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>nginx</category>
+        <category>python</category>
       </categories>
       <tags>
-        <tag>nginx</tag>
+        <tag>pymysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Yarn的安装</title>
+    <url>/2019/05/22/node/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h5 id="INSTALL-YARN"><a href="#INSTALL-YARN" class="headerlink" title="INSTALL YARN"></a>INSTALL YARN</h5><ul>
+<li><p>添加yum源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install yarn -y</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Centos7</category>
+      </categories>
+      <tags>
+        <tag>install</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Rabbitmq安装和使用</title>
+    <url>/2021/01/16/python/setup/</url>
+    <content><![CDATA[<h4 id="一、docker方式安装"><a href="#一、docker方式安装" class="headerlink" title="一、docker方式安装"></a>一、docker方式安装</h4><p>1、获取镜像，可以获取最新的，当然也可以选择dockerhub上star最多的，比如rabbitmq:3.8-management</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 拉取镜像</span></span><br><span class="line">docker pull rabbitmq</span><br></pre></td></tr></table></figure>
+<p>2、搭建容器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run --name rabbitmq -d -p 15672:15672 -p 5672:5672 [imageId]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>-p 制定容器内部端口号与宿主机之间的映射，rabbitmq默认使用15672作为web端访问端口，5672为其数据通信端口。</p>
+</blockquote>
+<p>3、创建账户</p>
+<blockquote>
+<p>默认创建为guest用户，密码也是guest。但是默认创建的用户只能 通过本地网络访问，远程网络访问受限，所以我们需要创建一个帐号。</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入容器</span></span><br><span class="line">docker <span class="built_in">exec</span> -it containerId /bin/bash</span><br><span class="line"><span class="comment"># add user</span></span><br><span class="line">rabbitmqctl add_user root rootroot</span><br><span class="line"><span class="comment"># 给root账户赋所有权限</span></span><br><span class="line">rabbitmqctl set_permissions -p / root <span class="string">".*"</span> <span class="string">".*"</span> <span class="string">".*"</span></span><br><span class="line"><span class="comment"># 给admin账户赋予administrator</span></span><br><span class="line">rabbitmqctl set_user_tags root administrator</span><br><span class="line"><span class="comment"># 查看创建的用户</span></span><br><span class="line">rabbitmqctl list_users</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h4 id="二、使用python-pika测试rabbitmq"><a href="#二、使用python-pika测试rabbitmq" class="headerlink" title="二、使用python pika测试rabbitmq"></a>二、使用python pika测试rabbitmq</h4><p>1、创建producer.py，执行python producer.py</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># author: huangshan</span></span><br><span class="line"><span class="comment"># datetime: 2021-01-17 11:28</span></span><br><span class="line"><span class="comment"># software: PyCharm</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> pika</span><br><span class="line"></span><br><span class="line">auth = pika.PlainCredentials(<span class="string">'root'</span>, <span class="string">'rootroot'</span>)</span><br><span class="line">connection = pika.BlockingConnection(pika.ConnectionParameters(<span class="string">'192.168.50.107'</span>, <span class="number">5672</span>, <span class="string">'/'</span>, auth))</span><br><span class="line">channel = connection.channel()</span><br><span class="line">channel.queue_declare(queue=<span class="string">'TESTCASE1'</span>)</span><br><span class="line">channel.basic_publish(exchange=<span class="string">''</span>,routing_key=<span class="string">'TESTCASE1'</span>, body=<span class="string">'Hello World'</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"Sent 'Hello World'"</span>)</span><br><span class="line">connection.close()</span><br></pre></td></tr></table></figure>
+<p>2、创建consumer.py，执行python consumer.py</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># author: huangshan</span></span><br><span class="line"><span class="comment"># datetime: 2021-01-17 02:08</span></span><br><span class="line"><span class="comment"># software: PyCharm</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> pika</span><br><span class="line"></span><br><span class="line">auth = pika.PlainCredentials(<span class="string">'root'</span>, <span class="string">'rootroot'</span>)</span><br><span class="line">connection = pika.BlockingConnection(</span><br><span class="line">    pika.ConnectionParameters(host=<span class="string">'192.168.50.107'</span>, port=<span class="number">5672</span>, virtual_host=<span class="string">'/'</span>, credentials=auth))</span><br><span class="line">channel = connection.channel()</span><br><span class="line">channel.queue_declare(queue=<span class="string">'TESTCASE1'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">callback</span><span class="params">(ch, method, properties, body)</span>:</span></span><br><span class="line">    print(<span class="string">"Received %r"</span> % body)</span><br><span class="line"></span><br><span class="line">channel.basic_consume(on_message_callback=callback, queue=<span class="string">'TESTCASE1'</span>, auto_ack=<span class="literal">True</span>)</span><br><span class="line">print(<span class="string">'Waitting for message To exit press CTRL+ C'</span>)</span><br><span class="line">channel.start_consuming()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>rabbit</category>
+      </categories>
+      <tags>
+        <tag>python&amp;&amp;rabbit</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nvm</title>
+    <url>/2020/02/14/node/nvm/</url>
+    <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm use 8.12.0</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>install</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim</title>
+    <url>/2021/01/19/utils/vim/</url>
+    <content><![CDATA[<p>在命令模式下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">e 跳到单词的末尾</span><br><span class="line">w 跳到单词的首位</span><br><span class="line">r + [想要替换成的字符]  比如hello 光标在h上，ra 就是把h替换成了a，也就是allo</span><br><span class="line">gg 跳到第一行首位</span><br><span class="line">G 跳到最后一行</span><br><span class="line">o 在光标的下面新开一行</span><br><span class="line">O 在光标的上面新开一行</span><br><span class="line">. 执行上次的操作</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>搜索</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">在normal模式下</span><br><span class="line"><span class="string">""</span><span class="string">"</span></span><br><span class="line"><span class="string">hello world</span></span><br><span class="line"><span class="string">hello</span></span><br><span class="line"><span class="string">"</span><span class="string">""</span></span><br><span class="line">输入 /hello 按下回车 按 n 去到下一个hello的位置</span><br></pre></td></tr></table></figure>
+<p>替换</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在normal模式下</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">hello world</span><br><span class="line">hello</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">光标所在行替换</span><br><span class="line">  替换单个</span><br><span class="line">  键入 </span><br><span class="line">  :s/hello/hi</span><br><span class="line">  替换全部</span><br><span class="line">  键入 </span><br><span class="line">  :s/hello/hi/g</span><br><span class="line">全文替换</span><br><span class="line">键入</span><br><span class="line">:%s/o/i/g</span><br></pre></td></tr></table></figure>
+<p>复制</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">复制当前行 yy</span><br></pre></td></tr></table></figure>
+<p>粘贴</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p</span><br></pre></td></tr></table></figure>
+<p>删除</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">删除当前行 dd</span><br><span class="line">删除光标选中字符 x</span><br><span class="line">2dd 删除从光标（包括光标所在行）往下2行</span><br></pre></td></tr></table></figure>
+<p>撤销</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">u</span><br></pre></td></tr></table></figure>
+<p>反撤销</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ctrl r</span><br></pre></td></tr></table></figure>
+<p>生成多个</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在normal模式下按下100，进入输入模式 输入hello 然后esc</span><br></pre></td></tr></table></figure>
+<p>visual</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">v 选中</span><br><span class="line">v0 选中到行首</span><br><span class="line">ctrl + v 进入 到block 然后ctrl + d 选中到最后一行 然后想要对选中的行做操作 按下 I，输入 # 进行注释，然后再按下esc</span><br></pre></td></tr></table></figure>
+<p>help</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">help 0</span><br><span class="line">help test.txt</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>utils</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
       </tags>
   </entry>
   <entry>
@@ -260,129 +403,6 @@
       </categories>
       <tags>
         <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Rewrite总结</title>
-    <url>/2019/06/02/nginx/rewrite/</url>
-    <content><![CDATA[<h4 id="一、Rewrite"><a href="#一、Rewrite" class="headerlink" title="一、Rewrite"></a>一、Rewrite</h4><p>​    实现url<span style="color:red">重写</span>以及<span style="color:red">重定向</span></p>
-<h4 id="二、场景"><a href="#二、场景" class="headerlink" title="二、场景"></a>二、场景</h4><p>​    url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等)</p>
-<p>​    SEO优化</p>
-<p>​    运维人员维护</p>
-<p>​    后台维护、流量转发</p>
-<p>​    安全-&gt;伪静态</p>
-<h4 id="三、配置语法"><a href="#三、配置语法" class="headerlink" title="三、配置语法"></a>三、配置语法</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Systanx: rewrite regx replacement[flag]</span><br><span class="line">​	Default: --</span><br><span class="line">​	Context:server,location,<span class="keyword">if</span></span><br></pre></td></tr></table></figure>
-<p>​    <a id="more"></a></p>
-<h4 id="四、正则"><a href="#四、正则" class="headerlink" title="四、正则"></a>四、正则</h4><p>​    pcre 正则测试</p>
-<h4 id="五、Flag"><a href="#五、Flag" class="headerlink" title="五、Flag"></a>五、Flag</h4><p>​    last : 停止rewrite 检测</p>
-<p>​    Break: 停止rewrite 检测</p>
-<p>​    redirect : 返回302临时重定向,地址栏会显示跳转后的地址</p>
-<p>​    permanent : 返回301永久重定向，地址栏会显示跳转后的地址 (nginx 停掉也会重定向)</p>
-<h4 id="六、Rewrite-规则优先级"><a href="#六、Rewrite-规则优先级" class="headerlink" title="六、Rewrite 规则优先级"></a>六、Rewrite 规则优先级</h4><p>​    执行server块的rewrite指令</p>
-<p>​    执行location匹配</p>
-<p>​    执行选定的location中的rewrite</p>
-<h4 id="七、示例"><a href="#七、示例" class="headerlink" title="七、示例"></a>七、示例</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    listen  6060;</span><br><span class="line">    server_name  localhost;</span><br><span class="line">    access_log  /var/<span class="built_in">log</span>/nginx/host.access.log  main;</span><br><span class="line">    root /opt/app/code;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        rewrite ^/course-(\d+)-(\d+)-(\d+)\.html$ /course/<span class="variable">$1</span>/<span class="variable">$2</span>/course_<span class="variable">$3</span>.html <span class="built_in">break</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$http_user_agent</span> ~* Chrome) &#123;</span><br><span class="line">            rewrite ^/nginx http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!-f <span class="variable">$request_filename</span>) &#123;</span><br><span class="line">            rewrite ^/(.*)$ http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        index  index.html  index.htm;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/<span class="built_in">break</span> &#123;</span><br><span class="line">        rewrite ^/<span class="built_in">break</span> /<span class="built_in">test</span>/ <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/last &#123;</span><br><span class="line">        <span class="comment">#rewrite ^/last /test/ last;</span></span><br><span class="line">        rewrite ^/last /<span class="built_in">test</span>/ redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/protagonist &#123;</span><br><span class="line">    	<span class="comment">#rewrite ^/protagonist  http://39.97.187.133:80 permanent;</span></span><br><span class="line">			rewrite ^/protagonist  http://39.97.187.133:80 redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location /<span class="built_in">test</span>/ &#123;</span><br><span class="line">			default_type  application/json;</span><br><span class="line">			<span class="built_in">return</span> 200 <span class="string">'&#123;"status":"success"&#125;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>nginx</category>
-      </categories>
-      <tags>
-        <tag>rewrite</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Yarn的安装</title>
-    <url>/2019/05/22/node/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h5 id="INSTALL-YARN"><a href="#INSTALL-YARN" class="headerlink" title="INSTALL YARN"></a>INSTALL YARN</h5><ul>
-<li><p>添加yum源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install yarn -y</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Centos7</category>
-      </categories>
-      <tags>
-        <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>nvm</title>
-    <url>/2020/02/14/node/nvm/</url>
-    <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm use 8.12.0</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>node</category>
-      </categories>
-      <tags>
-        <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Rabbitmq安装和使用</title>
-    <url>/2021/01/16/python/setup/</url>
-    <content><![CDATA[<h4 id="一、docker方式安装"><a href="#一、docker方式安装" class="headerlink" title="一、docker方式安装"></a>一、docker方式安装</h4><p>1、获取镜像，可以获取最新的，当然也可以选择dockerhub上star最多的，比如rabbitmq:3.8-management</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 拉取镜像</span></span><br><span class="line">docker pull rabbitmq</span><br></pre></td></tr></table></figure>
-<p>2、搭建容器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run --name rabbitmq -d -p 15672:15672 -p 5672:5672 [imageId]</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>-p 制定容器内部端口号与宿主机之间的映射，rabbitmq默认使用15672作为web端访问端口，5672为其数据通信端口。</p>
-</blockquote>
-<p>3、创建账户</p>
-<blockquote>
-<p>默认创建为guest用户，密码也是guest。但是默认创建的用户只能 通过本地网络访问，远程网络访问受限，所以我们需要创建一个帐号。</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 进入容器</span></span><br><span class="line">docker <span class="built_in">exec</span> -it containerId /bin/bash</span><br><span class="line"><span class="comment"># add user</span></span><br><span class="line">rabbitmqctl add_user root rootroot</span><br><span class="line"><span class="comment"># 给root账户赋所有权限</span></span><br><span class="line">rabbitmqctl set_permissions -p / root <span class="string">".*"</span> <span class="string">".*"</span> <span class="string">".*"</span></span><br><span class="line"><span class="comment"># 给admin账户赋予administrator</span></span><br><span class="line">rabbitmqctl set_user_tags root administrator</span><br><span class="line"><span class="comment"># 查看创建的用户</span></span><br><span class="line">rabbitmqctl list_users</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h4 id="二、使用python-pika测试rabbitmq"><a href="#二、使用python-pika测试rabbitmq" class="headerlink" title="二、使用python pika测试rabbitmq"></a>二、使用python pika测试rabbitmq</h4><p>1、创建producer.py，执行python producer.py</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># author: huangshan</span></span><br><span class="line"><span class="comment"># datetime: 2021-01-17 11:28</span></span><br><span class="line"><span class="comment"># software: PyCharm</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> pika</span><br><span class="line"></span><br><span class="line">auth = pika.PlainCredentials(<span class="string">'root'</span>, <span class="string">'rootroot'</span>)</span><br><span class="line">connection = pika.BlockingConnection(pika.ConnectionParameters(<span class="string">'192.168.50.107'</span>, <span class="number">5672</span>, <span class="string">'/'</span>, auth))</span><br><span class="line">channel = connection.channel()</span><br><span class="line">channel.queue_declare(queue=<span class="string">'TESTCASE1'</span>)</span><br><span class="line">channel.basic_publish(exchange=<span class="string">''</span>,routing_key=<span class="string">'TESTCASE1'</span>, body=<span class="string">'Hello World'</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"Sent 'Hello World'"</span>)</span><br><span class="line">connection.close()</span><br></pre></td></tr></table></figure>
-<p>2、创建consumer.py，执行python consumer.py</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># author: huangshan</span></span><br><span class="line"><span class="comment"># datetime: 2021-01-17 02:08</span></span><br><span class="line"><span class="comment"># software: PyCharm</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> pika</span><br><span class="line"></span><br><span class="line">auth = pika.PlainCredentials(<span class="string">'root'</span>, <span class="string">'rootroot'</span>)</span><br><span class="line">connection = pika.BlockingConnection(</span><br><span class="line">    pika.ConnectionParameters(host=<span class="string">'192.168.50.107'</span>, port=<span class="number">5672</span>, virtual_host=<span class="string">'/'</span>, credentials=auth))</span><br><span class="line">channel = connection.channel()</span><br><span class="line">channel.queue_declare(queue=<span class="string">'TESTCASE1'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">callback</span><span class="params">(ch, method, properties, body)</span>:</span></span><br><span class="line">    print(<span class="string">"Received %r"</span> % body)</span><br><span class="line"></span><br><span class="line">channel.basic_consume(on_message_callback=callback, queue=<span class="string">'TESTCASE1'</span>, auto_ack=<span class="literal">True</span>)</span><br><span class="line">print(<span class="string">'Waitting for message To exit press CTRL+ C'</span>)</span><br><span class="line">channel.start_consuming()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>rabbit</category>
-      </categories>
-      <tags>
-        <tag>python&amp;&amp;rabbit</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vim</title>
-    <url>/2021/01/19/utils/vim/</url>
-    <content><![CDATA[<p>在命令模式下</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">e 跳到单词的末尾</span><br><span class="line">w 跳到单词的首位</span><br><span class="line">r + [想要替换成的字符]  比如hello 光标在h上，ra 就是把h替换成了a，也就是allo</span><br><span class="line">gg 跳到第一行首位</span><br><span class="line">G 跳到最后一行</span><br><span class="line">o 在光标的下面新开一行</span><br><span class="line">O 在光标的上面新开一行</span><br><span class="line">. 执行上次的操作</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>搜索</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">在normal模式下</span><br><span class="line"><span class="string">""</span><span class="string">"</span></span><br><span class="line"><span class="string">hello world</span></span><br><span class="line"><span class="string">hello</span></span><br><span class="line"><span class="string">"</span><span class="string">""</span></span><br><span class="line">输入 /hello 按下回车 按 n 去到下一个hello的位置</span><br></pre></td></tr></table></figure>
-<p>替换</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在normal模式下</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">hello world</span><br><span class="line">hello</span><br><span class="line">&quot;&quot;&quot;</span><br><span class="line">光标所在行替换</span><br><span class="line">  替换单个</span><br><span class="line">  键入 </span><br><span class="line">  :s/hello/hi</span><br><span class="line">  替换全部</span><br><span class="line">  键入 </span><br><span class="line">  :s/hello/hi/g</span><br><span class="line">全文替换</span><br><span class="line">键入</span><br><span class="line">:%s/o/i/g</span><br></pre></td></tr></table></figure>
-<p>复制</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">复制当前行 yy</span><br></pre></td></tr></table></figure>
-<p>粘贴</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">p</span><br></pre></td></tr></table></figure>
-<p>删除</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">删除当前行 dd</span><br><span class="line">删除光标选中字符 x</span><br><span class="line">2dd 删除从光标（包括光标所在行）往下2行</span><br></pre></td></tr></table></figure>
-<p>撤销</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">u</span><br></pre></td></tr></table></figure>
-<p>反撤销</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ctrl r</span><br></pre></td></tr></table></figure>
-<p>生成多个</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在normal模式下按下100，进入输入模式 输入hello 然后esc</span><br></pre></td></tr></table></figure>
-<p>visual</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">v 选中</span><br><span class="line">v0 选中到行首</span><br><span class="line">ctrl + v 进入 到block 然后ctrl + d 选中到最后一行 然后想要对选中的行做操作 按下 I，输入 # 进行注释，然后再按下esc</span><br></pre></td></tr></table></figure>
-<p>help</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">help 0</span><br><span class="line">help test.txt</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>utils</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
       </tags>
   </entry>
   <entry>
@@ -457,15 +477,15 @@
       </tags>
   </entry>
   <entry>
-    <title>Css样式选中</title>
-    <url>/2019/05/16/frontend/css/css-%E6%A0%B7%E5%BC%8F%E9%80%89%E4%B8%AD/</url>
-    <content><![CDATA[<h4 id="CSS选中元素"><a href="#CSS选中元素" class="headerlink" title="CSS选中元素"></a>CSS选中元素</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"><span class="selector-tag">style</span>&#123;</span><br><span class="line">  // 选中第一个p标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(1)</span>&#123;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  // 选中除了第一个p标签以外的标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:first-child)</span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>Bind、Call、Apply</title>
+    <url>/2020/01/08/frontend/javascript/bind/</url>
+    <content><![CDATA[<h3 id="Bind、Apply、Call的区别"><a href="#Bind、Apply、Call的区别" class="headerlink" title="Bind、Apply、Call的区别"></a>Bind、Apply、Call的区别</h3><p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>
 ]]></content>
       <categories>
-        <category>css</category>
+        <category>javascript</category>
       </categories>
       <tags>
-        <tag>css</tag>
+        <tag>bind&amp;&amp;call&amp;&amp;apply</tag>
       </tags>
   </entry>
   <entry>
@@ -482,19 +502,15 @@
       </tags>
   </entry>
   <entry>
-    <title>链表</title>
-    <url>/2019/12/31/frontend/javascript/link-list/</url>
-    <content><![CDATA[<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><h4 id="一、链表的概念"><a href="#一、链表的概念" class="headerlink" title="一、链表的概念"></a>一、链表的概念</h4><p>链表是物理存储单元上非连续的，非顺序的存储结构，由一系列节点组成。链表分为有头链表和无头链表。</p>
-<h5 id="1、节点"><a href="#1、节点" class="headerlink" title="1、节点"></a>1、节点</h5><p>节点包含包含两个部分，一部分是存储数据元素的数据域，一部分是存储指向下一个节点的指针域，这两块构成一个节点，节点如何去使用？简单示意如下：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> Node = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.data = data</span><br><span class="line">  <span class="keyword">this</span>.next = <span class="literal">null</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> node = <span class="keyword">new</span> Node(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">var</span> node1 = <span class="keyword">new</span> Node(<span class="number">8</span>)</span><br><span class="line"><span class="keyword">var</span> node2 = <span class="keyword">new</span> Node(<span class="number">9</span>)</span><br><span class="line"><span class="built_in">console</span>.log(node)</span><br><span class="line"><span class="built_in">console</span>.log(node.next.data)</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h5 id="2、链表的方法"><a href="#2、链表的方法" class="headerlink" title="2、链表的方法"></a>2、链表的方法</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">LinkList</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> Node = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.data = data</span><br><span class="line">    <span class="keyword">this</span>.next = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">var</span> length = <span class="number">0</span></span><br><span class="line">  <span class="keyword">var</span> head = <span class="literal">null</span></span><br><span class="line">  <span class="keyword">var</span> tail = <span class="literal">null</span></span><br><span class="line">  <span class="comment">// append 方法</span></span><br><span class="line">  <span class="keyword">this</span>.append = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">    <span class="keyword">if</span>(head === <span class="literal">null</span>)&#123;</span><br><span class="line">      head = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      tail.next = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;</span><br><span class="line">    length += <span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// insert 方法</span></span><br><span class="line">  <span class="keyword">this</span>.insert = functoin(index, data)&#123;</span><br><span class="line">    <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt; length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(index === length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.append(index, data)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">      <span class="keyword">if</span>(index === <span class="number">0</span>)&#123;</span><br><span class="line">        new_node.next = head</span><br><span class="line">        head = new_node</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> insert_index = <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> curr_node = head</span><br><span class="line">        <span class="keyword">while</span>(insert_index &lt; index)&#123;</span><br><span class="line">          insert_index += <span class="number">1</span></span><br><span class="line">          curr_node = curr_node.next</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> next_node = curr_node.next</span><br><span class="line">        curr_node.next = new_node</span><br><span class="line">        new_node.next = next_node</span><br><span class="line">      &#125;</span><br><span class="line">      length += <span class="number">1</span></span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.print = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> current_node = head</span><br><span class="line">    <span class="keyword">while</span>(head === <span class="literal">true</span>)&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(current_node.data)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>Css样式选中</title>
+    <url>/2019/05/16/frontend/css/css-%E6%A0%B7%E5%BC%8F%E9%80%89%E4%B8%AD/</url>
+    <content><![CDATA[<h4 id="CSS选中元素"><a href="#CSS选中元素" class="headerlink" title="CSS选中元素"></a>CSS选中元素</h4><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"><span class="selector-tag">style</span>&#123;</span><br><span class="line">  // 选中第一个p标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(1)</span>&#123;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  // 选中除了第一个p标签以外的标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:first-child)</span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>javascript</category>
+        <category>css</category>
       </categories>
       <tags>
-        <tag>arithmetic</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
@@ -545,15 +561,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Bind、Call、Apply</title>
-    <url>/2020/01/08/frontend/javascript/bind/</url>
-    <content><![CDATA[<h3 id="Bind、Apply、Call的区别"><a href="#Bind、Apply、Call的区别" class="headerlink" title="Bind、Apply、Call的区别"></a>Bind、Apply、Call的区别</h3><p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>
+    <title>链表</title>
+    <url>/2019/12/31/frontend/javascript/link-list/</url>
+    <content><![CDATA[<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><h4 id="一、链表的概念"><a href="#一、链表的概念" class="headerlink" title="一、链表的概念"></a>一、链表的概念</h4><p>链表是物理存储单元上非连续的，非顺序的存储结构，由一系列节点组成。链表分为有头链表和无头链表。</p>
+<h5 id="1、节点"><a href="#1、节点" class="headerlink" title="1、节点"></a>1、节点</h5><p>节点包含包含两个部分，一部分是存储数据元素的数据域，一部分是存储指向下一个节点的指针域，这两块构成一个节点，节点如何去使用？简单示意如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> Node = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.data = data</span><br><span class="line">  <span class="keyword">this</span>.next = <span class="literal">null</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> node = <span class="keyword">new</span> Node(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">var</span> node1 = <span class="keyword">new</span> Node(<span class="number">8</span>)</span><br><span class="line"><span class="keyword">var</span> node2 = <span class="keyword">new</span> Node(<span class="number">9</span>)</span><br><span class="line"><span class="built_in">console</span>.log(node)</span><br><span class="line"><span class="built_in">console</span>.log(node.next.data)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h5 id="2、链表的方法"><a href="#2、链表的方法" class="headerlink" title="2、链表的方法"></a>2、链表的方法</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">LinkList</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> Node = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.data = data</span><br><span class="line">    <span class="keyword">this</span>.next = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">var</span> length = <span class="number">0</span></span><br><span class="line">  <span class="keyword">var</span> head = <span class="literal">null</span></span><br><span class="line">  <span class="keyword">var</span> tail = <span class="literal">null</span></span><br><span class="line">  <span class="comment">// append 方法</span></span><br><span class="line">  <span class="keyword">this</span>.append = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">    <span class="keyword">if</span>(head === <span class="literal">null</span>)&#123;</span><br><span class="line">      head = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      tail.next = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;</span><br><span class="line">    length += <span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// insert 方法</span></span><br><span class="line">  <span class="keyword">this</span>.insert = functoin(index, data)&#123;</span><br><span class="line">    <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt; length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(index === length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.append(index, data)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">      <span class="keyword">if</span>(index === <span class="number">0</span>)&#123;</span><br><span class="line">        new_node.next = head</span><br><span class="line">        head = new_node</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> insert_index = <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> curr_node = head</span><br><span class="line">        <span class="keyword">while</span>(insert_index &lt; index)&#123;</span><br><span class="line">          insert_index += <span class="number">1</span></span><br><span class="line">          curr_node = curr_node.next</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> next_node = curr_node.next</span><br><span class="line">        curr_node.next = new_node</span><br><span class="line">        new_node.next = next_node</span><br><span class="line">      &#125;</span><br><span class="line">      length += <span class="number">1</span></span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.print = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> current_node = head</span><br><span class="line">    <span class="keyword">while</span>(head === <span class="literal">true</span>)&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(current_node.data)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>javascript</category>
       </categories>
       <tags>
-        <tag>bind&amp;&amp;call&amp;&amp;apply</tag>
+        <tag>arithmetic</tag>
       </tags>
   </entry>
 </search>

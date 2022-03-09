@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2022-03-03T08:53:42.379Z</updated>
+  <updated>2022-03-09T02:06:24.305Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PyMysql使用</title>
+    <link href="http://protagonistss.github.io.com/2022/03/09/python/pymysql/"/>
+    <id>http://protagonistss.github.io.com/2022/03/09/python/pymysql/</id>
+    <published>2022-03-09T10:02:22.000Z</published>
+    <updated>2022-03-09T02:06:24.305Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、使用pymysql"><a href="#一、使用pymysql" class="headerlink" title="一、使用pymysql"></a>一、使用pymysql</h1><h2 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h2><p><code>pip install pymysql</code></p><h2 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a>2、使用</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Single</span>:</span></span><br><span class="line">_instance = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> cls._instance:</span><br><span class="line">            cls._instance = object.__new__(cls)</span><br><span class="line">        <span class="keyword">return</span> cls._instance</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GetMysqlIns</span><span class="params">(Single)</span>:</span></span><br><span class="line">    db = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.db = pymysql.connect(host=<span class="string">'xxx'</span>, user=<span class="string">'xxx'</span>,</span><br><span class="line">                                  passwd=<span class="string">'xxx'</span>, db=<span class="string">'xxx'</span>)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">db_ins = GetMysqlIns()</span><br><span class="line">cursor = db_ins.db.cursor()</span><br></pre></td></tr></table></figure><a id="more"></a><h1 id="二、新增"><a href="#二、新增" class="headerlink" title="二、新增"></a>二、新增</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">create_data = [(<span class="string">'xxx'</span>, <span class="number">18</span>)]</span><br><span class="line">create_sql = <span class="string">"insert into table (name, age) values (%s, %s)"</span></span><br><span class="line">cursor.executemany(create_sql, create_data)</span><br></pre></td></tr></table></figure><h1 id="三、删除"><a href="#三、删除" class="headerlink" title="三、删除"></a>三、删除</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">delete_sql = <span class="string">"delete from table where name='&#123;&#125;'"</span></span><br><span class="line">delete_data = [(<span class="string">'name'</span>)]</span><br><span class="line">cursor.executemany(delete_sql, delete_data)</span><br></pre></td></tr></table></figure><h1 id="四、修改"><a href="#四、修改" class="headerlink" title="四、修改"></a>四、修改</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">update_sql = <span class="string">"update table set name=(%s) where age='18' and gender='male'"</span></span><br><span class="line">update_data = [(<span class="string">'xxx'</span>)]</span><br><span class="line">cursor.executemany(update_sql, update_data)</span><br></pre></td></tr></table></figure><h1 id="五、查询"><a href="#五、查询" class="headerlink" title="五、查询"></a>五、查询</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">query_sql = <span class="string">"select * from table where name='name'"</span></span><br><span class="line">cursor.execute(query_sql)</span><br></pre></td></tr></table></figure><h1 id="六、操作失败回滚"><a href="#六、操作失败回滚" class="headerlink" title="六、操作失败回滚"></a>六、操作失败回滚</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">print(<span class="string">"操作db"</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">db_ins.db.rollback()</span><br></pre></td></tr></table></figure><h1 id="七、关闭链接"><a href="#七、关闭链接" class="headerlink" title="七、关闭链接"></a>七、关闭链接</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cursor.close()</span><br><span class="line">db_ins.db.close()</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、使用pymysql&quot;&gt;&lt;a href=&quot;#一、使用pymysql&quot; class=&quot;headerlink&quot; title=&quot;一、使用pymysql&quot;&gt;&lt;/a&gt;一、使用pymysql&lt;/h1&gt;&lt;h2 id=&quot;1、安装&quot;&gt;&lt;a href=&quot;#1、安装&quot; class=&quot;headerlink&quot; title=&quot;1、安装&quot;&gt;&lt;/a&gt;1、安装&lt;/h2&gt;&lt;p&gt;&lt;code&gt;pip install pymysql&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2、使用&quot;&gt;&lt;a href=&quot;#2、使用&quot; class=&quot;headerlink&quot; title=&quot;2、使用&quot;&gt;&lt;/a&gt;2、使用&lt;/h2&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; pymysql&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Single&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	_instance = &lt;span class=&quot;literal&quot;&gt;None&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;__new__&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(cls, *args, **kwargs)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;not&lt;/span&gt; cls._instance:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            cls._instance = object.__new__(cls)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; cls._instance&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;GetMysqlIns&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Single)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    db = &lt;span class=&quot;literal&quot;&gt;None&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(self)&lt;/span&gt;:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        self.db = pymysql.connect(host=&lt;span class=&quot;string&quot;&gt;&#39;xxx&#39;&lt;/span&gt;, user=&lt;span class=&quot;string&quot;&gt;&#39;xxx&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                                  passwd=&lt;span class=&quot;string&quot;&gt;&#39;xxx&#39;&lt;/span&gt;, db=&lt;span class=&quot;string&quot;&gt;&#39;xxx&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; __name__ == &lt;span class=&quot;string&quot;&gt;&#39;__main__&#39;&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		db_ins = GetMysqlIns()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		cursor = db_ins.db.cursor()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="http://protagonistss.github.io.com/categories/python/"/>
+    
+    
+      <category term="pymysql" scheme="http://protagonistss.github.io.com/tags/pymysql/"/>
+    
+  </entry>
   
   <entry>
     <title>travis-ci</title>
@@ -498,33 +521,6 @@
     </summary>
     
       <category term="node" scheme="http://protagonistss.github.io.com/categories/node/"/>
-    
-    
-      <category term="install" scheme="http://protagonistss.github.io.com/tags/install/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Yarn的安装</title>
-    <link href="http://protagonistss.github.io.com/2019/05/22/node/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/"/>
-    <id>http://protagonistss.github.io.com/2019/05/22/node/Yarn的安装/</id>
-    <published>2019-05-22T13:29:54.000Z</published>
-    <updated>2021-01-15T11:29:54.534Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="INSTALL-YARN"><a href="#INSTALL-YARN" class="headerlink" title="INSTALL YARN"></a>INSTALL YARN</h5><ul><li><p>添加yum源</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo</span><br></pre></td></tr></table></figure></li></ul><ul><li><p>安装</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install yarn -y</span><br></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;INSTALL-YARN&quot;&gt;&lt;a href=&quot;#INSTALL-YARN&quot; class=&quot;headerlink&quot; title=&quot;INSTALL YARN&quot;&gt;&lt;/a&gt;INSTALL YARN&lt;/h5&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;添加yum源&lt;/p&gt;
-&lt;figure cl
-      
-    
-    </summary>
-    
-      <category term="Centos7" scheme="http://protagonistss.github.io.com/categories/Centos7/"/>
     
     
       <category term="install" scheme="http://protagonistss.github.io.com/tags/install/"/>
