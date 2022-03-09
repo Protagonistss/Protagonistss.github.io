@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="出现横向滚动条核心思路是使用white-space 这个属性防止父容器内容换行，例子如下: 1234567891011121314151617181920// html&amp;lt;ul&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;">
+<meta name="description" content="出现横向滚动条核心思路是使用white-space 这个属性防止父容器内容换行，例子如下: 1234567891011121314151617181920&amp;lt;ul&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;">
 <meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Div横向排列和出现横向滚动条">
 <meta property="og:url" content="http://protagonistss.github.io.com/2019/04/30/frontend/css/div-横向排列和出现横向滚动条/index.html">
 <meta property="og:site_name" content="protagonistss">
-<meta property="og:description" content="出现横向滚动条核心思路是使用white-space 这个属性防止父容器内容换行，例子如下: 1234567891011121314151617181920// html&amp;lt;ul&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;">
+<meta property="og:description" content="出现横向滚动条核心思路是使用white-space 这个属性防止父容器内容换行，例子如下: 1234567891011121314151617181920&amp;lt;ul&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2021-01-15T11:33:19.812Z">
+<meta property="og:updated_time" content="2022-03-09T06:50:34.404Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Div横向排列和出现横向滚动条">
-<meta name="twitter:description" content="出现横向滚动条核心思路是使用white-space 这个属性防止父容器内容换行，例子如下: 1234567891011121314151617181920// html&amp;lt;ul&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;">
+<meta name="twitter:description" content="出现横向滚动条核心思路是使用white-space 这个属性防止父容器内容换行，例子如下: 1234567891011121314151617181920&amp;lt;ul&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;	&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;  &amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;">
 
 
 
@@ -397,7 +397,7 @@
 
       
         <h5 id="出现横向滚动条"><a href="#出现横向滚动条" class="headerlink" title="出现横向滚动条"></a>出现横向滚动条</h5><p>核心思路是使用<code>white-space</code> 这个属性防止父容器内容换行，例子如下:</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// html</span><br><span class="line">&lt;<span class="selector-tag">ul</span>&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">  &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">// css</span><br><span class="line"><span class="selector-tag">ul</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">overflow-x</span>: scroll;</span><br><span class="line">  <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">  <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>:inline-block;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">ul&#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">  overflow-x: scroll;</span><br><span class="line">  overflow-y: hidden;</span><br><span class="line">  white-space: nowrap;</span><br><span class="line">&#125;</span><br><span class="line">ul li&#123;</span><br><span class="line"><span class="css">  <span class="selector-tag">display</span><span class="selector-pseudo">:inline-block</span>;</span></span><br><span class="line">  box-sizing: border-box;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -566,7 +566,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
