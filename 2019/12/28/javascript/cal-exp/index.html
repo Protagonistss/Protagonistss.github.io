@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="css,">
+  <meta name="keywords" content="arithmetic,">
 
 
 
@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="CSS选中元素123456789101112131415&amp;lt;div&amp;gt;	&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;	&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;style&amp;#123;  // 选中第一个p标签  div p:nth-child(1)&amp;#123;  &amp;#125;    // 选中除了第一个p标签以外的标签  div p:not(:first-child)&amp;#12">
-<meta name="keywords" content="css">
+<meta name="description" content="计算表达式拆解 本例子使用数组实现栈,在栈的基础上 实现计算表达式  一、定义栈123456789101112131415161718192021222324252627function Stack()&amp;#123;  var items = []    this.push = function(item)&amp;#123;    items.push(item)  &amp;#125;    this.pop">
+<meta name="keywords" content="arithmetic">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Css样式选中">
-<meta property="og:url" content="http://protagonistss.github.io.com/2019/05/16/frontend/css/css-样式选中/index.html">
+<meta property="og:title" content="计算表达式">
+<meta property="og:url" content="http://protagonistss.github.io.com/2019/12/28/javascript/cal-exp/index.html">
 <meta property="og:site_name" content="protagonistss">
-<meta property="og:description" content="CSS选中元素123456789101112131415&amp;lt;div&amp;gt;	&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;	&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;style&amp;#123;  // 选中第一个p标签  div p:nth-child(1)&amp;#123;  &amp;#125;    // 选中除了第一个p标签以外的标签  div p:not(:first-child)&amp;#12">
+<meta property="og:description" content="计算表达式拆解 本例子使用数组实现栈,在栈的基础上 实现计算表达式  一、定义栈123456789101112131415161718192021222324252627function Stack()&amp;#123;  var items = []    this.push = function(item)&amp;#123;    items.push(item)  &amp;#125;    this.pop">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2022-03-09T06:49:45.780Z">
+<meta property="og:updated_time" content="2021-01-15T11:34:14.415Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Css样式选中">
-<meta name="twitter:description" content="CSS选中元素123456789101112131415&amp;lt;div&amp;gt;	&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;	&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;style&amp;#123;  // 选中第一个p标签  div p:nth-child(1)&amp;#123;  &amp;#125;    // 选中除了第一个p标签以外的标签  div p:not(:first-child)&amp;#12">
+<meta name="twitter:title" content="计算表达式">
+<meta name="twitter:description" content="计算表达式拆解 本例子使用数组实现栈,在栈的基础上 实现计算表达式  一、定义栈123456789101112131415161718192021222324252627function Stack()&amp;#123;  var items = []    this.push = function(item)&amp;#123;    items.push(item)  &amp;#125;    this.pop">
 
 
 
@@ -136,13 +136,13 @@
 
 
 
-  <link rel="canonical" href="http://protagonistss.github.io.com/2019/05/16/frontend/css/css-样式选中/">
+  <link rel="canonical" href="http://protagonistss.github.io.com/2019/12/28/javascript/cal-exp/">
 
 
 
 
 
-  <title>Css样式选中 | protagonistss</title>
+  <title>计算表达式 | protagonistss</title>
   
 
 
@@ -307,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://protagonistss.github.io.com/2019/05/16/frontend/css/css-样式选中/">
+    <link itemprop="mainEntityOfPage" href="http://protagonistss.github.io.com/2019/12/28/javascript/cal-exp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="protagonisths">
@@ -324,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Css样式选中</h1>
+          <h1 class="post-title" itemprop="name headline">计算表达式</h1>
         
 
         <div class="post-meta">
@@ -336,8 +336,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-16T19:01:33+08:00">
-                2019-05-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-28T01:24:00+08:00">
+                2019-12-27
               </time>
             
 
@@ -359,8 +359,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/css/" itemprop="url" rel="index">
-                    <span itemprop="name">css</span>
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
                   </a>
                 </span>
 
@@ -396,7 +396,13 @@
       
 
       
-        <h4 id="CSS选中元素"><a href="#CSS选中元素" class="headerlink" title="CSS选中元素"></a>CSS选中元素</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">	&lt;p&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"><span class="selector-tag">style</span>&#123;</span><br><span class="line">  // 选中第一个p标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:nth-child(1)</span>&#123;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  // 选中除了第一个p标签以外的标签</span><br><span class="line">  <span class="selector-tag">div</span> <span class="selector-tag">p</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:first-child)</span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="计算表达式拆解"><a href="#计算表达式拆解" class="headerlink" title="计算表达式拆解"></a>计算表达式拆解</h3><blockquote>
+<p>本例子使用数组实现栈,在栈的基础上 实现计算表达式</p>
+</blockquote>
+<h4 id="一、定义栈"><a href="#一、定义栈" class="headerlink" title="一、定义栈"></a>一、定义栈</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> items = []</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    items.push(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.pop()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.isEmpty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length === <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.top = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[items.length - <span class="number">1</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.clear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    items = []</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h4 id="二、用上述栈先来实现一个判断左右括号闭合的方法"><a href="#二、用上述栈先来实现一个判断左右括号闭合的方法" class="headerlink" title="二、用上述栈先来实现一个判断左右括号闭合的方法"></a>二、用上述栈先来实现一个判断左右括号闭合的方法</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> stack = <span class="keyword">new</span> Stack()</span><br><span class="line"><span class="comment">// validator</span></span><br><span class="line"><span class="comment">// 只入栈括号,</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isLegal</span>(<span class="params">param</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;param.length; i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> item = param[i]</span><br><span class="line">    <span class="keyword">if</span>(item === <span class="string">'('</span>)&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(item === <span class="string">')'</span>)&#123;</span><br><span class="line">      <span class="keyword">if</span>(stack.isEmpty())&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        stack.pop()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.isEmpty()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">isLegal(<span class="string">"((abc))"</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="三、实现一个计算后缀表达式"><a href="#三、实现一个计算后缀表达式" class="headerlink" title="三、实现一个计算后缀表达式"></a>三、实现一个计算后缀表达式</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calculate</span>(<span class="params">expressionList</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> data_stack = <span class="keyword">new</span> Stack()</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; expressionList.length; i++)&#123;</span><br><span class="line">  	<span class="keyword">var</span> item = expressionList[i]</span><br><span class="line">    <span class="keyword">if</span>([<span class="string">'+'</span>, <span class="string">'-'</span>, <span class="string">'*'</span>, <span class="string">'/'</span>].indexOf(item) &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">      <span class="keyword">var</span> pre = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> next = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> result = next + item + pre</span><br><span class="line">      result = <span class="built_in">parseInt</span>(<span class="built_in">eval</span>(result))</span><br><span class="line">      stack.push(result)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.pop()</span><br><span class="line">&#125;</span><br><span class="line">calculate([<span class="string">'4'</span>,<span class="string">'13'</span>, <span class="string">'5'</span>, <span class="string">'/'</span>, <span class="string">'+'</span>])</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -443,7 +449,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/css/" rel="tag"># css</a>
+            <a href="/tags/arithmetic/" rel="tag"># arithmetic</a>
           
         </div>
       
@@ -456,8 +462,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/01/java/tomcat/" rel="next" title="tomcat">
-                <i class="fa fa-chevron-left"></i> tomcat
+              <a href="/2019/10/11/nginx/nginx依赖/" rel="next" title="nginx依赖">
+                <i class="fa fa-chevron-left"></i> nginx依赖
               </a>
             
           </div>
@@ -466,8 +472,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/19/linux/website/" rel="prev" title="website">
-                website <i class="fa fa-chevron-right"></i>
+              <a href="/2019/12/28/javascript/triangle/" rel="prev" title="队列">
+                队列 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -631,7 +637,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS选中元素"><span class="nav-number">1.</span> <span class="nav-text">CSS选中元素</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#计算表达式拆解"><span class="nav-number">1.</span> <span class="nav-text">计算表达式拆解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、定义栈"><span class="nav-number">1.1.</span> <span class="nav-text">一、定义栈</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、用上述栈先来实现一个判断左右括号闭合的方法"><span class="nav-number">1.2.</span> <span class="nav-text">二、用上述栈先来实现一个判断左右括号闭合的方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、实现一个计算后缀表达式"><span class="nav-number">1.3.</span> <span class="nav-text">三、实现一个计算后缀表达式</span></a></li></ol></li></ol></div>
             
 
           </div>

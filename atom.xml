@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2022-03-09T03:55:09.466Z</updated>
+  <updated>2022-03-10T07:31:36.928Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://protagonistss.github.io.com/2022/03/09/rust/rust-start/"/>
     <id>http://protagonistss.github.io.com/2022/03/09/rust/rust-start/</id>
     <published>2022-03-09T11:52:14.000Z</published>
-    <updated>2022-03-09T03:55:09.466Z</updated>
+    <updated>2022-03-10T07:31:36.928Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="Linux、Macos"><a href="#Linux、Macos" class="headerlink" title="Linux、Macos"></a>Linux、Macos</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --proto <span class="string">'=https'</span> --tlsv1.2 https://sh.rustup.rs -sSf | sh</span><br></pre></td></tr></table></figure><h1 id="二、查看版本"><a href="#二、查看版本" class="headerlink" title="二、查看版本"></a>二、查看版本</h1><p><code>rustc -v</code></p><p><code>cargo -v</code></p><h1 id="三、卸载"><a href="#三、卸载" class="headerlink" title="三、卸载"></a>三、卸载</h1><p><code>rustup self uninstall</code></p><h1 id="四、vscode插件"><a href="#四、vscode插件" class="headerlink" title="四、vscode插件"></a>四、vscode插件</h1><ul><li>Better TOML</li><li>Error Lens 展示错误信息</li><li>CodeLLDB, Debugger</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="Linux、Macos"><a href="#Linux、Macos" class="headerlink" title="Linux、Macos"></a>Linux、Macos</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --proto <span class="string">'=https'</span> --tlsv1.2 https://sh.rustup.rs -sSf | sh</span><br></pre></td></tr></table></figure><h1 id="二、查看版本"><a href="#二、查看版本" class="headerlink" title="二、查看版本"></a>二、查看版本</h1><p><code>rustc -v</code></p><p><code>cargo -v</code></p><h1 id="三、卸载"><a href="#三、卸载" class="headerlink" title="三、卸载"></a>三、卸载</h1><p><code>rustup self uninstall</code></p><h1 id="四、更新"><a href="#四、更新" class="headerlink" title="四、更新"></a>四、更新</h1><p><code>rustup update</code></p><h1 id="四、vscode插件"><a href="#四、vscode插件" class="headerlink" title="四、vscode插件"></a>四、vscode插件</h1><ul><li>Better TOML</li><li>Error Lens 展示错误信息</li><li>CodeLLDB, Debugger</li></ul>]]></content>
     
     <summary type="html">
     
@@ -69,7 +69,7 @@
     <link href="http://protagonistss.github.io.com/2022/03/04/deploy/travis-ci/"/>
     <id>http://protagonistss.github.io.com/2022/03/04/deploy/travis-ci/</id>
     <published>2022-03-03T16:49:55.000Z</published>
-    <updated>2022-03-03T08:53:42.379Z</updated>
+    <updated>2022-03-10T07:34:59.674Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Travis"><a href="#Travis" class="headerlink" title="Travis"></a>Travis</h1>]]></content>
     
@@ -85,7 +85,7 @@
       <category term="deploy" scheme="http://protagonistss.github.io.com/categories/deploy/"/>
     
     
-      <category term="deploy" scheme="http://protagonistss.github.io.com/tags/deploy/"/>
+      <category term="todo" scheme="http://protagonistss.github.io.com/tags/todo/"/>
     
   </entry>
   
@@ -248,19 +248,19 @@
   </entry>
   
   <entry>
-    <title>Bind、Call、Apply</title>
-    <link href="http://protagonistss.github.io.com/2020/01/08/frontend/javascript/bind/"/>
-    <id>http://protagonistss.github.io.com/2020/01/08/frontend/javascript/bind/</id>
+    <title>Bind、Apply、Call的区别</title>
+    <link href="http://protagonistss.github.io.com/2020/01/08/javascript/bind/"/>
+    <id>http://protagonistss.github.io.com/2020/01/08/javascript/bind/</id>
     <published>2020-01-08T14:52:54.000Z</published>
-    <updated>2022-03-09T06:51:30.259Z</updated>
+    <updated>2022-03-10T07:34:24.301Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Bind、Apply、Call的区别"><a href="#Bind、Apply、Call的区别" class="headerlink" title="Bind、Apply、Call的区别"></a>Bind、Apply、Call的区别</h3><p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>]]></content>
+    <content type="html"><![CDATA[<p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;Bind、Apply、Call的区别&quot;&gt;&lt;a href=&quot;#Bind、Apply、Call的区别&quot; class=&quot;headerlink&quot; title=&quot;Bind、Apply、Call的区别&quot;&gt;&lt;/a&gt;Bind、Apply、Call的区别&lt;/h3&gt;&lt;p&gt;相同点就是这
+        &lt;p&gt;相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单
       
     
     </summary>
@@ -268,7 +268,7 @@
       <category term="javascript" scheme="http://protagonistss.github.io.com/categories/javascript/"/>
     
     
-      <category term="jsApi" scheme="http://protagonistss.github.io.com/tags/jsApi/"/>
+      <category term="javascript" scheme="http://protagonistss.github.io.com/tags/javascript/"/>
     
   </entry>
   
@@ -323,8 +323,8 @@
   
   <entry>
     <title>链表</title>
-    <link href="http://protagonistss.github.io.com/2019/12/31/frontend/javascript/link-list/"/>
-    <id>http://protagonistss.github.io.com/2019/12/31/frontend/javascript/link-list/</id>
+    <link href="http://protagonistss.github.io.com/2019/12/31/javascript/link-list/"/>
+    <id>http://protagonistss.github.io.com/2019/12/31/javascript/link-list/</id>
     <published>2019-12-30T18:24:17.000Z</published>
     <updated>2021-01-15T11:34:06.780Z</updated>
     
@@ -347,8 +347,8 @@
   
   <entry>
     <title>队列</title>
-    <link href="http://protagonistss.github.io.com/2019/12/28/frontend/javascript/triangle/"/>
-    <id>http://protagonistss.github.io.com/2019/12/28/frontend/javascript/triangle/</id>
+    <link href="http://protagonistss.github.io.com/2019/12/28/javascript/triangle/"/>
+    <id>http://protagonistss.github.io.com/2019/12/28/javascript/triangle/</id>
     <published>2019-12-27T18:03:19.000Z</published>
     <updated>2022-03-09T06:52:16.864Z</updated>
     
@@ -372,8 +372,8 @@
   
   <entry>
     <title>计算表达式</title>
-    <link href="http://protagonistss.github.io.com/2019/12/28/frontend/javascript/cal-exp/"/>
-    <id>http://protagonistss.github.io.com/2019/12/28/frontend/javascript/cal-exp/</id>
+    <link href="http://protagonistss.github.io.com/2019/12/28/javascript/cal-exp/"/>
+    <id>http://protagonistss.github.io.com/2019/12/28/javascript/cal-exp/</id>
     <published>2019-12-27T17:24:00.000Z</published>
     <updated>2021-01-15T11:34:14.415Z</updated>
     
