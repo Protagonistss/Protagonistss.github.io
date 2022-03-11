@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2022-03-10T07:31:36.928Z</updated>
+  <updated>2022-03-11T01:05:49.899Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://protagonistss.github.io.com/2022/03/09/rust/rust-start/"/>
     <id>http://protagonistss.github.io.com/2022/03/09/rust/rust-start/</id>
     <published>2022-03-09T11:52:14.000Z</published>
-    <updated>2022-03-10T07:31:36.928Z</updated>
+    <updated>2022-03-11T01:05:49.899Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="Linux、Macos"><a href="#Linux、Macos" class="headerlink" title="Linux、Macos"></a>Linux、Macos</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --proto <span class="string">'=https'</span> --tlsv1.2 https://sh.rustup.rs -sSf | sh</span><br></pre></td></tr></table></figure><h1 id="二、查看版本"><a href="#二、查看版本" class="headerlink" title="二、查看版本"></a>二、查看版本</h1><p><code>rustc -v</code></p><p><code>cargo -v</code></p><h1 id="三、卸载"><a href="#三、卸载" class="headerlink" title="三、卸载"></a>三、卸载</h1><p><code>rustup self uninstall</code></p><h1 id="四、更新"><a href="#四、更新" class="headerlink" title="四、更新"></a>四、更新</h1><p><code>rustup update</code></p><h1 id="四、vscode插件"><a href="#四、vscode插件" class="headerlink" title="四、vscode插件"></a>四、vscode插件</h1><ul><li>Better TOML</li><li>Error Lens 展示错误信息</li><li>CodeLLDB, Debugger</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="Linux、Macos"><a href="#Linux、Macos" class="headerlink" title="Linux、Macos"></a>Linux、Macos</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --proto <span class="string">'=https'</span> --tlsv1.2 https://sh.rustup.rs -sSf | sh</span><br></pre></td></tr></table></figure><h1 id="二、查看版本"><a href="#二、查看版本" class="headerlink" title="二、查看版本"></a>二、查看版本</h1><p><code>rustc -v</code></p><p><code>cargo -v</code></p><h1 id="三、卸载"><a href="#三、卸载" class="headerlink" title="三、卸载"></a>三、卸载</h1><p><code>rustup self uninstall</code></p><h1 id="四、更新"><a href="#四、更新" class="headerlink" title="四、更新"></a>四、更新</h1><p><code>rustup update</code></p><h1 id="五、vscode插件"><a href="#五、vscode插件" class="headerlink" title="五、vscode插件"></a>五、vscode插件</h1><ul><li>Better TOML</li><li>Error Lens 展示错误信息</li><li>CodeLLDB, Debugger</li></ul>]]></content>
     
     <summary type="html">
     

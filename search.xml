@@ -13,32 +13,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Div横向排列和出现横向滚动条</title>
-    <url>/2019/04/30/css/div-%E6%A8%AA%E5%90%91%E6%8E%92%E5%88%97%E5%92%8C%E5%87%BA%E7%8E%B0%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/</url>
-    <content><![CDATA[<h5 id="出现横向滚动条"><a href="#出现横向滚动条" class="headerlink" title="出现横向滚动条"></a>出现横向滚动条</h5><p>核心思路是使用<code>white-space</code> 这个属性防止父容器内容换行，例子如下:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">ul&#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">  overflow-x: scroll;</span><br><span class="line">  overflow-y: hidden;</span><br><span class="line">  white-space: nowrap;</span><br><span class="line">&#125;</span><br><span class="line">ul li&#123;</span><br><span class="line"><span class="css">  <span class="selector-tag">display</span><span class="selector-pseudo">:inline-block</span>;</span></span><br><span class="line">  box-sizing: border-box;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>css</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mongo备份操作</title>
-    <url>/2019/06/22/db/mongo/</url>
-    <content><![CDATA[<h4 id="Mongo的mongodump、mongorestore"><a href="#Mongo的mongodump、mongorestore" class="headerlink" title="Mongo的mongodump、mongorestore"></a>Mongo的mongodump、mongorestore</h4><h6 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongodump -d individtax -o /users/</span><br></pre></td></tr></table></figure>
-<h6 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongorestore -d individtax --dir /users/individtax/</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>mongo</category>
-      </categories>
-      <tags>
-        <tag>backup</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Docker总结</title>
     <url>/2019/04/28/docker/docker/</url>
     <content><![CDATA[<h3 id="Docker-命令"><a href="#Docker-命令" class="headerlink" title="Docker 命令"></a>Docker 命令</h3><ul>
@@ -85,6 +59,43 @@
       </tags>
   </entry>
   <entry>
+    <title>travis-ci</title>
+    <url>/2022/03/04/deploy/travis-ci/</url>
+    <content><![CDATA[<h1 id="Travis"><a href="#Travis" class="headerlink" title="Travis"></a>Travis</h1>]]></content>
+      <categories>
+        <category>deploy</category>
+      </categories>
+      <tags>
+        <tag>todo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mongo备份操作</title>
+    <url>/2019/06/22/db/mongo/</url>
+    <content><![CDATA[<h4 id="Mongo的mongodump、mongorestore"><a href="#Mongo的mongodump、mongorestore" class="headerlink" title="Mongo的mongodump、mongorestore"></a>Mongo的mongodump、mongorestore</h4><h6 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongodump -d individtax -o /users/</span><br></pre></td></tr></table></figure>
+<h6 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h6><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mongorestore -d individtax --dir /users/individtax/</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>mongo</category>
+      </categories>
+      <tags>
+        <tag>backup</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Div横向排列和出现横向滚动条</title>
+    <url>/2019/04/30/css/div-%E6%A8%AA%E5%90%91%E6%8E%92%E5%88%97%E5%92%8C%E5%87%BA%E7%8E%B0%E6%A8%AA%E5%90%91%E6%BB%9A%E5%8A%A8%E6%9D%A1/</url>
+    <content><![CDATA[<h5 id="出现横向滚动条"><a href="#出现横向滚动条" class="headerlink" title="出现横向滚动条"></a>出现横向滚动条</h5><p>核心思路是使用<code>white-space</code> 这个属性防止父容器内容换行，例子如下:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">ul&#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">  overflow-x: scroll;</span><br><span class="line">  overflow-y: hidden;</span><br><span class="line">  white-space: nowrap;</span><br><span class="line">&#125;</span><br><span class="line">ul li&#123;</span><br><span class="line"><span class="css">  <span class="selector-tag">display</span><span class="selector-pseudo">:inline-block</span>;</span></span><br><span class="line">  box-sizing: border-box;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git-Branch</title>
     <url>/2019/04/29/git/git-branch/</url>
     <content><![CDATA[<h4 id="Git-branch"><a href="#Git-branch" class="headerlink" title="Git-branch"></a>Git-branch</h4><ul>
@@ -97,17 +108,6 @@
       </categories>
       <tags>
         <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>travis-ci</title>
-    <url>/2022/03/04/deploy/travis-ci/</url>
-    <content><![CDATA[<h1 id="Travis"><a href="#Travis" class="headerlink" title="Travis"></a>Travis</h1>]]></content>
-      <categories>
-        <category>deploy</category>
-      </categories>
-      <tags>
-        <tag>todo</tag>
       </tags>
   </entry>
   <entry>
@@ -177,24 +177,6 @@
       </tags>
   </entry>
   <entry>
-    <title>计算表达式</title>
-    <url>/2019/12/28/javascript/cal-exp/</url>
-    <content><![CDATA[<h3 id="计算表达式拆解"><a href="#计算表达式拆解" class="headerlink" title="计算表达式拆解"></a>计算表达式拆解</h3><blockquote>
-<p>本例子使用数组实现栈,在栈的基础上 实现计算表达式</p>
-</blockquote>
-<h4 id="一、定义栈"><a href="#一、定义栈" class="headerlink" title="一、定义栈"></a>一、定义栈</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> items = []</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    items.push(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.pop()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.isEmpty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length === <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.top = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[items.length - <span class="number">1</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.clear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    items = []</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h4 id="二、用上述栈先来实现一个判断左右括号闭合的方法"><a href="#二、用上述栈先来实现一个判断左右括号闭合的方法" class="headerlink" title="二、用上述栈先来实现一个判断左右括号闭合的方法"></a>二、用上述栈先来实现一个判断左右括号闭合的方法</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> stack = <span class="keyword">new</span> Stack()</span><br><span class="line"><span class="comment">// validator</span></span><br><span class="line"><span class="comment">// 只入栈括号,</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isLegal</span>(<span class="params">param</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;param.length; i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> item = param[i]</span><br><span class="line">    <span class="keyword">if</span>(item === <span class="string">'('</span>)&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(item === <span class="string">')'</span>)&#123;</span><br><span class="line">      <span class="keyword">if</span>(stack.isEmpty())&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        stack.pop()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.isEmpty()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">isLegal(<span class="string">"((abc))"</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="三、实现一个计算后缀表达式"><a href="#三、实现一个计算后缀表达式" class="headerlink" title="三、实现一个计算后缀表达式"></a>三、实现一个计算后缀表达式</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calculate</span>(<span class="params">expressionList</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> data_stack = <span class="keyword">new</span> Stack()</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; expressionList.length; i++)&#123;</span><br><span class="line">  	<span class="keyword">var</span> item = expressionList[i]</span><br><span class="line">    <span class="keyword">if</span>([<span class="string">'+'</span>, <span class="string">'-'</span>, <span class="string">'*'</span>, <span class="string">'/'</span>].indexOf(item) &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">      <span class="keyword">var</span> pre = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> next = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> result = next + item + pre</span><br><span class="line">      result = <span class="built_in">parseInt</span>(<span class="built_in">eval</span>(result))</span><br><span class="line">      stack.push(result)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.pop()</span><br><span class="line">&#125;</span><br><span class="line">calculate([<span class="string">'4'</span>,<span class="string">'13'</span>, <span class="string">'5'</span>, <span class="string">'/'</span>, <span class="string">'+'</span>])</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>arithmetic</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Bind、Apply、Call的区别</title>
     <url>/2020/01/08/javascript/bind/</url>
     <content><![CDATA[<p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>
@@ -207,19 +189,23 @@
       </tags>
   </entry>
   <entry>
-    <title>链表</title>
-    <url>/2019/12/31/javascript/link-list/</url>
-    <content><![CDATA[<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><h4 id="一、链表的概念"><a href="#一、链表的概念" class="headerlink" title="一、链表的概念"></a>一、链表的概念</h4><p>链表是物理存储单元上非连续的，非顺序的存储结构，由一系列节点组成。链表分为有头链表和无头链表。</p>
-<h5 id="1、节点"><a href="#1、节点" class="headerlink" title="1、节点"></a>1、节点</h5><p>节点包含包含两个部分，一部分是存储数据元素的数据域，一部分是存储指向下一个节点的指针域，这两块构成一个节点，节点如何去使用？简单示意如下：</p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> Node = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.data = data</span><br><span class="line">  <span class="keyword">this</span>.next = <span class="literal">null</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> node = <span class="keyword">new</span> Node(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">var</span> node1 = <span class="keyword">new</span> Node(<span class="number">8</span>)</span><br><span class="line"><span class="keyword">var</span> node2 = <span class="keyword">new</span> Node(<span class="number">9</span>)</span><br><span class="line"><span class="built_in">console</span>.log(node)</span><br><span class="line"><span class="built_in">console</span>.log(node.next.data)</span><br></pre></td></tr></table></figure>
+    <title>环境搭建</title>
+    <url>/2020/01/17/linux/platform-install/</url>
+    <content><![CDATA[<h3 id="一、UBUNTU18-04-安装"><a href="#一、UBUNTU18-04-安装" class="headerlink" title="一、UBUNTU18.04 安装"></a>一、UBUNTU18.04 安装</h3><h4 id="1、服务器创建用户"><a href="#1、服务器创建用户" class="headerlink" title="1、服务器创建用户"></a>1、服务器创建用户</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">// 在 /home 目录下创建 username </span><br><span class="line">sudo useradd -m -s /bin/bash username</span><br><span class="line">// 设置密码</span><br><span class="line">sudo passwd username</span><br><span class="line">// 给username 赋予管理员权限</span><br><span class="line">sudo vim /etc/sudoers</span><br><span class="line">root ALL=(ALL:ALL)ALL</span><br><span class="line">protagonisths ALL=(ALL:ALL)ALL</span><br></pre></td></tr></table></figure>
+<h4 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</span><br><span class="line">sudo apt-get install -y nodejs</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><a href="https://github.com/nodesource/distributions#debinstall" target="_blank" rel="noopener">https://github.com/nodesource/distributions#debinstall</a></p>
+</blockquote>
+<h4 id="安装yarn"><a href="#安装yarn" class="headerlink" title="安装yarn"></a>安装yarn</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -</span><br><span class="line">sudo apt-get update &amp;&amp; sudo apt-get install yarn</span><br></pre></td></tr></table></figure>
+<h4 id="安装Pm2"><a href="#安装Pm2" class="headerlink" title="安装Pm2"></a>安装Pm2</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 4.2.1</span></span><br><span class="line">npm i -g pm2</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h5 id="2、链表的方法"><a href="#2、链表的方法" class="headerlink" title="2、链表的方法"></a>2、链表的方法</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">LinkList</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> Node = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.data = data</span><br><span class="line">    <span class="keyword">this</span>.next = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">var</span> length = <span class="number">0</span></span><br><span class="line">  <span class="keyword">var</span> head = <span class="literal">null</span></span><br><span class="line">  <span class="keyword">var</span> tail = <span class="literal">null</span></span><br><span class="line">  <span class="comment">// append 方法</span></span><br><span class="line">  <span class="keyword">this</span>.append = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">    <span class="keyword">if</span>(head === <span class="literal">null</span>)&#123;</span><br><span class="line">      head = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      tail.next = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;</span><br><span class="line">    length += <span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// insert 方法</span></span><br><span class="line">  <span class="keyword">this</span>.insert = functoin(index, data)&#123;</span><br><span class="line">    <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt; length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(index === length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.append(index, data)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">      <span class="keyword">if</span>(index === <span class="number">0</span>)&#123;</span><br><span class="line">        new_node.next = head</span><br><span class="line">        head = new_node</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> insert_index = <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> curr_node = head</span><br><span class="line">        <span class="keyword">while</span>(insert_index &lt; index)&#123;</span><br><span class="line">          insert_index += <span class="number">1</span></span><br><span class="line">          curr_node = curr_node.next</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> next_node = curr_node.next</span><br><span class="line">        curr_node.next = new_node</span><br><span class="line">        new_node.next = next_node</span><br><span class="line">      &#125;</span><br><span class="line">      length += <span class="number">1</span></span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.print = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> current_node = head</span><br><span class="line">    <span class="keyword">while</span>(head === <span class="literal">true</span>)&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(current_node.data)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="安装mongo"><a href="#安装mongo" class="headerlink" title="安装mongo"></a>安装mongo</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># install</span></span><br><span class="line">sudo apt-get install -y mongodb</span><br><span class="line"><span class="comment"># stop</span></span><br><span class="line">sudo service mongodb stop</span><br><span class="line"><span class="comment"># setup</span></span><br><span class="line">sudo service mongodb start</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>javascript</category>
+        <category>linux</category>
       </categories>
       <tags>
-        <tag>arithmetic</tag>
+        <tag>env</tag>
       </tags>
   </entry>
   <entry>
@@ -252,29 +238,56 @@
       </tags>
   </entry>
   <entry>
-    <title>环境搭建</title>
-    <url>/2020/01/17/linux/platform-install/</url>
-    <content><![CDATA[<h3 id="一、UBUNTU18-04-安装"><a href="#一、UBUNTU18-04-安装" class="headerlink" title="一、UBUNTU18.04 安装"></a>一、UBUNTU18.04 安装</h3><h4 id="1、服务器创建用户"><a href="#1、服务器创建用户" class="headerlink" title="1、服务器创建用户"></a>1、服务器创建用户</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">// 在 /home 目录下创建 username </span><br><span class="line">sudo useradd -m -s /bin/bash username</span><br><span class="line">// 设置密码</span><br><span class="line">sudo passwd username</span><br><span class="line">// 给username 赋予管理员权限</span><br><span class="line">sudo vim /etc/sudoers</span><br><span class="line">root ALL=(ALL:ALL)ALL</span><br><span class="line">protagonisths ALL=(ALL:ALL)ALL</span><br></pre></td></tr></table></figure>
-<h4 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</span><br><span class="line">sudo apt-get install -y nodejs</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><a href="https://github.com/nodesource/distributions#debinstall" target="_blank" rel="noopener">https://github.com/nodesource/distributions#debinstall</a></p>
+    <title>计算表达式</title>
+    <url>/2019/12/28/javascript/cal-exp/</url>
+    <content><![CDATA[<h3 id="计算表达式拆解"><a href="#计算表达式拆解" class="headerlink" title="计算表达式拆解"></a>计算表达式拆解</h3><blockquote>
+<p>本例子使用数组实现栈,在栈的基础上 实现计算表达式</p>
 </blockquote>
-<h4 id="安装yarn"><a href="#安装yarn" class="headerlink" title="安装yarn"></a>安装yarn</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -</span><br><span class="line">sudo apt-get update &amp;&amp; sudo apt-get install yarn</span><br></pre></td></tr></table></figure>
-<h4 id="安装Pm2"><a href="#安装Pm2" class="headerlink" title="安装Pm2"></a>安装Pm2</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 4.2.1</span></span><br><span class="line">npm i -g pm2</span><br></pre></td></tr></table></figure>
+<h4 id="一、定义栈"><a href="#一、定义栈" class="headerlink" title="一、定义栈"></a>一、定义栈</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> items = []</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    items.push(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.pop()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.isEmpty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length === <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.top = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[items.length - <span class="number">1</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.clear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    items = []</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h4 id="安装mongo"><a href="#安装mongo" class="headerlink" title="安装mongo"></a>安装mongo</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># install</span></span><br><span class="line">sudo apt-get install -y mongodb</span><br><span class="line"><span class="comment"># stop</span></span><br><span class="line">sudo service mongodb stop</span><br><span class="line"><span class="comment"># setup</span></span><br><span class="line">sudo service mongodb start</span><br></pre></td></tr></table></figure>
+<h4 id="二、用上述栈先来实现一个判断左右括号闭合的方法"><a href="#二、用上述栈先来实现一个判断左右括号闭合的方法" class="headerlink" title="二、用上述栈先来实现一个判断左右括号闭合的方法"></a>二、用上述栈先来实现一个判断左右括号闭合的方法</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> stack = <span class="keyword">new</span> Stack()</span><br><span class="line"><span class="comment">// validator</span></span><br><span class="line"><span class="comment">// 只入栈括号,</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isLegal</span>(<span class="params">param</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;param.length; i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> item = param[i]</span><br><span class="line">    <span class="keyword">if</span>(item === <span class="string">'('</span>)&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(item === <span class="string">')'</span>)&#123;</span><br><span class="line">      <span class="keyword">if</span>(stack.isEmpty())&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        stack.pop()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.isEmpty()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">isLegal(<span class="string">"((abc))"</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="三、实现一个计算后缀表达式"><a href="#三、实现一个计算后缀表达式" class="headerlink" title="三、实现一个计算后缀表达式"></a>三、实现一个计算后缀表达式</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calculate</span>(<span class="params">expressionList</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> data_stack = <span class="keyword">new</span> Stack()</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; expressionList.length; i++)&#123;</span><br><span class="line">  	<span class="keyword">var</span> item = expressionList[i]</span><br><span class="line">    <span class="keyword">if</span>([<span class="string">'+'</span>, <span class="string">'-'</span>, <span class="string">'*'</span>, <span class="string">'/'</span>].indexOf(item) &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">      <span class="keyword">var</span> pre = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> next = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> result = next + item + pre</span><br><span class="line">      result = <span class="built_in">parseInt</span>(<span class="built_in">eval</span>(result))</span><br><span class="line">      stack.push(result)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.pop()</span><br><span class="line">&#125;</span><br><span class="line">calculate([<span class="string">'4'</span>,<span class="string">'13'</span>, <span class="string">'5'</span>, <span class="string">'/'</span>, <span class="string">'+'</span>])</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>linux</category>
+        <category>javascript</category>
       </categories>
       <tags>
-        <tag>env</tag>
+        <tag>arithmetic</tag>
       </tags>
   </entry>
   <entry>
     <title>SCP使用示例</title>
     <url>/2019/06/21/linux/scp/</url>
     <content><![CDATA[<h4 id="SCP-复制远程服务器上的目录"><a href="#SCP-复制远程服务器上的目录" class="headerlink" title="SCP 复制远程服务器上的目录"></a>SCP 复制远程服务器上的目录</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scp -p 22 -r root@ip:/home/example/ /temp/</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>helper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>链表</title>
+    <url>/2019/12/31/javascript/link-list/</url>
+    <content><![CDATA[<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><h4 id="一、链表的概念"><a href="#一、链表的概念" class="headerlink" title="一、链表的概念"></a>一、链表的概念</h4><p>链表是物理存储单元上非连续的，非顺序的存储结构，由一系列节点组成。链表分为有头链表和无头链表。</p>
+<h5 id="1、节点"><a href="#1、节点" class="headerlink" title="1、节点"></a>1、节点</h5><p>节点包含包含两个部分，一部分是存储数据元素的数据域，一部分是存储指向下一个节点的指针域，这两块构成一个节点，节点如何去使用？简单示意如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> Node = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.data = data</span><br><span class="line">  <span class="keyword">this</span>.next = <span class="literal">null</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> node = <span class="keyword">new</span> Node(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">var</span> node1 = <span class="keyword">new</span> Node(<span class="number">8</span>)</span><br><span class="line"><span class="keyword">var</span> node2 = <span class="keyword">new</span> Node(<span class="number">9</span>)</span><br><span class="line"><span class="built_in">console</span>.log(node)</span><br><span class="line"><span class="built_in">console</span>.log(node.next.data)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h5 id="2、链表的方法"><a href="#2、链表的方法" class="headerlink" title="2、链表的方法"></a>2、链表的方法</h5><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">LinkList</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> Node = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.data = data</span><br><span class="line">    <span class="keyword">this</span>.next = <span class="literal">null</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">var</span> length = <span class="number">0</span></span><br><span class="line">  <span class="keyword">var</span> head = <span class="literal">null</span></span><br><span class="line">  <span class="keyword">var</span> tail = <span class="literal">null</span></span><br><span class="line">  <span class="comment">// append 方法</span></span><br><span class="line">  <span class="keyword">this</span>.append = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">    <span class="keyword">if</span>(head === <span class="literal">null</span>)&#123;</span><br><span class="line">      head = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      tail.next = new_node</span><br><span class="line">      tail = new_node</span><br><span class="line">    &#125;</span><br><span class="line">    length += <span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">// insert 方法</span></span><br><span class="line">  <span class="keyword">this</span>.insert = functoin(index, data)&#123;</span><br><span class="line">    <span class="keyword">if</span>(index &lt; <span class="number">0</span> || index &gt; length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(index === length)&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.append(index, data)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      <span class="keyword">var</span> new_node = <span class="keyword">new</span> Node(data)</span><br><span class="line">      <span class="keyword">if</span>(index === <span class="number">0</span>)&#123;</span><br><span class="line">        new_node.next = head</span><br><span class="line">        head = new_node</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> insert_index = <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> curr_node = head</span><br><span class="line">        <span class="keyword">while</span>(insert_index &lt; index)&#123;</span><br><span class="line">          insert_index += <span class="number">1</span></span><br><span class="line">          curr_node = curr_node.next</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> next_node = curr_node.next</span><br><span class="line">        curr_node.next = new_node</span><br><span class="line">        new_node.next = next_node</span><br><span class="line">      &#125;</span><br><span class="line">      length += <span class="number">1</span></span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.print = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> current_node = head</span><br><span class="line">    <span class="keyword">while</span>(head === <span class="literal">true</span>)&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(current_node.data)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>arithmetic</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>查看使用的端口</title>
+    <url>/2019/06/02/linux/%E6%9F%A5%E7%9C%8B%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AB%AF%E5%8F%A3/</url>
+    <content><![CDATA[<h5 id="Centos7"><a href="#Centos7" class="headerlink" title="Centos7"></a>Centos7</h5><p>查看服务器端口号目前的使用情况</p>
+<p>netstat -luntp</p>
 ]]></content>
       <categories>
         <category>linux</category>
@@ -296,74 +309,12 @@
       </tags>
   </entry>
   <entry>
-    <title>查看使用的端口</title>
-    <url>/2019/06/02/linux/%E6%9F%A5%E7%9C%8B%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AB%AF%E5%8F%A3/</url>
-    <content><![CDATA[<h5 id="Centos7"><a href="#Centos7" class="headerlink" title="Centos7"></a>Centos7</h5><p>查看服务器端口号目前的使用情况</p>
-<p>netstat -luntp</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>helper</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nginx依赖</title>
     <url>/2019/10/11/nginx/nginx%E4%BE%9D%E8%B5%96/</url>
     <content><![CDATA[<h3 id="编译安装nginx需要安装依赖"><a href="#编译安装nginx需要安装依赖" class="headerlink" title="编译安装nginx需要安装依赖"></a>编译安装nginx需要安装依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install gcc gcc-c++</span><br><span class="line">yum -y install zlib zlib-devel openssl openssl-devel pcre-devel</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>nginx</category>
-      </categories>
-      <tags>
-        <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Rewrite总结</title>
-    <url>/2019/06/02/nginx/rewrite/</url>
-    <content><![CDATA[<h4 id="一、Rewrite"><a href="#一、Rewrite" class="headerlink" title="一、Rewrite"></a>一、Rewrite</h4><p>​    实现url<span style="color:red">重写</span>以及<span style="color:red">重定向</span></p>
-<h4 id="二、场景"><a href="#二、场景" class="headerlink" title="二、场景"></a>二、场景</h4><p>​    url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等)</p>
-<p>​    SEO优化</p>
-<p>​    运维人员维护</p>
-<p>​    后台维护、流量转发</p>
-<p>​    安全-&gt;伪静态</p>
-<h4 id="三、配置语法"><a href="#三、配置语法" class="headerlink" title="三、配置语法"></a>三、配置语法</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Systanx: rewrite regx replacement[flag]</span><br><span class="line">​	Default: --</span><br><span class="line">​	Context:server,location,<span class="keyword">if</span></span><br></pre></td></tr></table></figure>
-<p>​    <a id="more"></a></p>
-<h4 id="四、正则"><a href="#四、正则" class="headerlink" title="四、正则"></a>四、正则</h4><p>​    pcre 正则测试</p>
-<h4 id="五、Flag"><a href="#五、Flag" class="headerlink" title="五、Flag"></a>五、Flag</h4><p>​    last : 停止rewrite 检测</p>
-<p>​    Break: 停止rewrite 检测</p>
-<p>​    redirect : 返回302临时重定向,地址栏会显示跳转后的地址</p>
-<p>​    permanent : 返回301永久重定向，地址栏会显示跳转后的地址 (nginx 停掉也会重定向)</p>
-<h4 id="六、Rewrite-规则优先级"><a href="#六、Rewrite-规则优先级" class="headerlink" title="六、Rewrite 规则优先级"></a>六、Rewrite 规则优先级</h4><p>​    执行server块的rewrite指令</p>
-<p>​    执行location匹配</p>
-<p>​    执行选定的location中的rewrite</p>
-<h4 id="七、示例"><a href="#七、示例" class="headerlink" title="七、示例"></a>七、示例</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    listen  6060;</span><br><span class="line">    server_name  localhost;</span><br><span class="line">    access_log  /var/<span class="built_in">log</span>/nginx/host.access.log  main;</span><br><span class="line">    root /opt/app/code;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        rewrite ^/course-(\d+)-(\d+)-(\d+)\.html$ /course/<span class="variable">$1</span>/<span class="variable">$2</span>/course_<span class="variable">$3</span>.html <span class="built_in">break</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$http_user_agent</span> ~* Chrome) &#123;</span><br><span class="line">            rewrite ^/nginx http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!-f <span class="variable">$request_filename</span>) &#123;</span><br><span class="line">            rewrite ^/(.*)$ http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        index  index.html  index.htm;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/<span class="built_in">break</span> &#123;</span><br><span class="line">        rewrite ^/<span class="built_in">break</span> /<span class="built_in">test</span>/ <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/last &#123;</span><br><span class="line">        <span class="comment">#rewrite ^/last /test/ last;</span></span><br><span class="line">        rewrite ^/last /<span class="built_in">test</span>/ redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/protagonist &#123;</span><br><span class="line">    	<span class="comment">#rewrite ^/protagonist  http://39.97.187.133:80 permanent;</span></span><br><span class="line">			rewrite ^/protagonist  http://39.97.187.133:80 redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location /<span class="built_in">test</span>/ &#123;</span><br><span class="line">			default_type  application/json;</span><br><span class="line">			<span class="built_in">return</span> 200 <span class="string">'&#123;"status":"success"&#125;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>nginx</category>
-      </categories>
-      <tags>
-        <tag>helper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Yarn的安装</title>
-    <url>/2019/05/22/node/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h5 id="INSTALL-YARN"><a href="#INSTALL-YARN" class="headerlink" title="INSTALL YARN"></a>INSTALL YARN</h5><ul>
-<li><p>添加yum源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install yarn -y</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>yarn</category>
       </categories>
       <tags>
         <tag>install</tag>
@@ -413,35 +364,31 @@
       </tags>
   </entry>
   <entry>
-    <title>nvm</title>
-    <url>/2020/02/14/node/nvm/</url>
-    <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm use 8.12.0</span><br></pre></td></tr></table></figure>
+    <title>Rewrite总结</title>
+    <url>/2019/06/02/nginx/rewrite/</url>
+    <content><![CDATA[<h4 id="一、Rewrite"><a href="#一、Rewrite" class="headerlink" title="一、Rewrite"></a>一、Rewrite</h4><p>​    实现url<span style="color:red">重写</span>以及<span style="color:red">重定向</span></p>
+<h4 id="二、场景"><a href="#二、场景" class="headerlink" title="二、场景"></a>二、场景</h4><p>​    url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等)</p>
+<p>​    SEO优化</p>
+<p>​    运维人员维护</p>
+<p>​    后台维护、流量转发</p>
+<p>​    安全-&gt;伪静态</p>
+<h4 id="三、配置语法"><a href="#三、配置语法" class="headerlink" title="三、配置语法"></a>三、配置语法</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Systanx: rewrite regx replacement[flag]</span><br><span class="line">​	Default: --</span><br><span class="line">​	Context:server,location,<span class="keyword">if</span></span><br></pre></td></tr></table></figure>
+<p>​    <a id="more"></a></p>
+<h4 id="四、正则"><a href="#四、正则" class="headerlink" title="四、正则"></a>四、正则</h4><p>​    pcre 正则测试</p>
+<h4 id="五、Flag"><a href="#五、Flag" class="headerlink" title="五、Flag"></a>五、Flag</h4><p>​    last : 停止rewrite 检测</p>
+<p>​    Break: 停止rewrite 检测</p>
+<p>​    redirect : 返回302临时重定向,地址栏会显示跳转后的地址</p>
+<p>​    permanent : 返回301永久重定向，地址栏会显示跳转后的地址 (nginx 停掉也会重定向)</p>
+<h4 id="六、Rewrite-规则优先级"><a href="#六、Rewrite-规则优先级" class="headerlink" title="六、Rewrite 规则优先级"></a>六、Rewrite 规则优先级</h4><p>​    执行server块的rewrite指令</p>
+<p>​    执行location匹配</p>
+<p>​    执行选定的location中的rewrite</p>
+<h4 id="七、示例"><a href="#七、示例" class="headerlink" title="七、示例"></a>七、示例</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    listen  6060;</span><br><span class="line">    server_name  localhost;</span><br><span class="line">    access_log  /var/<span class="built_in">log</span>/nginx/host.access.log  main;</span><br><span class="line">    root /opt/app/code;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        rewrite ^/course-(\d+)-(\d+)-(\d+)\.html$ /course/<span class="variable">$1</span>/<span class="variable">$2</span>/course_<span class="variable">$3</span>.html <span class="built_in">break</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$http_user_agent</span> ~* Chrome) &#123;</span><br><span class="line">            rewrite ^/nginx http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!-f <span class="variable">$request_filename</span>) &#123;</span><br><span class="line">            rewrite ^/(.*)$ http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        index  index.html  index.htm;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/<span class="built_in">break</span> &#123;</span><br><span class="line">        rewrite ^/<span class="built_in">break</span> /<span class="built_in">test</span>/ <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/last &#123;</span><br><span class="line">        <span class="comment">#rewrite ^/last /test/ last;</span></span><br><span class="line">        rewrite ^/last /<span class="built_in">test</span>/ redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/protagonist &#123;</span><br><span class="line">    	<span class="comment">#rewrite ^/protagonist  http://39.97.187.133:80 permanent;</span></span><br><span class="line">			rewrite ^/protagonist  http://39.97.187.133:80 redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location /<span class="built_in">test</span>/ &#123;</span><br><span class="line">			default_type  application/json;</span><br><span class="line">			<span class="built_in">return</span> 200 <span class="string">'&#123;"status":"success"&#125;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>nvm</category>
+        <category>nginx</category>
       </categories>
       <tags>
-        <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PyMysql使用</title>
-    <url>/2022/03/09/python/pymysql/</url>
-    <content><![CDATA[<h1 id="一、使用pymysql"><a href="#一、使用pymysql" class="headerlink" title="一、使用pymysql"></a>一、使用pymysql</h1><h2 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h2><p><code>pip install pymysql</code></p>
-<h2 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a>2、使用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Single</span>:</span></span><br><span class="line">	_instance = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> cls._instance:</span><br><span class="line">            cls._instance = object.__new__(cls)</span><br><span class="line">        <span class="keyword">return</span> cls._instance</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GetMysqlIns</span><span class="params">(Single)</span>:</span></span><br><span class="line">    db = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.db = pymysql.connect(host=<span class="string">'xxx'</span>, user=<span class="string">'xxx'</span>,</span><br><span class="line">                                  passwd=<span class="string">'xxx'</span>, db=<span class="string">'xxx'</span>)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">		db_ins = GetMysqlIns()</span><br><span class="line">		cursor = db_ins.db.cursor()</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h1 id="二、新增"><a href="#二、新增" class="headerlink" title="二、新增"></a>二、新增</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">create_data = [(<span class="string">'xxx'</span>, <span class="number">18</span>)]</span><br><span class="line">create_sql = <span class="string">"insert into table (name, age) values (%s, %s)"</span></span><br><span class="line">cursor.executemany(create_sql, create_data)</span><br></pre></td></tr></table></figure>
-<h1 id="三、删除"><a href="#三、删除" class="headerlink" title="三、删除"></a>三、删除</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">delete_sql = <span class="string">"delete from table where name='&#123;&#125;'"</span></span><br><span class="line">delete_data = [(<span class="string">'name'</span>)]</span><br><span class="line">cursor.executemany(delete_sql, delete_data)</span><br></pre></td></tr></table></figure>
-<h1 id="四、修改"><a href="#四、修改" class="headerlink" title="四、修改"></a>四、修改</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">update_sql = <span class="string">"update table set name=(%s) where age='18' and gender='male'"</span></span><br><span class="line">update_data = [(<span class="string">'xxx'</span>)]</span><br><span class="line">cursor.executemany(update_sql, update_data)</span><br></pre></td></tr></table></figure>
-<h1 id="五、查询"><a href="#五、查询" class="headerlink" title="五、查询"></a>五、查询</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">query_sql = <span class="string">"select * from table where name='name'"</span></span><br><span class="line">cursor.execute(query_sql)</span><br></pre></td></tr></table></figure>
-<h1 id="六、操作失败回滚"><a href="#六、操作失败回滚" class="headerlink" title="六、操作失败回滚"></a>六、操作失败回滚</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">		print(<span class="string">"操作db"</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">		db_ins.db.rollback()</span><br></pre></td></tr></table></figure>
-<h1 id="七、关闭链接"><a href="#七、关闭链接" class="headerlink" title="七、关闭链接"></a>七、关闭链接</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cursor.close()</span><br><span class="line">db_ins.db.close()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>pymysql</tag>
+        <tag>helper</tag>
       </tags>
   </entry>
   <entry>
@@ -480,7 +427,7 @@
 <p><code>cargo -v</code></p>
 <h1 id="三、卸载"><a href="#三、卸载" class="headerlink" title="三、卸载"></a>三、卸载</h1><p><code>rustup self uninstall</code></p>
 <h1 id="四、更新"><a href="#四、更新" class="headerlink" title="四、更新"></a>四、更新</h1><p><code>rustup update</code></p>
-<h1 id="四、vscode插件"><a href="#四、vscode插件" class="headerlink" title="四、vscode插件"></a>四、vscode插件</h1><ul>
+<h1 id="五、vscode插件"><a href="#五、vscode插件" class="headerlink" title="五、vscode插件"></a>五、vscode插件</h1><ul>
 <li>Better TOML</li>
 <li>Error Lens 展示错误信息</li>
 <li>CodeLLDB, Debugger</li>
@@ -491,6 +438,81 @@
       </categories>
       <tags>
         <tag>env</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Yarn的安装</title>
+    <url>/2019/05/22/node/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h5 id="INSTALL-YARN"><a href="#INSTALL-YARN" class="headerlink" title="INSTALL YARN"></a>INSTALL YARN</h5><ul>
+<li><p>添加yum源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install yarn -y</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>yarn</category>
+      </categories>
+      <tags>
+        <tag>install</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue-Extend总结</title>
+    <url>/2020/01/02/vue/vue-extend/</url>
+    <content><![CDATA[<h4 id="一、Vue-extend"><a href="#一、Vue-extend" class="headerlink" title="一、Vue-extend"></a>一、Vue-extend</h4><p>Vue.extend(options)在官法文章中的归类是全局API，是使用基础Vue构造器，创造一个子类，动态地创建实例。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Init = Vue.extend(&#123;</span><br><span class="line">	template: <span class="string">'&lt;div&gt;Hello World&lt;/div&gt;'</span>,</span><br><span class="line">	data()&#123;</span><br><span class="line">		<span class="keyword">return</span> &#123;</span><br><span class="line">			msg:<span class="string">'Hello'</span></span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// render: h =&gt; h(Component)</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">new</span> Init().$mount(<span class="string">'app'</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="二、Vue-component"><a href="#二、Vue-component" class="headerlink" title="二、Vue.component()"></a>二、Vue.component()</h4><p>注册或者获取全局组件，注册还会自动使用给定的id设置组件的名称</p>
+<a id="more"></a>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 注册组件时，传入一个构造器</span></span><br><span class="line">Vue.component(<span class="string">'hs-form'</span>,Vue.extend(...))</span><br><span class="line"></span><br><span class="line"><span class="comment">// 注册组件时，传入一个选项对象</span></span><br><span class="line">Vue.component(<span class="string">'hs-form'</span>,&#123;</span><br><span class="line">	data()&#123;</span><br><span class="line">		<span class="keyword">return</span>&#123;</span><br><span class="line">			name: <span class="string">'Hello'</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取注册的组件（始终返回构造器）</span></span><br><span class="line"><span class="keyword">var</span> hsFormConstructor = Vue.component(<span class="string">'hs-form'</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>PyMysql使用</title>
+    <url>/2022/03/09/python/pymysql/</url>
+    <content><![CDATA[<h1 id="一、使用pymysql"><a href="#一、使用pymysql" class="headerlink" title="一、使用pymysql"></a>一、使用pymysql</h1><h2 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h2><p><code>pip install pymysql</code></p>
+<h2 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a>2、使用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Single</span>:</span></span><br><span class="line">	_instance = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> cls._instance:</span><br><span class="line">            cls._instance = object.__new__(cls)</span><br><span class="line">        <span class="keyword">return</span> cls._instance</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GetMysqlIns</span><span class="params">(Single)</span>:</span></span><br><span class="line">    db = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.db = pymysql.connect(host=<span class="string">'xxx'</span>, user=<span class="string">'xxx'</span>,</span><br><span class="line">                                  passwd=<span class="string">'xxx'</span>, db=<span class="string">'xxx'</span>)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">		db_ins = GetMysqlIns()</span><br><span class="line">		cursor = db_ins.db.cursor()</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h1 id="二、新增"><a href="#二、新增" class="headerlink" title="二、新增"></a>二、新增</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">create_data = [(<span class="string">'xxx'</span>, <span class="number">18</span>)]</span><br><span class="line">create_sql = <span class="string">"insert into table (name, age) values (%s, %s)"</span></span><br><span class="line">cursor.executemany(create_sql, create_data)</span><br></pre></td></tr></table></figure>
+<h1 id="三、删除"><a href="#三、删除" class="headerlink" title="三、删除"></a>三、删除</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">delete_sql = <span class="string">"delete from table where name='&#123;&#125;'"</span></span><br><span class="line">delete_data = [(<span class="string">'name'</span>)]</span><br><span class="line">cursor.executemany(delete_sql, delete_data)</span><br></pre></td></tr></table></figure>
+<h1 id="四、修改"><a href="#四、修改" class="headerlink" title="四、修改"></a>四、修改</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">update_sql = <span class="string">"update table set name=(%s) where age='18' and gender='male'"</span></span><br><span class="line">update_data = [(<span class="string">'xxx'</span>)]</span><br><span class="line">cursor.executemany(update_sql, update_data)</span><br></pre></td></tr></table></figure>
+<h1 id="五、查询"><a href="#五、查询" class="headerlink" title="五、查询"></a>五、查询</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">query_sql = <span class="string">"select * from table where name='name'"</span></span><br><span class="line">cursor.execute(query_sql)</span><br></pre></td></tr></table></figure>
+<h1 id="六、操作失败回滚"><a href="#六、操作失败回滚" class="headerlink" title="六、操作失败回滚"></a>六、操作失败回滚</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">		print(<span class="string">"操作db"</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">		db_ins.db.rollback()</span><br></pre></td></tr></table></figure>
+<h1 id="七、关闭链接"><a href="#七、关闭链接" class="headerlink" title="七、关闭链接"></a>七、关闭链接</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cursor.close()</span><br><span class="line">db_ins.db.close()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>pymysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>架构</title>
+    <url>/2020/01/01/vue/framework/</url>
+    <content><![CDATA[<h4 id="Vue组件化"><a href="#Vue组件化" class="headerlink" title="Vue组件化"></a>Vue组件化</h4><h5 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h5><p>插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。</p>
+<h6 id="匿名插槽"><a href="#匿名插槽" class="headerlink" title="匿名插槽"></a>匿名插槽</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;slot&gt;&lt;/slot&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;child&gt;Hello World&lt;/child&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h6><p>将内容过分发到子组件指定位置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;solt&gt;&lt;/solt&gt;</span><br><span class="line">  &lt;solt name=&quot;content&quot;&gt;&lt;/solt&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;Child&gt;</span><br><span class="line">	&lt;template v-solt:default&gt;具名插槽&lt;/template&gt;</span><br><span class="line">  &lt;template v-solt:content&gt;hello world&lt;/template&gt;</span><br><span class="line">&lt;/Child&gt;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h6 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h6><p>分发内容要用到子组件中的数据</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;slot :foo=&quot;foo&quot;&gt;&lt;/slot&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">//parent</span><br><span class="line">&lt;child&gt;</span><br><span class="line">	&lt;template v-slot:default=&quot;slotProps&quot;&gt;来自子组件的数据&#123;&#123; slotProps.foo &#125;&#125;&lt;/template&gt;</span><br><span class="line">&lt;/child&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -528,54 +550,6 @@
       </tags>
   </entry>
   <entry>
-    <title>架构</title>
-    <url>/2020/01/01/vue/framework/</url>
-    <content><![CDATA[<h4 id="Vue组件化"><a href="#Vue组件化" class="headerlink" title="Vue组件化"></a>Vue组件化</h4><h5 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h5><p>插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。</p>
-<h6 id="匿名插槽"><a href="#匿名插槽" class="headerlink" title="匿名插槽"></a>匿名插槽</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;slot&gt;&lt;/slot&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;child&gt;Hello World&lt;/child&gt;</span><br></pre></td></tr></table></figure>
-<h6 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h6><p>将内容过分发到子组件指定位置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;solt&gt;&lt;/solt&gt;</span><br><span class="line">  &lt;solt name=&quot;content&quot;&gt;&lt;/solt&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;Child&gt;</span><br><span class="line">	&lt;template v-solt:default&gt;具名插槽&lt;/template&gt;</span><br><span class="line">  &lt;template v-solt:content&gt;hello world&lt;/template&gt;</span><br><span class="line">&lt;/Child&gt;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h6 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h6><p>分发内容要用到子组件中的数据</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;slot :foo=&quot;foo&quot;&gt;&lt;/slot&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">//parent</span><br><span class="line">&lt;child&gt;</span><br><span class="line">	&lt;template v-slot:default=&quot;slotProps&quot;&gt;来自子组件的数据&#123;&#123; slotProps.foo &#125;&#125;&lt;/template&gt;</span><br><span class="line">&lt;/child&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>vue</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue-Extend总结</title>
-    <url>/2020/01/02/vue/vue-extend/</url>
-    <content><![CDATA[<h4 id="一、Vue-extend"><a href="#一、Vue-extend" class="headerlink" title="一、Vue-extend"></a>一、Vue-extend</h4><p>Vue.extend(options)在官法文章中的归类是全局API，是使用基础Vue构造器，创造一个子类，动态地创建实例。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> Init = Vue.extend(&#123;</span><br><span class="line">	template: <span class="string">'&lt;div&gt;Hello World&lt;/div&gt;'</span>,</span><br><span class="line">	data()&#123;</span><br><span class="line">		<span class="keyword">return</span> &#123;</span><br><span class="line">			msg:<span class="string">'Hello'</span></span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// render: h =&gt; h(Component)</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">new</span> Init().$mount(<span class="string">'app'</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="二、Vue-component"><a href="#二、Vue-component" class="headerlink" title="二、Vue.component()"></a>二、Vue.component()</h4><p>注册或者获取全局组件，注册还会自动使用给定的id设置组件的名称</p>
-<a id="more"></a>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 注册组件时，传入一个构造器</span></span><br><span class="line">Vue.component(<span class="string">'hs-form'</span>,Vue.extend(...))</span><br><span class="line"></span><br><span class="line"><span class="comment">// 注册组件时，传入一个选项对象</span></span><br><span class="line">Vue.component(<span class="string">'hs-form'</span>,&#123;</span><br><span class="line">	data()&#123;</span><br><span class="line">		<span class="keyword">return</span>&#123;</span><br><span class="line">			name: <span class="string">'Hello'</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取注册的组件（始终返回构造器）</span></span><br><span class="line"><span class="keyword">var</span> hsFormConstructor = Vue.component(<span class="string">'hs-form'</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>vue</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vue单元测试</title>
-    <url>/2021/01/16/vue/vue-unit-test/</url>
-    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1、安装依赖模块</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add @vue/<span class="built_in">test</span>-utils vue-jest -D</span><br></pre></td></tr></table></figure>
-<p>2、创建jest配置文件</p>
-]]></content>
-      <categories>
-        <category>test</category>
-      </categories>
-      <tags>
-        <tag>unit-test</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>webpack构建vue项目</title>
     <url>/2021/01/15/webpack/webpack%E6%9E%84%E5%BB%BAvue%E9%A1%B9%E7%9B%AE/</url>
     <content><![CDATA[<h3 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h3><h4 id="1、安装webpack依赖"><a href="#1、安装webpack依赖" class="headerlink" title="1、安装webpack依赖"></a>1、安装webpack依赖</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add webpack webpack-cli -D</span><br><span class="line">yarn add webpack-dev-server -D</span><br><span class="line">yarn add html-webpack-plugin -D</span><br></pre></td></tr></table></figure>
@@ -599,6 +573,32 @@
       </categories>
       <tags>
         <tag>webpack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nvm</title>
+    <url>/2020/02/14/node/nvm/</url>
+    <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm use 8.12.0</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>nvm</category>
+      </categories>
+      <tags>
+        <tag>install</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue单元测试</title>
+    <url>/2021/01/16/vue/vue-unit-test/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1、安装依赖模块</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add @vue/<span class="built_in">test</span>-utils vue-jest -D</span><br></pre></td></tr></table></figure>
+<p>2、创建jest配置文件</p>
+]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>unit-test</tag>
       </tags>
   </entry>
 </search>
