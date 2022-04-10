@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2022-03-11T01:05:49.899Z</updated>
+  <updated>2022-04-10T04:15:51.388Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>eslint</title>
+    <link href="http://protagonistss.github.io.com/2022/04/10/javascript/eslint/"/>
+    <id>http://protagonistss.github.io.com/2022/04/10/javascript/eslint/</id>
+    <published>2022-04-10T12:11:07.000Z</published>
+    <updated>2022-04-10T04:15:51.388Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、初始化eslint"><a href="#一、初始化eslint" class="headerlink" title="一、初始化eslint"></a>一、初始化eslint</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pnpm add eslint -D</span><br><span class="line">npx eslint --init</span><br></pre></td></tr></table></figure><blockquote><p>选择自己的配置</p></blockquote><h1 id="二、初始化prettier"><a href="#二、初始化prettier" class="headerlink" title="二、初始化prettier"></a>二、初始化prettier</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm add prettier -D</span><br></pre></td></tr></table></figure><blockquote><p>配置prettier文件，创建.prettierrc.json</p></blockquote><h1 id="三、解决prettier和eslint冲突"><a href="#三、解决prettier和eslint冲突" class="headerlink" title="三、解决prettier和eslint冲突"></a>三、解决prettier和eslint冲突</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm add eslint-config-prettier eslint-plugin-prettier -D</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一、初始化eslint&quot;&gt;&lt;a href=&quot;#一、初始化eslint&quot; class=&quot;headerlink&quot; title=&quot;一、初始化eslint&quot;&gt;&lt;/a&gt;一、初始化eslint&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tabl
+      
+    
+    </summary>
+    
+      <category term="eslint" scheme="http://protagonistss.github.io.com/categories/eslint/"/>
+    
+    
+      <category term="eslant config" scheme="http://protagonistss.github.io.com/tags/eslant-config/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>transfer-css</title>
+    <link href="http://protagonistss.github.io.com/2022/04/08/webpack/transfer-css/"/>
+    <id>http://protagonistss.github.io.com/2022/04/08/webpack/transfer-css/</id>
+    <published>2022-04-07T23:19:06.000Z</published>
+    <updated>2022-04-07T15:21:40.246Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;一、&quot;&gt;&lt;a href=&quot;#一、&quot; class=&quot;headerlink&quot; title=&quot;一、&quot;&gt;&lt;/a&gt;一、&lt;/h1&gt;
+      
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://protagonistss.github.io.com/categories/webpack/"/>
+    
+    
+      <category term="todo" scheme="http://protagonistss.github.io.com/tags/todo/"/>
+    
+  </entry>
   
   <entry>
     <title>Rust安装</title>
@@ -464,62 +514,6 @@
     </summary>
     
       <category term="linux" scheme="http://protagonistss.github.io.com/categories/linux/"/>
-    
-    
-      <category term="helper" scheme="http://protagonistss.github.io.com/tags/helper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>查看使用的端口</title>
-    <link href="http://protagonistss.github.io.com/2019/06/02/linux/%E6%9F%A5%E7%9C%8B%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AB%AF%E5%8F%A3/"/>
-    <id>http://protagonistss.github.io.com/2019/06/02/linux/查看使用的端口/</id>
-    <published>2019-06-01T20:21:06.000Z</published>
-    <updated>2022-03-09T06:55:38.587Z</updated>
-    
-    <content type="html"><![CDATA[<h5 id="Centos7"><a href="#Centos7" class="headerlink" title="Centos7"></a>Centos7</h5><p>查看服务器端口号目前的使用情况</p><p>netstat -luntp</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h5 id=&quot;Centos7&quot;&gt;&lt;a href=&quot;#Centos7&quot; class=&quot;headerlink&quot; title=&quot;Centos7&quot;&gt;&lt;/a&gt;Centos7&lt;/h5&gt;&lt;p&gt;查看服务器端口号目前的使用情况&lt;/p&gt;
-&lt;p&gt;netstat -luntp&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="linux" scheme="http://protagonistss.github.io.com/categories/linux/"/>
-    
-    
-      <category term="helper" scheme="http://protagonistss.github.io.com/tags/helper/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Rewrite总结</title>
-    <link href="http://protagonistss.github.io.com/2019/06/02/nginx/rewrite/"/>
-    <id>http://protagonistss.github.io.com/2019/06/02/nginx/rewrite/</id>
-    <published>2019-06-01T20:06:54.000Z</published>
-    <updated>2022-03-09T06:56:23.276Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="一、Rewrite"><a href="#一、Rewrite" class="headerlink" title="一、Rewrite"></a>一、Rewrite</h4><p>​    实现url<span style="color:red">重写</span>以及<span style="color:red">重定向</span></p><h4 id="二、场景"><a href="#二、场景" class="headerlink" title="二、场景"></a>二、场景</h4><p>​    url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等)</p><p>​    SEO优化</p><p>​    运维人员维护</p><p>​    后台维护、流量转发</p><p>​    安全-&gt;伪静态</p><h4 id="三、配置语法"><a href="#三、配置语法" class="headerlink" title="三、配置语法"></a>三、配置语法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Systanx: rewrite regx replacement[flag]</span><br><span class="line">​Default: --</span><br><span class="line">​Context:server,location,<span class="keyword">if</span></span><br></pre></td></tr></table></figure><p>​    <a id="more"></a></p><h4 id="四、正则"><a href="#四、正则" class="headerlink" title="四、正则"></a>四、正则</h4><p>​    pcre 正则测试</p><h4 id="五、Flag"><a href="#五、Flag" class="headerlink" title="五、Flag"></a>五、Flag</h4><p>​    last : 停止rewrite 检测</p><p>​    Break: 停止rewrite 检测</p><p>​    redirect : 返回302临时重定向,地址栏会显示跳转后的地址</p><p>​    permanent : 返回301永久重定向，地址栏会显示跳转后的地址 (nginx 停掉也会重定向)</p><h4 id="六、Rewrite-规则优先级"><a href="#六、Rewrite-规则优先级" class="headerlink" title="六、Rewrite 规则优先级"></a>六、Rewrite 规则优先级</h4><p>​    执行server块的rewrite指令</p><p>​    执行location匹配</p><p>​    执行选定的location中的rewrite</p><h4 id="七、示例"><a href="#七、示例" class="headerlink" title="七、示例"></a>七、示例</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">    listen  6060;</span><br><span class="line">    server_name  localhost;</span><br><span class="line">    access_log  /var/<span class="built_in">log</span>/nginx/host.access.log  main;</span><br><span class="line">    root /opt/app/code;</span><br><span class="line"></span><br><span class="line">    location / &#123;</span><br><span class="line">        rewrite ^/course-(\d+)-(\d+)-(\d+)\.html$ /course/<span class="variable">$1</span>/<span class="variable">$2</span>/course_<span class="variable">$3</span>.html <span class="built_in">break</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="variable">$http_user_agent</span> ~* Chrome) &#123;</span><br><span class="line">            rewrite ^/nginx http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (!-f <span class="variable">$request_filename</span>) &#123;</span><br><span class="line">            rewrite ^/(.*)$ http://www.baidu.com redirect;</span><br><span class="line">        &#125;</span><br><span class="line">        index  index.html  index.htm;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/<span class="built_in">break</span> &#123;</span><br><span class="line">        rewrite ^/<span class="built_in">break</span> /<span class="built_in">test</span>/ <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/last &#123;</span><br><span class="line">        <span class="comment">#rewrite ^/last /test/ last;</span></span><br><span class="line">        rewrite ^/last /<span class="built_in">test</span>/ redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location ~ ^/protagonist &#123;</span><br><span class="line">    <span class="comment">#rewrite ^/protagonist  http://39.97.187.133:80 permanent;</span></span><br><span class="line">rewrite ^/protagonist  http://39.97.187.133:80 redirect;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    location /<span class="built_in">test</span>/ &#123;</span><br><span class="line">default_type  application/json;</span><br><span class="line"><span class="built_in">return</span> 200 <span class="string">'&#123;"status":"success"&#125;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;一、Rewrite&quot;&gt;&lt;a href=&quot;#一、Rewrite&quot; class=&quot;headerlink&quot; title=&quot;一、Rewrite&quot;&gt;&lt;/a&gt;一、Rewrite&lt;/h4&gt;&lt;p&gt;​    实现url&lt;span style=&quot;color:red&quot;&gt;重写&lt;/span&gt;以及&lt;span style=&quot;color:red&quot;&gt;重定向&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&quot;二、场景&quot;&gt;&lt;a href=&quot;#二、场景&quot; class=&quot;headerlink&quot; title=&quot;二、场景&quot;&gt;&lt;/a&gt;二、场景&lt;/h4&gt;&lt;p&gt;​    url访问跳转,支持开发设计(页面跳转,兼容性支持,展示效果等)&lt;/p&gt;
-&lt;p&gt;​    SEO优化&lt;/p&gt;
-&lt;p&gt;​    运维人员维护&lt;/p&gt;
-&lt;p&gt;​    后台维护、流量转发&lt;/p&gt;
-&lt;p&gt;​    安全-&amp;gt;伪静态&lt;/p&gt;
-&lt;h4 id=&quot;三、配置语法&quot;&gt;&lt;a href=&quot;#三、配置语法&quot; class=&quot;headerlink&quot; title=&quot;三、配置语法&quot;&gt;&lt;/a&gt;三、配置语法&lt;/h4&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Systanx: rewrite regx replacement[flag]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;​	Default: --&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;​	Context:server,location,&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;​
-    
-    </summary>
-    
-      <category term="nginx" scheme="http://protagonistss.github.io.com/categories/nginx/"/>
     
     
       <category term="helper" scheme="http://protagonistss.github.io.com/tags/helper/"/>
