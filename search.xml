@@ -41,6 +41,17 @@
       </tags>
   </entry>
   <entry>
+    <title>travis-ci</title>
+    <url>/2022/03/04/deploy/travis-ci/</url>
+    <content><![CDATA[<h1 id="Travis"><a href="#Travis" class="headerlink" title="Travis"></a>Travis</h1>]]></content>
+      <categories>
+        <category>deploy</category>
+      </categories>
+      <tags>
+        <tag>todo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Docker总结</title>
     <url>/2019/04/28/docker/docker/</url>
     <content><![CDATA[<h3 id="Docker-命令"><a href="#Docker-命令" class="headerlink" title="Docker 命令"></a>Docker 命令</h3><ul>
@@ -87,36 +98,6 @@
       </tags>
   </entry>
   <entry>
-    <title>tomcat</title>
-    <url>/2019/05/01/java/tomcat/</url>
-    <content><![CDATA[<h4 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h4><ul>
-<li>tomcat 下载<ul>
-<li><a href="http://tomcat.apache.org/" target="_blank" rel="noopener">tomcat 下载地址</a></li>
-</ul>
-</li>
-<li>mac 下载tar.gz格式<ul>
-<li>解压 `tar -zxvf apache-tomcat-9.0.19.tar.gz </li>
-<li>将解压后的文件夹重命名为Tomcat( 之所以重名,只是习惯性命名 )放到/Library下</li>
-<li>进入到Tomcat 文件夹下的bin目录</li>
-<li>设置bin目录下的所有.sh文件的读写执行权限 <code>sudo chmod 755 *.sh</code></li>
-<li>启动tomcat 服务<code>sudo sh startup.sh</code></li>
-<li>关闭tomcat服务<code>sudo sh shutdown.sh</code></li>
-</ul>
-</li>
-<li>注意:tomcat 的配置信息都在server.xml文件里配置，如果想自定义配置,可以去xml文件配置</li>
-</ul>
-<h4 id="Eclipse-集成Tomcat"><a href="#Eclipse-集成Tomcat" class="headerlink" title="Eclipse 集成Tomcat"></a>Eclipse 集成Tomcat</h4><ul>
-<li>Window-&gt;show view -&gt; server</li>
-</ul>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>tomcat</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git的基本操作</title>
     <url>/2019/04/29/git/git-branch/</url>
     <content><![CDATA[<h1 id="一、add"><a href="#一、add" class="headerlink" title="一、add"></a>一、add</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加文件跟踪到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 添加已经被git管理的文件到暂存区</span></span><br><span class="line">git add -u</span><br></pre></td></tr></table></figure>
@@ -158,6 +139,66 @@
       </tags>
   </entry>
   <entry>
+    <title>tomcat</title>
+    <url>/2019/05/01/java/tomcat/</url>
+    <content><![CDATA[<h4 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h4><ul>
+<li>tomcat 下载<ul>
+<li><a href="http://tomcat.apache.org/" target="_blank" rel="noopener">tomcat 下载地址</a></li>
+</ul>
+</li>
+<li>mac 下载tar.gz格式<ul>
+<li>解压 `tar -zxvf apache-tomcat-9.0.19.tar.gz </li>
+<li>将解压后的文件夹重命名为Tomcat( 之所以重名,只是习惯性命名 )放到/Library下</li>
+<li>进入到Tomcat 文件夹下的bin目录</li>
+<li>设置bin目录下的所有.sh文件的读写执行权限 <code>sudo chmod 755 *.sh</code></li>
+<li>启动tomcat 服务<code>sudo sh startup.sh</code></li>
+<li>关闭tomcat服务<code>sudo sh shutdown.sh</code></li>
+</ul>
+</li>
+<li>注意:tomcat 的配置信息都在server.xml文件里配置，如果想自定义配置,可以去xml文件配置</li>
+</ul>
+<h4 id="Eclipse-集成Tomcat"><a href="#Eclipse-集成Tomcat" class="headerlink" title="Eclipse 集成Tomcat"></a>Eclipse 集成Tomcat</h4><ul>
+<li>Window-&gt;show view -&gt; server</li>
+</ul>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Bind、Apply、Call的区别</title>
+    <url>/2020/01/08/javascript/bind/</url>
+    <content><![CDATA[<p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>
+]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算表达式</title>
+    <url>/2019/12/28/javascript/cal-exp/</url>
+    <content><![CDATA[<h3 id="计算表达式拆解"><a href="#计算表达式拆解" class="headerlink" title="计算表达式拆解"></a>计算表达式拆解</h3><blockquote>
+<p>本例子使用数组实现栈,在栈的基础上 实现计算表达式</p>
+</blockquote>
+<h4 id="一、定义栈"><a href="#一、定义栈" class="headerlink" title="一、定义栈"></a>一、定义栈</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> items = []</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    items.push(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.pop()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.isEmpty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length === <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.top = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[items.length - <span class="number">1</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.clear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    items = []</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h4 id="二、用上述栈先来实现一个判断左右括号闭合的方法"><a href="#二、用上述栈先来实现一个判断左右括号闭合的方法" class="headerlink" title="二、用上述栈先来实现一个判断左右括号闭合的方法"></a>二、用上述栈先来实现一个判断左右括号闭合的方法</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> stack = <span class="keyword">new</span> Stack()</span><br><span class="line"><span class="comment">// validator</span></span><br><span class="line"><span class="comment">// 只入栈括号,</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isLegal</span>(<span class="params">param</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;param.length; i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> item = param[i]</span><br><span class="line">    <span class="keyword">if</span>(item === <span class="string">'('</span>)&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(item === <span class="string">')'</span>)&#123;</span><br><span class="line">      <span class="keyword">if</span>(stack.isEmpty())&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        stack.pop()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.isEmpty()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">isLegal(<span class="string">"((abc))"</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="三、实现一个计算后缀表达式"><a href="#三、实现一个计算后缀表达式" class="headerlink" title="三、实现一个计算后缀表达式"></a>三、实现一个计算后缀表达式</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calculate</span>(<span class="params">expressionList</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> data_stack = <span class="keyword">new</span> Stack()</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; expressionList.length; i++)&#123;</span><br><span class="line">  	<span class="keyword">var</span> item = expressionList[i]</span><br><span class="line">    <span class="keyword">if</span>([<span class="string">'+'</span>, <span class="string">'-'</span>, <span class="string">'*'</span>, <span class="string">'/'</span>].indexOf(item) &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">      <span class="keyword">var</span> pre = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> next = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> result = next + item + pre</span><br><span class="line">      result = <span class="built_in">parseInt</span>(<span class="built_in">eval</span>(result))</span><br><span class="line">      stack.push(result)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.pop()</span><br><span class="line">&#125;</span><br><span class="line">calculate([<span class="string">'4'</span>,<span class="string">'13'</span>, <span class="string">'5'</span>, <span class="string">'/'</span>, <span class="string">'+'</span>])</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>arithmetic</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>eslint</title>
     <url>/2022/04/10/javascript/eslint/</url>
     <content><![CDATA[<h1 id="一、初始化eslint"><a href="#一、初始化eslint" class="headerlink" title="一、初始化eslint"></a>一、初始化eslint</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pnpm add eslint -D</span><br><span class="line">npx eslint --init</span><br></pre></td></tr></table></figure>
@@ -175,30 +216,6 @@
       </categories>
       <tags>
         <tag>eslant config</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Bind、Apply、Call的区别</title>
-    <url>/2020/01/08/javascript/bind/</url>
-    <content><![CDATA[<p>相同点就是这三个方法都可以改变函数的this指向，不同点是call，apply是修改函数作用域，修改this指向，并且立即执行。bind是返回一个新的函数,并不会立即执行，若想立即执行需要在后面加上()调用，当然关于传入的参数也有一定的差异，call和bind可以接受多个单个的参数，apply 接受的参数形式是数组。</p>
-]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SCP使用示例</title>
-    <url>/2019/06/21/linux/scp/</url>
-    <content><![CDATA[<h4 id="SCP-复制远程服务器上的目录"><a href="#SCP-复制远程服务器上的目录" class="headerlink" title="SCP 复制远程服务器上的目录"></a>SCP 复制远程服务器上的目录</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scp -p 22 -r root@ip:/home/example/ /temp/</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>helper</tag>
       </tags>
   </entry>
   <entry>
@@ -222,57 +239,15 @@
       </tags>
   </entry>
   <entry>
-    <title>website</title>
-    <url>/2019/05/19/linux/website/</url>
-    <content><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>website</category>
-      </categories>
-      <tags>
-        <tag>helper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>travis-ci</title>
-    <url>/2022/03/04/deploy/travis-ci/</url>
-    <content><![CDATA[<h1 id="Travis"><a href="#Travis" class="headerlink" title="Travis"></a>Travis</h1>]]></content>
-      <categories>
-        <category>deploy</category>
-      </categories>
-      <tags>
-        <tag>todo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>查看使用的端口</title>
-    <url>/2019/06/02/linux/%E6%9F%A5%E7%9C%8B%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AB%AF%E5%8F%A3/</url>
-    <content><![CDATA[<h5 id="Centos7"><a href="#Centos7" class="headerlink" title="Centos7"></a>Centos7</h5><p>查看服务器端口号目前的使用情况</p>
-<p>netstat -luntp</p>
+    <title>SCP使用示例</title>
+    <url>/2019/06/21/linux/scp/</url>
+    <content><![CDATA[<h4 id="SCP-复制远程服务器上的目录"><a href="#SCP-复制远程服务器上的目录" class="headerlink" title="SCP 复制远程服务器上的目录"></a>SCP 复制远程服务器上的目录</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">scp -p 22 -r root@ip:/home/example/ /temp/</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>linux</category>
       </categories>
       <tags>
         <tag>helper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>计算表达式</title>
-    <url>/2019/12/28/javascript/cal-exp/</url>
-    <content><![CDATA[<h3 id="计算表达式拆解"><a href="#计算表达式拆解" class="headerlink" title="计算表达式拆解"></a>计算表达式拆解</h3><blockquote>
-<p>本例子使用数组实现栈,在栈的基础上 实现计算表达式</p>
-</blockquote>
-<h4 id="一、定义栈"><a href="#一、定义栈" class="headerlink" title="一、定义栈"></a>一、定义栈</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> items = []</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    items.push(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.pop()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.isEmpty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length === <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.top = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[items.length - <span class="number">1</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.clear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    items = []</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h4 id="二、用上述栈先来实现一个判断左右括号闭合的方法"><a href="#二、用上述栈先来实现一个判断左右括号闭合的方法" class="headerlink" title="二、用上述栈先来实现一个判断左右括号闭合的方法"></a>二、用上述栈先来实现一个判断左右括号闭合的方法</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> stack = <span class="keyword">new</span> Stack()</span><br><span class="line"><span class="comment">// validator</span></span><br><span class="line"><span class="comment">// 只入栈括号,</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isLegal</span>(<span class="params">param</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;param.length; i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> item = param[i]</span><br><span class="line">    <span class="keyword">if</span>(item === <span class="string">'('</span>)&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(item === <span class="string">')'</span>)&#123;</span><br><span class="line">      <span class="keyword">if</span>(stack.isEmpty())&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        stack.pop()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.isEmpty()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">isLegal(<span class="string">"((abc))"</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="三、实现一个计算后缀表达式"><a href="#三、实现一个计算后缀表达式" class="headerlink" title="三、实现一个计算后缀表达式"></a>三、实现一个计算后缀表达式</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">calculate</span>(<span class="params">expressionList</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> data_stack = <span class="keyword">new</span> Stack()</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; expressionList.length; i++)&#123;</span><br><span class="line">  	<span class="keyword">var</span> item = expressionList[i]</span><br><span class="line">    <span class="keyword">if</span>([<span class="string">'+'</span>, <span class="string">'-'</span>, <span class="string">'*'</span>, <span class="string">'/'</span>].indexOf(item) &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">      <span class="keyword">var</span> pre = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> next = data_stack.pop()</span><br><span class="line">      <span class="keyword">var</span> result = next + item + pre</span><br><span class="line">      result = <span class="built_in">parseInt</span>(<span class="built_in">eval</span>(result))</span><br><span class="line">      stack.push(result)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      stack.push(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> stack.pop()</span><br><span class="line">&#125;</span><br><span class="line">calculate([<span class="string">'4'</span>,<span class="string">'13'</span>, <span class="string">'5'</span>, <span class="string">'/'</span>, <span class="string">'+'</span>])</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>arithmetic</tag>
       </tags>
   </entry>
   <entry>
@@ -289,6 +264,89 @@
       </categories>
       <tags>
         <tag>arithmetic</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>队列</title>
+    <url>/2019/12/28/javascript/triangle/</url>
+    <content><![CDATA[<h3 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h3><blockquote>
+<p>利用数组定义队列,在队列的基础上实现一些功能</p>
+</blockquote>
+<h4 id="一、定义队列"><a href="#一、定义队列" class="headerlink" title="一、定义队列"></a>一、定义队列</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Queue</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> items = []</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.enqueue = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    items.push(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.dequeue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.shift()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.head = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[<span class="number">0</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.tail = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[items.length - <span class="number">1</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.clear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    items = []</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.Empty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length === <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h4 id="二、实现斐波那契"><a href="#二、实现斐波那契" class="headerlink" title="二、实现斐波那契"></a>二、实现斐波那契</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用队列实现斐波那契,此处默认n &gt; 2</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fibonacci</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> queue = <span class="keyword">new</span> Queue()</span><br><span class="line">  queue.enqueue(<span class="number">1</span>)</span><br><span class="line">  queue.enqueue(<span class="number">1</span>)</span><br><span class="line">  <span class="keyword">var</span> index = <span class="number">0</span></span><br><span class="line">  <span class="keyword">while</span>(index &lt; n - <span class="number">2</span> )&#123;</span><br><span class="line">     <span class="keyword">var</span> old_head_data = queue.dequeue()</span><br><span class="line">     <span class="keyword">var</span> new_head_data = queue.head()</span><br><span class="line">     <span class="keyword">var</span> next_data = old_head_data + new_head_data</span><br><span class="line">     queue.enqueue(next_data)</span><br><span class="line">    index += <span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">  queue.dequeue()</span><br><span class="line">  <span class="keyword">return</span> queue.head()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>队列中始终只有两个数, 第二个数便是所求的数</p>
+</blockquote>
+<h4 id="三、循环删除"><a href="#三、循环删除" class="headerlink" title="三、循环删除"></a>三、循环删除</h4><blockquote>
+<p>有一个数组a[100] 存放0-99,要求每隔两个数删掉一个数,到末尾时循环至开头继续进行,求最后一个被删除的数.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deleteCircle</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> queue = <span class="keyword">new</span> Queue()</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">    queue.enqueue(arr[i])</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">var</span> index = <span class="number">0</span></span><br><span class="line">  <span class="keyword">while</span>(queue.size() != <span class="number">1</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> item = queue.dequeue()</span><br><span class="line">    index += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span>(index % <span class="number">3</span> != <span class="number">0</span>)&#123;</span><br><span class="line">      queue.enqueue(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr = []</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++)&#123;</span><br><span class="line">  arr.push(i)</span><br><span class="line">&#125;</span><br><span class="line">deleteCircle(arr)</span><br></pre></td></tr></table></figure>
+<h4 id="四、使用两个队列实现一个栈"><a href="#四、使用两个队列实现一个栈" class="headerlink" title="四、使用两个队列实现一个栈"></a>四、使用两个队列实现一个栈</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> init_queue_first  = <span class="keyword">new</span> Queue()</span><br><span class="line">  <span class="keyword">var</span> init_queue_second = <span class="keyword">new</span> Queue()</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">var</span> data_queue = <span class="literal">null</span></span><br><span class="line"> 	<span class="keyword">var</span> empty_queue = <span class="literal">null</span></span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">validateEmptyQueue</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(init_queue_first.isEmpty()&amp;&amp; init_queue_second.isEmpty())&#123;</span><br><span class="line">    	data_queue = init_queue_first</span><br><span class="line">      empty_queue = init_queue_second</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(init_queue_first.isEmpty())&#123;</span><br><span class="line">      data_queue = init_queue_second</span><br><span class="line">      empty_queue = init_queue_first</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      data_queue = init_queue_first</span><br><span class="line">      empty_queue = init_queue_second</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">	</span><br><span class="line">  <span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    validateEmptyQueue()</span><br><span class="line">    data_queue.enqueue(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.top = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    validateEmptyQueue()</span><br><span class="line">    <span class="keyword">return</span> data_queue.tail()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    validateEmptyQueue()</span><br><span class="line">    <span class="keyword">while</span>(data_queue.size()&gt;<span class="number">1</span>)&#123;</span><br><span class="line">      empty_queue.enqueue(data_queue.dequeue())</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> data_queue.dequeue()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">var</span> stack = <span class="keyword">new</span> Stack()</span><br><span class="line">  stack.push(<span class="number">1</span>)</span><br><span class="line">  stack.push(<span class="number">2</span>)</span><br><span class="line">  <span class="built_in">console</span>.log(stack.pop())</span><br><span class="line">  <span class="built_in">console</span>.log(stack.pop())</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="五、使用队列实现杨辉三角"><a href="#五、使用队列实现杨辉三角" class="headerlink" title="五、使用队列实现杨辉三角"></a>五、使用队列实现杨辉三角</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">triangle</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> queue = <span class="keyword">new</span> Queue()</span><br><span class="line">  queue.enqueue(<span class="number">1</span>)</span><br><span class="line"> 	<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> line = <span class="string">''</span></span><br><span class="line">    <span class="keyword">var</span> pre = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; i; j++)&#123;</span><br><span class="line">      <span class="keyword">var</span> item = queue.dequeue()</span><br><span class="line">      line += item + <span class="string">" "</span></span><br><span class="line">      <span class="comment">//此时开始计算下一行的数据</span></span><br><span class="line">      pre = item</span><br><span class="line">      <span class="keyword">var</span> value = item + pre</span><br><span class="line">      queue.enqueue(value)</span><br><span class="line">    &#125;</span><br><span class="line">    queue.enqueue(<span class="number">1</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(line)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">triangle(<span class="number">6</span>)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>外层for循环是计算行,内层for循环是计算行的内容</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>arithmetic</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>查看使用的端口</title>
+    <url>/2019/06/02/linux/%E6%9F%A5%E7%9C%8B%E4%BD%BF%E7%94%A8%E7%9A%84%E7%AB%AF%E5%8F%A3/</url>
+    <content><![CDATA[<h5 id="Centos7"><a href="#Centos7" class="headerlink" title="Centos7"></a>Centos7</h5><p>查看服务器端口号目前的使用情况</p>
+<p>netstat -luntp</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>helper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>website</title>
+    <url>/2019/05/19/linux/website/</url>
+    <content><![CDATA[<h5 id="Create-command"><a href="#Create-command" class="headerlink" title="Create command"></a>Create command</h5><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>website</category>
+      </categories>
+      <tags>
+        <tag>helper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>debug_v8</title>
+    <url>/2022/04/21/node/debug-v8/</url>
+    <content><![CDATA[<h1 id="MAC环境下如何调试v8"><a href="#MAC环境下如何调试v8" class="headerlink" title="MAC环境下如何调试v8"></a>MAC环境下如何调试v8</h1><h4 id="一、下载depot-tools"><a href="#一、下载depot-tools" class="headerlink" title="一、下载depot_tools"></a>一、下载depot_tools</h4><p><a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up" target="_blank" rel="noopener">depot_tools</a></p>
+<h4 id="二、更新depot-tools"><a href="#二、更新depot-tools" class="headerlink" title="二、更新depot_tools"></a>二、更新depot_tools</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gclient sync</span><br></pre></td></tr></table></figure>
+<p>执行上述命令成功后，会出现v8的源码</p>
+<h4 id="三、配置工程"><a href="#三、配置工程" class="headerlink" title="三、配置工程"></a>三、配置工程</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># at v8</span><br><span class="line">gn gen out/gn --ide=xcode</span><br></pre></td></tr></table></figure>
+<h4 id="四、编译v8"><a href="#四、编译v8" class="headerlink" title="四、编译v8"></a>四、编译v8</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ninja -C out/gn</span><br></pre></td></tr></table></figure>
+<p>执行成功后会出现d8的可执行文件</p>
+]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>v8</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nginx依赖</title>
+    <url>/2019/10/11/nginx/nginx%E4%BE%9D%E8%B5%96/</url>
+    <content><![CDATA[<h3 id="编译安装nginx需要安装依赖"><a href="#编译安装nginx需要安装依赖" class="headerlink" title="编译安装nginx需要安装依赖"></a>编译安装nginx需要安装依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install gcc gcc-c++</span><br><span class="line">yum -y install zlib zlib-devel openssl openssl-devel pcre-devel</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>nginx</category>
+      </categories>
+      <tags>
+        <tag>install</tag>
       </tags>
   </entry>
   <entry>
@@ -335,68 +393,6 @@
       </tags>
   </entry>
   <entry>
-    <title>队列</title>
-    <url>/2019/12/28/javascript/triangle/</url>
-    <content><![CDATA[<h3 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h3><blockquote>
-<p>利用数组定义队列,在队列的基础上实现一些功能</p>
-</blockquote>
-<h4 id="一、定义队列"><a href="#一、定义队列" class="headerlink" title="一、定义队列"></a>一、定义队列</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Queue</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> items = []</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.enqueue = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    items.push(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.dequeue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.shift()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.head = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[<span class="number">0</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.tail = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items[items.length - <span class="number">1</span>]</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.size = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.clear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    items = []</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.Empty = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items.length === <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h4 id="二、实现斐波那契"><a href="#二、实现斐波那契" class="headerlink" title="二、实现斐波那契"></a>二、实现斐波那契</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 使用队列实现斐波那契,此处默认n &gt; 2</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fibonacci</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> queue = <span class="keyword">new</span> Queue()</span><br><span class="line">  queue.enqueue(<span class="number">1</span>)</span><br><span class="line">  queue.enqueue(<span class="number">1</span>)</span><br><span class="line">  <span class="keyword">var</span> index = <span class="number">0</span></span><br><span class="line">  <span class="keyword">while</span>(index &lt; n - <span class="number">2</span> )&#123;</span><br><span class="line">     <span class="keyword">var</span> old_head_data = queue.dequeue()</span><br><span class="line">     <span class="keyword">var</span> new_head_data = queue.head()</span><br><span class="line">     <span class="keyword">var</span> next_data = old_head_data + new_head_data</span><br><span class="line">     queue.enqueue(next_data)</span><br><span class="line">    index += <span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">  queue.dequeue()</span><br><span class="line">  <span class="keyword">return</span> queue.head()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>队列中始终只有两个数, 第二个数便是所求的数</p>
-</blockquote>
-<h4 id="三、循环删除"><a href="#三、循环删除" class="headerlink" title="三、循环删除"></a>三、循环删除</h4><blockquote>
-<p>有一个数组a[100] 存放0-99,要求每隔两个数删掉一个数,到末尾时循环至开头继续进行,求最后一个被删除的数.</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deleteCircle</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> queue = <span class="keyword">new</span> Queue()</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">    queue.enqueue(arr[i])</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">var</span> index = <span class="number">0</span></span><br><span class="line">  <span class="keyword">while</span>(queue.size() != <span class="number">1</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> item = queue.dequeue()</span><br><span class="line">    index += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span>(index % <span class="number">3</span> != <span class="number">0</span>)&#123;</span><br><span class="line">      queue.enqueue(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr = []</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++)&#123;</span><br><span class="line">  arr.push(i)</span><br><span class="line">&#125;</span><br><span class="line">deleteCircle(arr)</span><br></pre></td></tr></table></figure>
-<h4 id="四、使用两个队列实现一个栈"><a href="#四、使用两个队列实现一个栈" class="headerlink" title="四、使用两个队列实现一个栈"></a>四、使用两个队列实现一个栈</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stack</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> init_queue_first  = <span class="keyword">new</span> Queue()</span><br><span class="line">  <span class="keyword">var</span> init_queue_second = <span class="keyword">new</span> Queue()</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">var</span> data_queue = <span class="literal">null</span></span><br><span class="line"> 	<span class="keyword">var</span> empty_queue = <span class="literal">null</span></span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">validateEmptyQueue</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(init_queue_first.isEmpty()&amp;&amp; init_queue_second.isEmpty())&#123;</span><br><span class="line">    	data_queue = init_queue_first</span><br><span class="line">      empty_queue = init_queue_second</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(init_queue_first.isEmpty())&#123;</span><br><span class="line">      data_queue = init_queue_second</span><br><span class="line">      empty_queue = init_queue_first</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      data_queue = init_queue_first</span><br><span class="line">      empty_queue = init_queue_second</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">	</span><br><span class="line">  <span class="keyword">this</span>.push = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">    validateEmptyQueue()</span><br><span class="line">    data_queue.enqueue(item)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.top = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    validateEmptyQueue()</span><br><span class="line">    <span class="keyword">return</span> data_queue.tail()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.pop = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    validateEmptyQueue()</span><br><span class="line">    <span class="keyword">while</span>(data_queue.size()&gt;<span class="number">1</span>)&#123;</span><br><span class="line">      empty_queue.enqueue(data_queue.dequeue())</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> data_queue.dequeue()</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">var</span> stack = <span class="keyword">new</span> Stack()</span><br><span class="line">  stack.push(<span class="number">1</span>)</span><br><span class="line">  stack.push(<span class="number">2</span>)</span><br><span class="line">  <span class="built_in">console</span>.log(stack.pop())</span><br><span class="line">  <span class="built_in">console</span>.log(stack.pop())</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<h4 id="五、使用队列实现杨辉三角"><a href="#五、使用队列实现杨辉三角" class="headerlink" title="五、使用队列实现杨辉三角"></a>五、使用队列实现杨辉三角</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">triangle</span>(<span class="params">n</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> queue = <span class="keyword">new</span> Queue()</span><br><span class="line">  queue.enqueue(<span class="number">1</span>)</span><br><span class="line"> 	<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> line = <span class="string">''</span></span><br><span class="line">    <span class="keyword">var</span> pre = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; i; j++)&#123;</span><br><span class="line">      <span class="keyword">var</span> item = queue.dequeue()</span><br><span class="line">      line += item + <span class="string">" "</span></span><br><span class="line">      <span class="comment">//此时开始计算下一行的数据</span></span><br><span class="line">      pre = item</span><br><span class="line">      <span class="keyword">var</span> value = item + pre</span><br><span class="line">      queue.enqueue(value)</span><br><span class="line">    &#125;</span><br><span class="line">    queue.enqueue(<span class="number">1</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(line)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">triangle(<span class="number">6</span>)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>外层for循环是计算行,内层for循环是计算行的内容</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>javascript</category>
-      </categories>
-      <tags>
-        <tag>arithmetic</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>nginx依赖</title>
-    <url>/2019/10/11/nginx/nginx%E4%BE%9D%E8%B5%96/</url>
-    <content><![CDATA[<h3 id="编译安装nginx需要安装依赖"><a href="#编译安装nginx需要安装依赖" class="headerlink" title="编译安装nginx需要安装依赖"></a>编译安装nginx需要安装依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install gcc gcc-c++</span><br><span class="line">yum -y install zlib zlib-devel openssl openssl-devel pcre-devel</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>nginx</category>
-      </categories>
-      <tags>
-        <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Yarn的安装</title>
-    <url>/2019/05/22/node/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h5 id="INSTALL-YARN"><a href="#INSTALL-YARN" class="headerlink" title="INSTALL YARN"></a>INSTALL YARN</h5><ul>
-<li><p>添加yum源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install yarn -y</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>yarn</category>
-      </categories>
-      <tags>
-        <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nvm</title>
     <url>/2020/02/14/node/nvm/</url>
     <content><![CDATA[<h3 id="NVM-安装"><a href="#NVM-安装" class="headerlink" title="NVM 安装"></a>NVM 安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash</span><br><span class="line"><span class="meta">#</span><span class="bash"> .bash_profile</span></span><br><span class="line">export NVM_DIR="$HOME/.nvm"</span><br><span class="line">[ -s "$NVM_DIR/nvm.sh" ] &amp;&amp; . "$NVM_DIR/nvm.sh"</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地所有node版本</span></span><br><span class="line">nvm list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装node</span></span><br><span class="line">nvm install v8.12.0</span><br><span class="line"><span class="meta">#</span><span class="bash"> 切换node版本</span></span><br><span class="line">nvm use 8.12.0</span><br></pre></td></tr></table></figure>
@@ -406,26 +402,6 @@
       </categories>
       <tags>
         <tag>install</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PyMysql使用</title>
-    <url>/2022/03/09/python/pymysql/</url>
-    <content><![CDATA[<h1 id="一、使用pymysql"><a href="#一、使用pymysql" class="headerlink" title="一、使用pymysql"></a>一、使用pymysql</h1><h2 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h2><p><code>pip install pymysql</code></p>
-<h2 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a>2、使用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Single</span>:</span></span><br><span class="line">	_instance = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> cls._instance:</span><br><span class="line">            cls._instance = object.__new__(cls)</span><br><span class="line">        <span class="keyword">return</span> cls._instance</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GetMysqlIns</span><span class="params">(Single)</span>:</span></span><br><span class="line">    db = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.db = pymysql.connect(host=<span class="string">'xxx'</span>, user=<span class="string">'xxx'</span>,</span><br><span class="line">                                  passwd=<span class="string">'xxx'</span>, db=<span class="string">'xxx'</span>)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">		db_ins = GetMysqlIns()</span><br><span class="line">		cursor = db_ins.db.cursor()</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h1 id="二、新增"><a href="#二、新增" class="headerlink" title="二、新增"></a>二、新增</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">create_data = [(<span class="string">'xxx'</span>, <span class="number">18</span>)]</span><br><span class="line">create_sql = <span class="string">"insert into table (name, age) values (%s, %s)"</span></span><br><span class="line">cursor.executemany(create_sql, create_data)</span><br></pre></td></tr></table></figure>
-<h1 id="三、删除"><a href="#三、删除" class="headerlink" title="三、删除"></a>三、删除</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">delete_sql = <span class="string">"delete from table where name='&#123;&#125;'"</span></span><br><span class="line">delete_data = [(<span class="string">'name'</span>)]</span><br><span class="line">cursor.executemany(delete_sql, delete_data)</span><br></pre></td></tr></table></figure>
-<h1 id="四、修改"><a href="#四、修改" class="headerlink" title="四、修改"></a>四、修改</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">update_sql = <span class="string">"update table set name=(%s) where age='18' and gender='male'"</span></span><br><span class="line">update_data = [(<span class="string">'xxx'</span>)]</span><br><span class="line">cursor.executemany(update_sql, update_data)</span><br></pre></td></tr></table></figure>
-<h1 id="五、查询"><a href="#五、查询" class="headerlink" title="五、查询"></a>五、查询</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">query_sql = <span class="string">"select * from table where name='name'"</span></span><br><span class="line">cursor.execute(query_sql)</span><br></pre></td></tr></table></figure>
-<h1 id="六、操作失败回滚"><a href="#六、操作失败回滚" class="headerlink" title="六、操作失败回滚"></a>六、操作失败回滚</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">		print(<span class="string">"操作db"</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">		db_ins.db.rollback()</span><br></pre></td></tr></table></figure>
-<h1 id="七、关闭链接"><a href="#七、关闭链接" class="headerlink" title="七、关闭链接"></a>七、关闭链接</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cursor.close()</span><br><span class="line">db_ins.db.close()</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>pymysql</tag>
       </tags>
   </entry>
   <entry>
@@ -457,6 +433,48 @@
       </tags>
   </entry>
   <entry>
+    <title>Rust安装</title>
+    <url>/2022/03/09/rust/rust-start/</url>
+    <content><![CDATA[<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="Linux、Macos"><a href="#Linux、Macos" class="headerlink" title="Linux、Macos"></a>Linux、Macos</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl --proto <span class="string">'=https'</span> --tlsv1.2 https://sh.rustup.rs -sSf | sh</span><br></pre></td></tr></table></figure>
+<h1 id="二、查看版本"><a href="#二、查看版本" class="headerlink" title="二、查看版本"></a>二、查看版本</h1><p><code>rustc -v</code></p>
+<p><code>cargo -v</code></p>
+<h1 id="三、卸载"><a href="#三、卸载" class="headerlink" title="三、卸载"></a>三、卸载</h1><p><code>rustup self uninstall</code></p>
+<h1 id="四、更新"><a href="#四、更新" class="headerlink" title="四、更新"></a>四、更新</h1><p><code>rustup update</code></p>
+<h1 id="五、vscode插件"><a href="#五、vscode插件" class="headerlink" title="五、vscode插件"></a>五、vscode插件</h1><ul>
+<li>Better TOML</li>
+<li>Error Lens 展示错误信息</li>
+<li>CodeLLDB, Debugger</li>
+</ul>
+]]></content>
+      <categories>
+        <category>rust</category>
+      </categories>
+      <tags>
+        <tag>env</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Yarn的安装</title>
+    <url>/2019/05/22/node/Yarn%E7%9A%84%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h5 id="INSTALL-YARN"><a href="#INSTALL-YARN" class="headerlink" title="INSTALL YARN"></a>INSTALL YARN</h5><ul>
+<li><p>添加yum源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install yarn -y</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>yarn</category>
+      </categories>
+      <tags>
+        <tag>install</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Rabbitmq安装和使用</title>
     <url>/2021/01/16/python/setup/</url>
     <content><![CDATA[<h4 id="一、docker方式安装"><a href="#一、docker方式安装" class="headerlink" title="一、docker方式安装"></a>一、docker方式安装</h4><p>1、获取镜像，可以获取最新的，当然也可以选择dockerhub上star最多的，比如rabbitmq:3.8-management</p>
@@ -485,17 +503,23 @@
       </tags>
   </entry>
   <entry>
-    <title>vue单元测试</title>
-    <url>/2021/01/16/vue/vue-unit-test/</url>
-    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1、安装依赖模块</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add @vue/<span class="built_in">test</span>-utils vue-jest -D</span><br></pre></td></tr></table></figure>
-<p>2、创建jest配置文件</p>
+    <title>PyMysql使用</title>
+    <url>/2022/03/09/python/pymysql/</url>
+    <content><![CDATA[<h1 id="一、使用pymysql"><a href="#一、使用pymysql" class="headerlink" title="一、使用pymysql"></a>一、使用pymysql</h1><h2 id="1、安装"><a href="#1、安装" class="headerlink" title="1、安装"></a>1、安装</h2><p><code>pip install pymysql</code></p>
+<h2 id="2、使用"><a href="#2、使用" class="headerlink" title="2、使用"></a>2、使用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Single</span>:</span></span><br><span class="line">	_instance = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, *args, **kwargs)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> cls._instance:</span><br><span class="line">            cls._instance = object.__new__(cls)</span><br><span class="line">        <span class="keyword">return</span> cls._instance</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">GetMysqlIns</span><span class="params">(Single)</span>:</span></span><br><span class="line">    db = <span class="literal">None</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.db = pymysql.connect(host=<span class="string">'xxx'</span>, user=<span class="string">'xxx'</span>,</span><br><span class="line">                                  passwd=<span class="string">'xxx'</span>, db=<span class="string">'xxx'</span>)</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">		db_ins = GetMysqlIns()</span><br><span class="line">		cursor = db_ins.db.cursor()</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h1 id="二、新增"><a href="#二、新增" class="headerlink" title="二、新增"></a>二、新增</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">create_data = [(<span class="string">'xxx'</span>, <span class="number">18</span>)]</span><br><span class="line">create_sql = <span class="string">"insert into table (name, age) values (%s, %s)"</span></span><br><span class="line">cursor.executemany(create_sql, create_data)</span><br></pre></td></tr></table></figure>
+<h1 id="三、删除"><a href="#三、删除" class="headerlink" title="三、删除"></a>三、删除</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">delete_sql = <span class="string">"delete from table where name='&#123;&#125;'"</span></span><br><span class="line">delete_data = [(<span class="string">'name'</span>)]</span><br><span class="line">cursor.executemany(delete_sql, delete_data)</span><br></pre></td></tr></table></figure>
+<h1 id="四、修改"><a href="#四、修改" class="headerlink" title="四、修改"></a>四、修改</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">update_sql = <span class="string">"update table set name=(%s) where age='18' and gender='male'"</span></span><br><span class="line">update_data = [(<span class="string">'xxx'</span>)]</span><br><span class="line">cursor.executemany(update_sql, update_data)</span><br></pre></td></tr></table></figure>
+<h1 id="五、查询"><a href="#五、查询" class="headerlink" title="五、查询"></a>五、查询</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">query_sql = <span class="string">"select * from table where name='name'"</span></span><br><span class="line">cursor.execute(query_sql)</span><br></pre></td></tr></table></figure>
+<h1 id="六、操作失败回滚"><a href="#六、操作失败回滚" class="headerlink" title="六、操作失败回滚"></a>六、操作失败回滚</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">		print(<span class="string">"操作db"</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">		db_ins.db.rollback()</span><br></pre></td></tr></table></figure>
+<h1 id="七、关闭链接"><a href="#七、关闭链接" class="headerlink" title="七、关闭链接"></a>七、关闭链接</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cursor.close()</span><br><span class="line">db_ins.db.close()</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>test</category>
+        <category>python</category>
       </categories>
       <tags>
-        <tag>unit-test</tag>
+        <tag>pymysql</tag>
       </tags>
   </entry>
   <entry>
@@ -533,24 +557,6 @@
       </tags>
   </entry>
   <entry>
-    <title>架构</title>
-    <url>/2020/01/01/vue/framework/</url>
-    <content><![CDATA[<h4 id="Vue组件化"><a href="#Vue组件化" class="headerlink" title="Vue组件化"></a>Vue组件化</h4><h5 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h5><p>插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。</p>
-<h6 id="匿名插槽"><a href="#匿名插槽" class="headerlink" title="匿名插槽"></a>匿名插槽</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;slot&gt;&lt;/slot&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;child&gt;Hello World&lt;/child&gt;</span><br></pre></td></tr></table></figure>
-<h6 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h6><p>将内容过分发到子组件指定位置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;solt&gt;&lt;/solt&gt;</span><br><span class="line">  &lt;solt name=&quot;content&quot;&gt;&lt;/solt&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;Child&gt;</span><br><span class="line">	&lt;template v-solt:default&gt;具名插槽&lt;/template&gt;</span><br><span class="line">  &lt;template v-solt:content&gt;hello world&lt;/template&gt;</span><br><span class="line">&lt;/Child&gt;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<h6 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h6><p>分发内容要用到子组件中的数据</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;slot :foo=&quot;foo&quot;&gt;&lt;/slot&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">//parent</span><br><span class="line">&lt;child&gt;</span><br><span class="line">	&lt;template v-slot:default=&quot;slotProps&quot;&gt;来自子组件的数据&#123;&#123; slotProps.foo &#125;&#125;&lt;/template&gt;</span><br><span class="line">&lt;/child&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>vue</category>
-      </categories>
-      <tags>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>transfer-css</title>
     <url>/2022/04/08/webpack/transfer-css/</url>
     <content><![CDATA[<h1 id="一、"><a href="#一、" class="headerlink" title="一、"></a>一、</h1>]]></content>
@@ -578,24 +584,35 @@
       </tags>
   </entry>
   <entry>
-    <title>Rust安装</title>
-    <url>/2022/03/09/rust/rust-start/</url>
-    <content><![CDATA[<h1 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h1><h2 id="Linux、Macos"><a href="#Linux、Macos" class="headerlink" title="Linux、Macos"></a>Linux、Macos</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl --proto <span class="string">'=https'</span> --tlsv1.2 https://sh.rustup.rs -sSf | sh</span><br></pre></td></tr></table></figure>
-<h1 id="二、查看版本"><a href="#二、查看版本" class="headerlink" title="二、查看版本"></a>二、查看版本</h1><p><code>rustc -v</code></p>
-<p><code>cargo -v</code></p>
-<h1 id="三、卸载"><a href="#三、卸载" class="headerlink" title="三、卸载"></a>三、卸载</h1><p><code>rustup self uninstall</code></p>
-<h1 id="四、更新"><a href="#四、更新" class="headerlink" title="四、更新"></a>四、更新</h1><p><code>rustup update</code></p>
-<h1 id="五、vscode插件"><a href="#五、vscode插件" class="headerlink" title="五、vscode插件"></a>五、vscode插件</h1><ul>
-<li>Better TOML</li>
-<li>Error Lens 展示错误信息</li>
-<li>CodeLLDB, Debugger</li>
-</ul>
+    <title>架构</title>
+    <url>/2020/01/01/vue/framework/</url>
+    <content><![CDATA[<h4 id="Vue组件化"><a href="#Vue组件化" class="headerlink" title="Vue组件化"></a>Vue组件化</h4><h5 id="插槽"><a href="#插槽" class="headerlink" title="插槽"></a>插槽</h5><p>插槽语法是Vue实现的内容分发API，用于复合组件开发。该技术在通用组件库开发中有大量应用。</p>
+<h6 id="匿名插槽"><a href="#匿名插槽" class="headerlink" title="匿名插槽"></a>匿名插槽</h6><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;slot&gt;&lt;/slot&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;child&gt;Hello World&lt;/child&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="具名插槽"><a href="#具名插槽" class="headerlink" title="具名插槽"></a>具名插槽</h6><p>将内容过分发到子组件指定位置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;solt&gt;&lt;/solt&gt;</span><br><span class="line">  &lt;solt name=&quot;content&quot;&gt;&lt;/solt&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">// parent</span><br><span class="line">&lt;Child&gt;</span><br><span class="line">	&lt;template v-solt:default&gt;具名插槽&lt;/template&gt;</span><br><span class="line">  &lt;template v-solt:content&gt;hello world&lt;/template&gt;</span><br><span class="line">&lt;/Child&gt;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h6 id="作用域插槽"><a href="#作用域插槽" class="headerlink" title="作用域插槽"></a>作用域插槽</h6><p>分发内容要用到子组件中的数据</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// child</span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &lt;slot :foo=&quot;foo&quot;&gt;&lt;/slot&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">//parent</span><br><span class="line">&lt;child&gt;</span><br><span class="line">	&lt;template v-slot:default=&quot;slotProps&quot;&gt;来自子组件的数据&#123;&#123; slotProps.foo &#125;&#125;&lt;/template&gt;</span><br><span class="line">&lt;/child&gt;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>rust</category>
+        <category>vue</category>
       </categories>
       <tags>
-        <tag>env</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue单元测试</title>
+    <url>/2021/01/16/vue/vue-unit-test/</url>
+    <content><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1、安装依赖模块</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yarn add @vue/<span class="built_in">test</span>-utils vue-jest -D</span><br></pre></td></tr></table></figure>
+<p>2、创建jest配置文件</p>
+]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>unit-test</tag>
       </tags>
   </entry>
   <entry>

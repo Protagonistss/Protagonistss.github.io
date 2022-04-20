@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2022-04-10T04:15:51.388Z</updated>
+  <updated>2022-04-20T11:59:47.194Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>debug_v8</title>
+    <link href="http://protagonistss.github.io.com/2022/04/21/node/debug-v8/"/>
+    <id>http://protagonistss.github.io.com/2022/04/21/node/debug-v8/</id>
+    <published>2022-04-20T19:50:54.000Z</published>
+    <updated>2022-04-20T11:59:47.194Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MAC环境下如何调试v8"><a href="#MAC环境下如何调试v8" class="headerlink" title="MAC环境下如何调试v8"></a>MAC环境下如何调试v8</h1><h4 id="一、下载depot-tools"><a href="#一、下载depot-tools" class="headerlink" title="一、下载depot_tools"></a>一、下载depot_tools</h4><p><a href="https://commondatastorage.googleapis.com/chrome-infra-docs/flat/depot_tools/docs/html/depot_tools_tutorial.html#_setting_up" target="_blank" rel="noopener">depot_tools</a></p><h4 id="二、更新depot-tools"><a href="#二、更新depot-tools" class="headerlink" title="二、更新depot_tools"></a>二、更新depot_tools</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gclient sync</span><br></pre></td></tr></table></figure><p>执行上述命令成功后，会出现v8的源码</p><h4 id="三、配置工程"><a href="#三、配置工程" class="headerlink" title="三、配置工程"></a>三、配置工程</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># at v8</span><br><span class="line">gn gen out/gn --ide=xcode</span><br></pre></td></tr></table></figure><h4 id="四、编译v8"><a href="#四、编译v8" class="headerlink" title="四、编译v8"></a>四、编译v8</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ninja -C out/gn</span><br></pre></td></tr></table></figure><p>执行成功后会出现d8的可执行文件</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;MAC环境下如何调试v8&quot;&gt;&lt;a href=&quot;#MAC环境下如何调试v8&quot; class=&quot;headerlink&quot; title=&quot;MAC环境下如何调试v8&quot;&gt;&lt;/a&gt;MAC环境下如何调试v8&lt;/h1&gt;&lt;h4 id=&quot;一、下载depot-tools&quot;&gt;&lt;a href=
+      
+    
+    </summary>
+    
+      <category term="node" scheme="http://protagonistss.github.io.com/categories/node/"/>
+    
+    
+      <category term="v8" scheme="http://protagonistss.github.io.com/tags/v8/"/>
+    
+  </entry>
   
   <entry>
     <title>eslint</title>
@@ -492,31 +517,6 @@
     
     
       <category term="backup" scheme="http://protagonistss.github.io.com/tags/backup/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SCP使用示例</title>
-    <link href="http://protagonistss.github.io.com/2019/06/21/linux/scp/"/>
-    <id>http://protagonistss.github.io.com/2019/06/21/linux/scp/</id>
-    <published>2019-06-21T15:40:07.000Z</published>
-    <updated>2022-03-09T06:55:48.980Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="SCP-复制远程服务器上的目录"><a href="#SCP-复制远程服务器上的目录" class="headerlink" title="SCP 复制远程服务器上的目录"></a>SCP 复制远程服务器上的目录</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -p 22 -r root@ip:/home/example/ /temp/</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;SCP-复制远程服务器上的目录&quot;&gt;&lt;a href=&quot;#SCP-复制远程服务器上的目录&quot; class=&quot;headerlink&quot; title=&quot;SCP 复制远程服务器上的目录&quot;&gt;&lt;/a&gt;SCP 复制远程服务器上的目录&lt;/h4&gt;&lt;figure class=&quot;highli
-      
-    
-    </summary>
-    
-      <category term="linux" scheme="http://protagonistss.github.io.com/categories/linux/"/>
-    
-    
-      <category term="helper" scheme="http://protagonistss.github.io.com/tags/helper/"/>
     
   </entry>
   
