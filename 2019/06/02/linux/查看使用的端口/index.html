@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="helper,">
+  <meta name="keywords" content="centos,">
 
 
 
@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Centos7查看服务器端口号目前的使用情况 netstat -luntp">
-<meta name="keywords" content="helper">
+<meta name="description" content="知识点总结路由追踪 12mtrtraceroute 查看域名信息 1nslookup 查看端口状态 1telnet protagonisths.com 80 网络抓包 123456# -i any 所有的网卡的数据包# -n 如果有域名的解析成ip# port 指定端口# host 捕获某个主机# -w 保存到某个文件tcpdump -i any -n host [example] and por">
+<meta name="keywords" content="centos">
 <meta property="og:type" content="article">
-<meta property="og:title" content="查看使用的端口">
+<meta property="og:title" content="知识点总结">
 <meta property="og:url" content="http://protagonistss.github.io.com/2019/06/02/linux/查看使用的端口/index.html">
 <meta property="og:site_name" content="protagonistss">
-<meta property="og:description" content="Centos7查看服务器端口号目前的使用情况 netstat -luntp">
+<meta property="og:description" content="知识点总结路由追踪 12mtrtraceroute 查看域名信息 1nslookup 查看端口状态 1telnet protagonisths.com 80 网络抓包 123456# -i any 所有的网卡的数据包# -n 如果有域名的解析成ip# port 指定端口# host 捕获某个主机# -w 保存到某个文件tcpdump -i any -n host [example] and por">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2022-03-09T06:55:38.587Z">
+<meta property="og:updated_time" content="2022-05-12T09:07:27.127Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="查看使用的端口">
-<meta name="twitter:description" content="Centos7查看服务器端口号目前的使用情况 netstat -luntp">
+<meta name="twitter:title" content="知识点总结">
+<meta name="twitter:description" content="知识点总结路由追踪 12mtrtraceroute 查看域名信息 1nslookup 查看端口状态 1telnet protagonisths.com 80 网络抓包 123456# -i any 所有的网卡的数据包# -n 如果有域名的解析成ip# port 指定端口# host 捕获某个主机# -w 保存到某个文件tcpdump -i any -n host [example] and por">
 
 
 
@@ -142,7 +142,7 @@
 
 
 
-  <title>查看使用的端口 | protagonistss</title>
+  <title>知识点总结 | protagonistss</title>
   
 
 
@@ -324,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">查看使用的端口</h1>
+          <h1 class="post-title" itemprop="name headline">知识点总结</h1>
         
 
         <div class="post-meta">
@@ -396,8 +396,16 @@
       
 
       
-        <h5 id="Centos7"><a href="#Centos7" class="headerlink" title="Centos7"></a>Centos7</h5><p>查看服务器端口号目前的使用情况</p>
-<p>netstat -luntp</p>
+        <h5 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h5><p>路由追踪</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mtr</span><br><span class="line">traceroute</span><br></pre></td></tr></table></figure>
+<p>查看域名信息</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nslookup</span><br></pre></td></tr></table></figure>
+<p>查看端口状态</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">telnet protagonisths.com 80</span><br></pre></td></tr></table></figure>
+<p>网络抓包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -i any 所有的网卡的数据包</span></span><br><span class="line"><span class="comment"># -n 如果有域名的解析成ip</span></span><br><span class="line"><span class="comment"># port 指定端口</span></span><br><span class="line"><span class="comment"># host 捕获某个主机</span></span><br><span class="line"><span class="comment"># -w 保存到某个文件</span></span><br><span class="line">tcpdump -i any -n host [example] and port 80 -w /tmp/temp.txt</span><br></pre></td></tr></table></figure>
+<p>查看服务器监听地址</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -n 解析域名成ip</span></span><br><span class="line"><span class="comment"># t tcp协议</span></span><br><span class="line"><span class="comment"># p 进程</span></span><br><span class="line"><span class="comment"># l tcp的状态 listen</span></span><br><span class="line">netstat -ntpl</span><br><span class="line"><span class="comment"># 或</span></span><br><span class="line">ss -ntpl</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -444,7 +452,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/helper/" rel="tag"># helper</a>
+            <a href="/tags/centos/" rel="tag"># centos</a>
           
         </div>
       
@@ -566,7 +574,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -632,7 +640,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#Centos7"><span class="nav-number">1.</span> <span class="nav-text">Centos7</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#知识点总结"><span class="nav-number">1.</span> <span class="nav-text">知识点总结</span></a></li></ol></div>
             
 
           </div>
