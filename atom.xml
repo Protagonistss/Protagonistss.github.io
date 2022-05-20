@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://protagonistss.github.io.com/"/>
-  <updated>2022-04-20T11:59:47.194Z</updated>
+  <updated>2022-05-13T01:45:17.170Z</updated>
   <id>http://protagonistss.github.io.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack配置</title>
+    <link href="http://protagonistss.github.io.com/2022/05/13/webpack/config/"/>
+    <id>http://protagonistss.github.io.com/2022/05/13/webpack/config/</id>
+    <published>2022-05-12T19:46:22.000Z</published>
+    <updated>2022-05-13T01:45:17.170Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="webpack配置"><a href="#webpack配置" class="headerlink" title="webpack配置"></a>webpack配置</h4><h5 id="代码压缩"><a href="#代码压缩" class="headerlink" title="代码压缩"></a>代码压缩</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm add terser-webpack-plugin -D</span><br></pre></td></tr></table></figure><h5 id="css"><a href="#css" class="headerlink" title="css"></a>css</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pnpm add css-loader -D</span><br><span class="line">pnpm add mini-css-extract-plugin -D</span><br><span class="line">pnpm add css-minimizer-webpack-plugin -D</span><br></pre></td></tr></table></figure><h5 id="编译代码产物"><a href="#编译代码产物" class="headerlink" title="编译代码产物"></a>编译代码产物</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm add @babel/core @babel/preset-env babel-loader -D</span><br></pre></td></tr></table></figure><h5 id="清除构建产物"><a href="#清除构建产物" class="headerlink" title="清除构建产物"></a>清除构建产物</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm add clean-webpack-plugin -D</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;webpack配置&quot;&gt;&lt;a href=&quot;#webpack配置&quot; class=&quot;headerlink&quot; title=&quot;webpack配置&quot;&gt;&lt;/a&gt;webpack配置&lt;/h4&gt;&lt;h5 id=&quot;代码压缩&quot;&gt;&lt;a href=&quot;#代码压缩&quot; class=&quot;headerli
+      
+    
+    </summary>
+    
+      <category term="webpack" scheme="http://protagonistss.github.io.com/categories/webpack/"/>
+    
+    
+      <category term="config" scheme="http://protagonistss.github.io.com/tags/config/"/>
+    
+  </entry>
   
   <entry>
     <title>debug_v8</title>
@@ -492,31 +517,6 @@
     
     
       <category term="install" scheme="http://protagonistss.github.io.com/tags/install/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Mongo备份操作</title>
-    <link href="http://protagonistss.github.io.com/2019/06/22/db/mongo/"/>
-    <id>http://protagonistss.github.io.com/2019/06/22/db/mongo/</id>
-    <published>2019-06-21T16:48:46.000Z</published>
-    <updated>2022-04-12T08:50:28.349Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Mongo的更新数组"><a href="#Mongo的更新数组" class="headerlink" title="Mongo的更新数组"></a>Mongo的更新数组</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$push: 增加一个对象到数组底部</span><br><span class="line">$pushAll: 增加多个对象到数组底部</span><br><span class="line">$pop: 从数组底部删除一个对象</span><br><span class="line">$pull: 如果匹配指定的值,从数组中删除对应的对象</span><br><span class="line">$pullAll: 如果匹配任意的值,从数据中删除相应的对象</span><br><span class="line">$addToSet: 如果不存在则增加一个值到数组</span><br></pre></td></tr></table></figure><h1 id="Mongo的mongodump、mongorestore"><a href="#Mongo的mongodump、mongorestore" class="headerlink" title="Mongo的mongodump、mongorestore"></a>Mongo的mongodump、mongorestore</h1><h6 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongodump -d individtax -o /users/</span><br></pre></td></tr></table></figure><h6 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongorestore -d individtax --dir /users/individtax/</span><br></pre></td></tr></table></figure><h1 id="Mongo删除数据库"><a href="#Mongo删除数据库" class="headerlink" title="Mongo删除数据库"></a>Mongo删除数据库</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.dropDatabase()</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Mongo的更新数组&quot;&gt;&lt;a href=&quot;#Mongo的更新数组&quot; class=&quot;headerlink&quot; title=&quot;Mongo的更新数组&quot;&gt;&lt;/a&gt;Mongo的更新数组&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;t
-      
-    
-    </summary>
-    
-      <category term="mongo" scheme="http://protagonistss.github.io.com/categories/mongo/"/>
-    
-    
-      <category term="backup" scheme="http://protagonistss.github.io.com/tags/backup/"/>
     
   </entry>
   
